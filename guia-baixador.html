@@ -30,7 +30,7 @@
     <main class="guia">
       <p class="migalha"><a href="./#materiais">Materiais</a> / <a href="como-fazer-baixador.html">Baixador de Vídeos</a> / Programa pronto</p>
       <h1>Baixador<br>de <span>Vídeos</span></h1>
-      <p class="lide">Cola o link do YouTube ou do Instagram, e o vídeo cai na pasta Downloads em MP4, na melhor qualidade. A instalação leva alguns minutos e só precisa ser feita uma vez.</p>
+      <p class="lide">Cola o link do YouTube ou do Instagram, e o vídeo é salvo com o nome original dele, na pasta que você escolher, em MP4 na melhor qualidade ou só o áudio em MP3. A instalação leva alguns minutos e só precisa ser feita uma vez.</p>
       <p class="alerta">Baixe apenas vídeos seus ou com autorização de quem os publicou. Os termos do YouTube e do Instagram proíbem baixar conteúdo de terceiros sem permissão.</p>
 
       <h2>Passo a passo</h2>
@@ -52,15 +52,15 @@
       <section class="passo-guia">
         <span class="num" aria-hidden="true">3</span>
         <h3>Instale (só uma vez)</h3>
-        <p>Dê dois cliques em <code>1 - Instalar (so uma vez)</code>. Se o Windows perguntar algo, clique em <strong>Sim</strong>. Aguarde até aparecer "Pronto!". O instalador coloca as duas ferramentas livres que fazem o trabalho (yt-dlp e ffmpeg) e cria o atalho <strong>Baixador do BirutIA</strong> na Área de Trabalho.</p>
+        <p>Dê dois cliques em <code>1 - Instalar (so uma vez)</code>. Se o Windows perguntar algo, clique em <strong>Sim</strong>. O instalador também procura versões antigas do Baixador e pergunta se pode apagá-las (só apaga arquivos do próprio Baixador, nunca os seus vídeos). Aguarde até aparecer "Pronto!". O instalador coloca as duas ferramentas livres que fazem o trabalho (yt-dlp e ffmpeg) e cria o atalho <strong>Baixador do BirutIA</strong> na Área de Trabalho.</p>
         <span></span>
       </section>
 
       <section class="passo-guia">
         <span class="num" aria-hidden="true">4</span>
         <h3>Use</h3>
-        <p>Abra o atalho, cole o link (Ctrl + V), clique em <strong>Baixar</strong> e espere a barra chegar a 100%. O botão <strong>Abrir pasta Downloads</strong> mostra o vídeo.</p>
-        <img class="janela" src="img/janela-baixador.png" alt="Janela do Baixador do BirutIA: logo do robô, campo para colar o link e o botão roxo Baixar" width="540" height="400">
+        <p>Abra o atalho e cole o link (botão <strong>Colar</strong> ou Ctrl + V). Escolha a pasta em <strong>Escolher...</strong>, o formato (MP4 ou só o áudio em MP3) e clique em <strong>Baixar</strong>. A barra mostra a porcentagem, a velocidade e o tempo que falta. Ao terminar, o arquivo aparece com o nome original do vídeo. Marque <strong>Fechar o programa quando terminar</strong> se quiser que a janela se feche sozinha.</p>
+        <img class="janela" src="img/janela-baixador.png" alt="Janela do Baixador do BirutIA: logo do robô, campo para colar o link, escolha de pasta e formato, e o botão roxo Baixar" width="540" height="400">
       </section>
 
       <h2>Se algo der errado</h2>
@@ -94,10 +94,13 @@
       <h2>Deixe com a sua cara</h2>
       <details open>
         <summary>Trocar logo, cores e nome</summary>
-        <p>O programa é livre e foi feito para você mudar.</p>
+        <p>O programa é livre e foi feito para você mudar, sem mexer em código.</p>
         <ol>
-          <li><strong>Logo:</strong> troque o arquivo <code>cabeca.png</code> por uma imagem sua, de preferência quadrada.</li>
-          <li><strong>Cores e nome:</strong> abra <code>BaixadorVideos.ps1</code> com o Bloco de Notas, ou peça ao Claude: "Mude o Baixador para as cores X e Y e o nome Z."</li>
+          <li><strong>Tudo fica em um arquivo:</strong> abra <code>marca.json</code> com o Bloco de Notas.</li>
+          <li><strong>Nome e atalho:</strong> troque os textos de <code>nome</code> (título da janela) e <code>atalho</code> (nome do atalho na Área de Trabalho).</li>
+          <li><strong>Logo:</strong> coloque a sua imagem na mesma pasta e escreva o nome do arquivo em <code>logo</code>. Quadrada ou larga, ela se ajusta sozinha.</li>
+          <li><strong>Cores:</strong> <code>corPrincipal</code>, <code>corDestaque</code> e <code>corFundo</code> usam o formato [vermelho, verde, azul], de 0 a 255. O texto dos botões muda sozinho para ficar legível.</li>
+          <li><strong>Para aplicar:</strong> rode de novo <code>1 - Instalar</code>. Ele apaga a cópia anterior e cria o atalho com o seu nome.</li>
         </ol>
       </details>
     </main>

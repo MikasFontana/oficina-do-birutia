@@ -1,3 +1,9 @@
+// Sem menu do botão direito no site, exceto dentro de campos de texto (para colar).
+document.addEventListener("contextmenu", function (e) {
+  if (e.target.closest && e.target.closest("input, textarea")) return;
+  e.preventDefault();
+});
+
 // Cadastro rápido antes de baixar: nome e e-mail vão direto para o Google Formulários (sem abrir o formulário).
 (function () {
   var CADASTRO = {
@@ -7,7 +13,7 @@
     material: "entry.212069383"
   };
   var CHAVE = "birutia_cadastro";
-  var NOMES = { "baixador-do-biruta.zip": "Baixador de Vídeos", "cofre-modelo.zip": "Cofre modelo (Obsidian)" };
+  var NOMES = { "baixador-do-biruta.zip": "Baixador de Vídeos", "cofre-modelo.zip": "Cofre modelo (Obsidian)", "pacote-de-skills.zip": "Pacote de skills", "guia-completo-de-skills.pdf": "Guia completo de skills (PDF)" };
   var links = Array.prototype.slice.call(document.querySelectorAll("a[download]"));
   if (!links.length || !CADASTRO.url) return;
 
