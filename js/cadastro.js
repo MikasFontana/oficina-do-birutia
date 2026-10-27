@@ -13,7 +13,7 @@ document.addEventListener("contextmenu", function (e) {
     material: "entry.212069383"
   };
   var CHAVE = "birutia_cadastro";
-  var NOMES = { "baixador-do-biruta.zip": "Baixador de Vídeos", "cofre-modelo.zip": "Cofre modelo (Obsidian)", "pacote-de-skills.zip": "Pacote de skills", "guia-completo-de-skills.pdf": "Guia completo de skills (PDF)" };
+  var NOMES = { "baixador-do-biruta.zip": "Baixador de Vídeos", "cofre-modelo.zip": "Cofre modelo (Obsidian)", "pacote-de-skills.zip": "Pacote de skills", "guia-completo-de-skills.pdf": "Guia completo de skills (PDF)", "pedido-limpar-tv.txt": "Pedido para limpar a TV" };
   var links = Array.prototype.slice.call(document.querySelectorAll("a[download]"));
   if (!links.length || !CADASTRO.url) return;
 

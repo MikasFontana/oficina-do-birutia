@@ -1,0 +1,47 @@
+LIMPAR A TV E TROCAR A TELA INICIAL COM O CLAUDE CODE
+Oficina do BirutIA - material gratuito (guia completo no site)
+
+PARA QUE SERVE
+Tirar anúncios e apps que pesam de uma TV com Android TV ou Google TV
+e instalar uma tela inicial limpa. Nada é apagado: tudo pode ser reativado.
+
+NÃO SERVE PARA: Samsung (Tizen), LG (webOS) e Roku.
+
+---------------------------------------------------------------
+LISTA DE CONFERÊNCIA
+---------------------------------------------------------------
+[ ] A TV é Android TV ou Google TV (tem Google Play e Assistente do Google)
+[ ] Computador e TV estão no mesmo Wi-Fi
+[ ] Claude Code instalado no computador
+[ ] Modo desenvolvedor ligado na TV (Sobre, item Build, OK 7 vezes)
+[ ] Depuração USB ligada (e depuração pela rede, se existir)
+[ ] Anotei o modelo da TV e, se souber, o endereço (IP)
+[ ] Colei o pedido abaixo no Claude Code
+[ ] Aceitei na TV o aviso "Permitir depuração USB?"
+[ ] Respondi quais apps, assistente de voz, Chromecast e atualizações eu uso
+[ ] Testei os botões do controle (Netflix, YouTube, HDMI) quando o Claude pediu
+[ ] Guardei o comando para desfazer tudo
+[ ] DESLIGUEI a depuração USB e a depuração pela rede na TV
+
+---------------------------------------------------------------
+PEDIDO PARA COLAR NO CLAUDE CODE
+---------------------------------------------------------------
+Quero limpar a minha TV com Android TV ou Google TV e trocar a tela inicial por uma mais limpa, usando o projeto aberto CleanYourTV (https://github.com/Gathin23/cleanyourtv). Antes de tudo, pergunte a marca e o modelo da TV e o endereço dela na rede; se eu não souber, ajude a achar. Clone o projeto, leia o README e o PROMPT.md e siga o PROMPT.md. Explique em português simples, como se eu nunca tivesse feito isso, o que vai mudar e como a ferramenta fala com a TV. Verifique o que falta no meu computador e me ajude a instalar. Diga o que devo fazer na TV (modo desenvolvedor e depuração) e espere eu confirmar. Faça o backup antes de desativar qualquer coisa, desative em lotes pequenos e confira com uma captura de tela da TV depois de cada lote. Pergunte quais apps, assistente de voz, Chromecast e atualizações eu uso antes de mexer neles. Se a TV for Samsung (Tizen), LG (webOS) ou Roku, pare e me avise, porque este método não serve para elas. No fim, me dê o comando exato para desfazer tudo e me lembre de desligar a depuração na TV. Responda sempre em português.
+
+---------------------------------------------------------------
+PARA DESFAZER
+---------------------------------------------------------------
+Peça ao Claude Code: "Restaure a minha TV como estava antes."
+Ele usa o backup feito no começo e reativa tudo que foi desativado.
+
+---------------------------------------------------------------
+SAMSUNG, LG OU ROKU?
+---------------------------------------------------------------
+Não dá para trocar a tela inicial. O que ajuda: reinício completo (segure
+o botão de ligar do controle; se preciso, tire da tomada por 30 segundos),
+excluir apps que não usa, desligar o início automático e as recomendações
+no Smart Hub e, em último caso, redefinir o Smart Hub. Outra saída é ligar
+um Android TV (stick de streaming) em uma entrada HDMI e usar este guia nele.
+
+Projeto usado: CleanYourTV, de Gathin23 (github.com/Gathin23/cleanyourtv).
+Não temos ligação com ele. Leia a licença e o código antes de usar.

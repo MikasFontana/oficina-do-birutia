@@ -131,6 +131,11 @@
             <button class="chip" type="button" data-filtro="skills" aria-pressed="false">Skills</button>
             <button class="chip" type="button" data-filtro="embreve" aria-pressed="false">Em breve</button>
           </div>
+          <div class="chips" role="group" aria-label="Filtrar por plataforma">
+            <button class="chip chip-plat" type="button" data-filtro="plat-claude" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="#d97757"><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(0 12 12)"/><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(30 12 12)"/><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(60 12 12)"/><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(90 12 12)"/><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(120 12 12)"/><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(150 12 12)"/><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(180 12 12)"/><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(210 12 12)"/><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(240 12 12)"/><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(270 12 12)"/><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(300 12 12)"/><rect x="11" y="1.5" width="2" height="9.5" rx="1" transform="rotate(330 12 12)"/></g></svg>Claude</button>
+            <button class="chip chip-plat" type="button" data-filtro="plat-chatgpt" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="7.2" y="2.6" width="9.6" height="18.8" rx="4.8" transform="rotate(0 12 12)"/><rect x="7.2" y="2.6" width="9.6" height="18.8" rx="4.8" transform="rotate(60 12 12)"/><rect x="7.2" y="2.6" width="9.6" height="18.8" rx="4.8" transform="rotate(120 12 12)"/></svg>ChatGPT</button>
+            <button class="chip chip-plat" type="button" data-filtro="plat-google" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg>Google</button>
+          </div>
         </div>
 
         <div class="vazio" id="vazio" hidden>
@@ -139,6 +144,15 @@
         </div>
 
         <ul class="grade" id="grade">
+          <!--NOVOS-->
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="limpe a sua tv e troque a tela inicial com o claude code claude code tire anúncios e apps que pesam da sua tv com android tv ou google tv e instale uma tela inicial limpa, com backup e caminho de volta. inclui o que fazer em samsung, lg e roku.">
+            <span class="furo" aria-hidden="true"></span><span class="selo">Novo</span>
+            <p class="cat">Claude Code · Passo a passo</p>
+            <h3>Limpe a sua TV e troque a tela inicial com o Claude Code</h3>
+            <p>Tire anúncios e apps que pesam da sua TV com Android TV ou Google TV e instale uma tela inicial limpa, com backup e caminho de volta. Inclui o que fazer em Samsung, LG e Roku.</p>
+            <div class="acoes"><a class="btn btn-escuro" href="limpar-a-tv-com-o-claude.html">Ler o guia</a></div>
+          </li>
+          <!--/NOVOS-->
           <li class="etiqueta t-laranja" data-cats="programas guias" data-texto="baixador de vídeos youtube instagram mp4 programa windows guia passo a passo">
             <span class="furo" aria-hidden="true"></span>
             <span class="selo">Novo</span>
@@ -156,7 +170,7 @@
             <p class="nota">Use só com vídeos seus ou com autorização.</p>
           </li>
 
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="obsidian memória ia cofre notas claude cowork rotina agendada onde paramos">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="obsidian memória ia cofre notas claude cowork rotina agendada onde paramos">
             <span class="furo" aria-hidden="true"></span>
             <span class="selo">Novo</span>
             <p class="cat">Claude · Guia</p>
@@ -173,124 +187,117 @@
           </li>
 
           <!--GUIAS-->
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="aprender qualquer assunto mais rápido com notebooklm e obsidian google um sistema em três camadas: as suas fontes ficam em um caderno de pesquisa, a ia resume e questiona, e só o que é novo vai para as suas notas. menos repetição, mais retenção.">
+          <li class="etiqueta t-laranja" data-cats="guias plat-google" data-texto="aprender qualquer assunto mais rápido com notebooklm e obsidian google um sistema em três camadas: as suas fontes ficam em um caderno de pesquisa, a ia resume e questiona, e só o que é novo vai para as suas notas. menos repetição, mais retenção.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · sistema + 3 pedidos</p>
             <h3>Aprender qualquer assunto mais rápido com NotebookLM e Obsidian</h3>
             <p>Um sistema em três camadas: as suas fontes ficam em um caderno de pesquisa, a IA resume e questiona, e só o que é novo vai para as suas notas. Menos repetição, mais retenção.</p>
             <div class="acoes"><a class="btn btn-escuro" href="aprender-mais-rapido-com-notebooklm-e-obsidian.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="seu assistente pessoal com ia, montado em um fim de semana claude um assistente que conhece o seu trabalho, lembra do que ficou combinado e responde &quot;onde paramos?&quot;. veja o que montar no sábado e no domingo, com os pedidos.">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="seu assistente pessoal com ia, montado em um fim de semana claude um assistente que conhece o seu trabalho, lembra do que ficou combinado e responde &quot;onde paramos?&quot;. veja o que montar no sábado e no domingo, com os pedidos.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · roteiro de 2 dias</p>
             <h3>Seu assistente pessoal com IA, montado em um fim de semana</h3>
             <p>Um assistente que conhece o seu trabalho, lembra do que ficou combinado e responde &quot;onde paramos?&quot;. Veja o que montar no sábado e no domingo, com os pedidos.</p>
             <div class="acoes"><a class="btn btn-escuro" href="assistente-pessoal-em-um-fim-de-semana.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="cinco jeitos de pedir para o claude pensar melhor claude a resposta fraca quase sempre vem de um pedido solto. cinco formas de pedir que fazem a ia explicar, duvidar e testar o próprio raciocínio.">
+          <li class="etiqueta t-laranja" data-cats="guias plat-claude" data-texto="cinco jeitos de pedir para o claude pensar melhor claude a resposta fraca quase sempre vem de um pedido solto. cinco formas de pedir que fazem a ia explicar, duvidar e testar o próprio raciocínio.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · 5 pedidos prontos</p>
             <h3>Cinco jeitos de pedir para o Claude pensar melhor</h3>
             <p>A resposta fraca quase sempre vem de um pedido solto. Cinco formas de pedir que fazem a IA explicar, duvidar e testar o próprio raciocínio.</p>
             <div class="acoes"><a class="btn btn-escuro" href="cinco-jeitos-de-pedir-melhor.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="o que montar no claude quando você só tem um fim de semana claude um painel da vida, um segundo cérebro, um revisor, um kit de marca e uma biblioteca do que você aprende. cinco projetos pequenos, com o pedido de cada um.">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="o que montar no claude quando você só tem um fim de semana claude um painel da vida, um segundo cérebro, um revisor, um kit de marca e uma biblioteca do que você aprende. cinco projetos pequenos, com o pedido de cada um.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia + 5 pedidos</p>
             <h3>O que montar no Claude quando você só tem um fim de semana</h3>
             <p>Um painel da vida, um segundo cérebro, um revisor, um kit de marca e uma biblioteca do que você aprende. Cinco projetos pequenos, com o pedido de cada um.</p>
             <div class="acoes"><a class="btn btn-escuro" href="cinco-projetos-no-claude.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="cinco skills para o seu instagram claude uma skill é uma instrução salva que o claude segue sempre do mesmo jeito. veja cinco ideias para o instagram e um modelo para criar a sua em dois minutos.">
+          <li class="etiqueta t-laranja" data-cats="guias plat-claude" data-texto="cinco skills para o seu instagram claude uma skill é uma instrução salva que o claude segue sempre do mesmo jeito. veja cinco ideias para o instagram e um modelo para criar a sua em dois minutos.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia + modelo de skill</p>
             <h3>Cinco skills para o seu Instagram</h3>
             <p>Uma skill é uma instrução salva que o Claude segue sempre do mesmo jeito. Veja cinco ideias para o Instagram e um modelo para criar a sua em dois minutos.</p>
             <div class="acoes"><a class="btn btn-escuro" href="cinco-skills-para-o-instagram.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="o claude dentro do google docs, sheets e slides claude se você já trabalha no google workspace, dá para usar o claude sem sair dele: resumir um documento, limpar uma planilha, montar uma apresentação. veja os pedidos mais úteis e os cuidados.">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="o claude dentro do google docs, sheets e slides claude se você já trabalha no google workspace, dá para usar o claude sem sair dele: resumir um documento, limpar uma planilha, montar uma apresentação. veja os pedidos mais úteis e os cuidados.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia + 6 pedidos</p>
             <h3>O Claude dentro do Google Docs, Sheets e Slides</h3>
             <p>Se você já trabalha no Google Workspace, dá para usar o Claude sem sair dele: resumir um documento, limpar uma planilha, montar uma apresentação. Veja os pedidos mais úteis e os cuidados.</p>
             <div class="acoes"><a class="btn btn-escuro" href="claude-no-google-docs-sheets-slides.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="clonar a própria voz com ia, de graça e no seu computador repositórios é possível clonar a sua voz com ferramentas de código aberto, sem pagar nada. contamos o que funcionou, o que deu errado e os cuidados que não podem faltar.">
+          <li class="etiqueta t-laranja" data-cats="guias" data-texto="clonar a própria voz com ia, de graça e no seu computador repositórios é possível clonar a sua voz com ferramentas de código aberto, sem pagar nada. contamos o que funcionou, o que deu errado e os cuidados que não podem faltar.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · guia, o que testamos</p>
             <h3>Clonar a própria voz com IA, de graça e no seu computador</h3>
             <p>É possível clonar a sua voz com ferramentas de código aberto, sem pagar nada. Contamos o que funcionou, o que deu errado e os cuidados que não podem faltar.</p>
             <div class="acoes"><a class="btn btn-escuro" href="clonar-a-propria-voz-com-ia.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="um dashboard que vira um mundo 3d clicável claude em vez de gráficos de sempre, os números do seu negócio viram uma cidade ou uma oficina em 3d, onde cada prédio ou máquina conta uma parte da história. veja como pedir, na ordem.">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="um dashboard que vira um mundo 3d clicável claude em vez de gráficos de sempre, os números do seu negócio viram uma cidade ou uma oficina em 3d, onde cada prédio ou máquina conta uma parte da história. veja como pedir, na ordem.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · método em 6 pedidos</p>
             <h3>Um dashboard que vira um mundo 3D clicável</h3>
             <p>Em vez de gráficos de sempre, os números do seu negócio viram uma cidade ou uma oficina em 3D, onde cada prédio ou máquina conta uma parte da história. Veja como pedir, na ordem.</p>
             <div class="acoes"><a class="btn btn-escuro" href="dashboard-que-vira-mundo-3d.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="do nicho ao post publicado, em seis passos claude um fluxo para criar conteúdo com a ia sem perder a sua voz: pesquisa do nicho, plano de 30 dias, roteiro, produção e publicação, com você aprovando cada etapa.">
+          <li class="etiqueta t-laranja" data-cats="guias plat-claude" data-texto="do nicho ao post publicado, em seis passos claude um fluxo para criar conteúdo com a ia sem perder a sua voz: pesquisa do nicho, plano de 30 dias, roteiro, produção e publicação, com você aprovando cada etapa.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · método + 6 pedidos</p>
             <h3>Do nicho ao post publicado, em seis passos</h3>
             <p>Um fluxo para criar conteúdo com a IA sem perder a sua voz: pesquisa do nicho, plano de 30 dias, roteiro, produção e publicação, com você aprovando cada etapa.</p>
             <div class="acoes"><a class="btn btn-escuro" href="do-nicho-ao-post-publicado.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="peça documentos, apresentações e peças visuais ao claude sem sair da conversa claude dá para pedir um documento, uma apresentação ou uma peça visual direto na conversa, e ajustar com novos pedidos. veja como briefar bem e revisar antes de usar.">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="peça documentos, apresentações e peças visuais ao claude sem sair da conversa claude dá para pedir um documento, uma apresentação ou uma peça visual direto na conversa, e ajustar com novos pedidos. veja como briefar bem e revisar antes de usar.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia + 5 pedidos</p>
             <h3>Peça documentos, apresentações e peças visuais ao Claude sem sair da conversa</h3>
             <p>Dá para pedir um documento, uma apresentação ou uma peça visual direto na conversa, e ajustar com novos pedidos. Veja como briefar bem e revisar antes de usar.</p>
             <div class="acoes"><a class="btn btn-escuro" href="documentos-slides-e-design-no-claude.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="como editei um vídeo com o claude, do roteiro ao arquivo final claude o vídeo de estreia do canal foi feito assim: roteiro, voz, animação em código, efeitos sonoros e trilha. veja cada etapa e o pedido que usamos.">
+          <li class="etiqueta t-laranja" data-cats="guias plat-claude" data-texto="como editei um vídeo com o claude, do roteiro ao arquivo final claude o vídeo de estreia do canal foi feito assim: roteiro, voz, animação em código, efeitos sonoros e trilha. veja cada etapa e o pedido que usamos.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · método em 6 etapas</p>
             <h3>Como editei um vídeo com o Claude, do roteiro ao arquivo final</h3>
             <p>O vídeo de estreia do canal foi feito assim: roteiro, voz, animação em código, efeitos sonoros e trilha. Veja cada etapa e o pedido que usamos.</p>
             <div class="acoes"><a class="btn btn-escuro" href="editar-video-com-o-claude.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="como achar e escolher skills com segurança claude code skill é uma instrução pronta que o claude segue. é ótima para ganhar tempo, mas é código de terceiros rodando no seu computador. veja como achar, ler e testar antes de instalar.">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="como achar e escolher skills com segurança claude code skill é uma instrução pronta que o claude segue. é ótima para ganhar tempo, mas é código de terceiros rodando no seu computador. veja como achar, ler e testar antes de instalar.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude Code · guia com checklist</p>
             <h3>Como achar e escolher skills com segurança</h3>
             <p>Skill é uma instrução pronta que o Claude segue. É ótima para ganhar tempo, mas é código de terceiros rodando no seu computador. Veja como achar, ler e testar antes de instalar.</p>
             <div class="acoes"><a class="btn btn-escuro" href="escolher-skills-com-seguranca.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="como gastar menos do limite de uso no claude code claude code o limite acaba rápido quando a conversa fica longa, os arquivos são enormes e os pedidos são soltos. seis hábitos que fazem o mesmo trabalho gastando bem menos.">
+          <li class="etiqueta t-laranja" data-cats="guias plat-claude" data-texto="como gastar menos do limite de uso no claude code claude code o limite acaba rápido quando a conversa fica longa, os arquivos são enormes e os pedidos são soltos. seis hábitos que fazem o mesmo trabalho gastando bem menos.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude Code · guia + 6 hábitos</p>
             <h3>Como gastar menos do limite de uso no Claude Code</h3>
             <p>O limite acaba rápido quando a conversa fica longa, os arquivos são enormes e os pedidos são soltos. Seis hábitos que fazem o mesmo trabalho gastando bem menos.</p>
             <div class="acoes"><a class="btn btn-escuro" href="gastar-menos-limite-no-claude-code.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="ensine a sua marca ao claude uma vez e pare de repetir claude em vez de explicar quem você é a cada conversa, monte um projeto com o visual, a voz e o público da sua marca. todo texto novo já nasce com a sua cara.">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="ensine a sua marca ao claude uma vez e pare de repetir claude em vez de explicar quem você é a cada conversa, monte um projeto com o visual, a voz e o público da sua marca. todo texto novo já nasce com a sua cara.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia + 4 pedidos</p>
             <h3>Ensine a sua marca ao Claude uma vez e pare de repetir</h3>
             <p>Em vez de explicar quem você é a cada conversa, monte um projeto com o visual, a voz e o público da sua marca. Todo texto novo já nasce com a sua cara.</p>
             <div class="acoes"><a class="btn btn-escuro" href="memoria-da-marca-no-claude.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="o que são mods do claude code e três coisas que você pode criar claude code um mod muda o comportamento ou a aparência do claude code para o seu jeito de trabalhar: um painel que atualiza sozinho, um aviso, um atalho. veja três usos e como pedir.">
+          <li class="etiqueta t-laranja" data-cats="guias plat-claude" data-texto="o que são mods do claude code e três coisas que você pode criar claude code um mod muda o comportamento ou a aparência do claude code para o seu jeito de trabalhar: um painel que atualiza sozinho, um aviso, um atalho. veja três usos e como pedir.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude Code · guia + 3 pedidos</p>
             <h3>O que são mods do Claude Code e três coisas que você pode criar</h3>
             <p>Um mod muda o comportamento ou a aparência do Claude Code para o seu jeito de trabalhar: um painel que atualiza sozinho, um aviso, um atalho. Veja três usos e como pedir.</p>
             <div class="acoes"><a class="btn btn-escuro" href="mods-do-claude-code.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="organize o seu drive com o claude, sem apagar nada claude pasta cheia de arquivos soltos, duplicados e nomes como &quot;final_v3_agora&quot;. um método em duas etapas: primeiro a ia propõe, depois você aprova e ela move, com a lista para desfazer.">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="organize o seu drive com o claude, sem apagar nada claude pasta cheia de arquivos soltos, duplicados e nomes como &quot;final_v3_agora&quot;. um método em duas etapas: primeiro a ia propõe, depois você aprova e ela move, com a lista para desfazer.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · 5 pedidos prontos</p>
             <h3>Organize o seu Drive com o Claude, sem apagar nada</h3>
             <p>Pasta cheia de arquivos soltos, duplicados e nomes como &quot;final_v3_agora&quot;. Um método em duas etapas: primeiro a IA propõe, depois você aprova e ela move, com a lista para desfazer.</p>
             <div class="acoes"><a class="btn btn-escuro" href="organizar-o-drive-com-o-claude.html">Ler o guia</a></div>
-          </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve skills" data-texto="em breve pacote de skills: 48 skills prontas para o seu claude code claude code">
-            <span class="furo" aria-hidden="true"></span>
-            <p class="cat">Claude Code · pacote + guia completo</p>
-            <h3>Pacote de skills: 48 skills prontas para o seu Claude Code</h3>
-            <div class="conteudo-borrado" aria-hidden="true"><p>Skills prontas para o seu Claude Code, com tutorial em português e guia completo em PDF.</p></div>
-            <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Data a definir</span></div></div>
           </li>
           <li class="etiqueta t-laranja" data-cats="guias" data-texto="pdf e word em markdown para gastar menos limite repositórios arquivos como pdf e word carregam muita formatação que a ia não precisa. converter para markdown deixa o texto limpo e usa menos do seu limite. veja como fazer com o markitdown.">
             <span class="furo" aria-hidden="true"></span>
@@ -299,21 +306,21 @@
             <p>Arquivos como PDF e Word carregam muita formatação que a IA não precisa. Converter para Markdown deixa o texto limpo e usa menos do seu limite. Veja como fazer com o MarkItDown.</p>
             <div class="acoes"><a class="btn btn-escuro" href="pdf-e-word-em-markdown.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="plugins que mudam o jeito de programar com o claude code claude code plugins somam comandos, skills e regras ao claude code. veja o que eles são, como escolher poucos e bons, e o que conferir antes de instalar qualquer um.">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="plugins que mudam o jeito de programar com o claude code claude code plugins somam comandos, skills e regras ao claude code. veja o que eles são, como escolher poucos e bons, e o que conferir antes de instalar qualquer um.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude Code · guia + checklist</p>
             <h3>Plugins que mudam o jeito de programar com o Claude Code</h3>
             <p>Plugins somam comandos, skills e regras ao Claude Code. Veja o que eles são, como escolher poucos e bons, e o que conferir antes de instalar qualquer um.</p>
             <div class="acoes"><a class="btn btn-escuro" href="plugins-para-o-claude-code.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="apresentação com ia: do briefing ao arquivo que você pode usar claude uma apresentação boa começa antes dos slides: no briefing e no roteiro. veja o caminho em cinco passos, com os pedidos, para chegar a um arquivo que você pode usar.">
+          <li class="etiqueta t-laranja" data-cats="guias plat-claude" data-texto="apresentação com ia: do briefing ao arquivo que você pode usar claude uma apresentação boa começa antes dos slides: no briefing e no roteiro. veja o caminho em cinco passos, com os pedidos, para chegar a um arquivo que você pode usar.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · passo a passo + 5 pedidos</p>
             <h3>Apresentação com IA: do briefing ao arquivo que você pode usar</h3>
             <p>Uma apresentação boa começa antes dos slides: no briefing e no roteiro. Veja o caminho em cinco passos, com os pedidos, para chegar a um arquivo que você pode usar.</p>
             <div class="acoes"><a class="btn btn-escuro" href="primeira-apresentacao-com-ia-no-claude.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="como fazer o claude code parar de mexer no que você não pediu claude code o claude code tende a mexer em mais coisas do que você pediu. um arquivo de quatro regras, escrito em português, deixa o trabalho mais curto, mais seguro e mais fácil de revisar.">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="como fazer o claude code parar de mexer no que você não pediu claude code o claude code tende a mexer em mais coisas do que você pediu. um arquivo de quatro regras, escrito em português, deixa o trabalho mais curto, mais seguro e mais fácil de revisar.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude Code · arquivo CLAUDE.md</p>
             <h3>Como fazer o Claude Code parar de mexer no que você não pediu</h3>
@@ -334,21 +341,21 @@
             <p>Com skills de Three.js, GSAP e motion design instaladas, o Claude cria animações melhores a partir de um pedido simples. Veja o que cada uma faz e como pedir.</p>
             <div class="acoes"><a class="btn btn-escuro" href="skills-de-animacao-para-o-claude-code.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="skills grátis que transformam o claude em gerente, analista e arquiteto claude code com a skill certa, o claude passa a agir como gerente de produto, analista de mercado ou arquiteto de sistemas. veja que papéis valem a pena e como pedir.">
+          <li class="etiqueta t-laranja" data-cats="guias plat-claude" data-texto="skills grátis que transformam o claude em gerente, analista e arquiteto claude code com a skill certa, o claude passa a agir como gerente de produto, analista de mercado ou arquiteto de sistemas. veja que papéis valem a pena e como pedir.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude Code · guia + 5 pedidos</p>
             <h3>Skills grátis que transformam o Claude em gerente, analista e arquiteto</h3>
             <p>Com a skill certa, o Claude passa a agir como gerente de produto, analista de mercado ou arquiteto de sistemas. Veja que papéis valem a pena e como pedir.</p>
             <div class="acoes"><a class="btn btn-escuro" href="skills-de-produto-e-analise.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-roxo" data-cats="guias" data-texto="como o texto de ia se entrega, e como deixá-lo com voz humana claude texto de ia tem marcas que o leitor percebe mesmo sem saber explicar. veja os sinais mais comuns, como corrigi-los e um pedido de revisão para usar antes de publicar.">
+          <li class="etiqueta t-roxo" data-cats="guias plat-claude" data-texto="como o texto de ia se entrega, e como deixá-lo com voz humana claude texto de ia tem marcas que o leitor percebe mesmo sem saber explicar. veja os sinais mais comuns, como corrigi-los e um pedido de revisão para usar antes de publicar.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia + checklist + pedido</p>
             <h3>Como o texto de IA se entrega, e como deixá-lo com voz humana</h3>
             <p>Texto de IA tem marcas que o leitor percebe mesmo sem saber explicar. Veja os sinais mais comuns, como corrigi-los e um pedido de revisão para usar antes de publicar.</p>
             <div class="acoes"><a class="btn btn-escuro" href="texto-de-ia-com-voz-humana.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="um time de agentes de ia para o seu conteúdo claude em vez de um pedido gigante, quatro papéis com tarefas claras: pesquisador, roteirista, criador e atendente. veja o que cada um faz e o pedido para criar o seu time.">
+          <li class="etiqueta t-laranja" data-cats="guias plat-claude" data-texto="um time de agentes de ia para o seu conteúdo claude em vez de um pedido gigante, quatro papéis com tarefas claras: pesquisador, roteirista, criador e atendente. veja o que cada um faz e o pedido para criar o seu time.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia + 4 papéis</p>
             <h3>Um time de agentes de IA para o seu conteúdo</h3>
@@ -362,7 +369,7 @@
             <p>Em vez de anexar o livro inteiro toda vez, você extrai os princípios e cria uma skill curta que o Claude consulta quando precisa. Menos limite gasto, respostas mais seguras.</p>
             <div class="acoes"><a class="btn btn-escuro" href="transformar-um-livro-em-skill.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-laranja" data-cats="guias" data-texto="três ajustes para o seu primeiro dia no claude claude antes de sair usando, três configurações que fazem o claude responder melhor desde a primeira conversa: preferências, memória do que importa e um jeito de pedir.">
+          <li class="etiqueta t-laranja" data-cats="guias plat-claude" data-texto="três ajustes para o seu primeiro dia no claude claude antes de sair usando, três configurações que fazem o claude responder melhor desde a primeira conversa: preferências, memória do que importa e um jeito de pedir.">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia curto + 3 pedidos</p>
             <h3>Três ajustes para o seu primeiro dia no Claude</h3>
@@ -376,434 +383,441 @@
             <p>O Remotion transforma código em vídeo. Com o Claude Code, você descreve a cena e ele escreve, testa e renderiza. Foi assim que fizemos o primeiro vídeo do canal.</p>
             <div class="acoes"><a class="btn btn-escuro" href="videos-com-codigo-remotion.html">Ler o guia</a></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude-code" data-libera="2026-10-28T10:00" data-texto="em breve claude-code Plugin oficial que arruma o seu setup">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve skills plat-claude" data-texto="em breve pacote de skills: 48 skills prontas para o seu claude code claude code">
+            <span class="furo" aria-hidden="true"></span>
+            <p class="cat">Claude Code · pacote + guia completo</p>
+            <h3>Pacote de skills: 48 skills prontas para o seu Claude Code</h3>
+            <div class="conteudo-borrado" aria-hidden="true"><p>Skills prontas para o seu Claude Code, com tutorial em português e guia completo em PDF.</p></div>
+            <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Data a definir</span></div></div>
+          </li>
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude-code plat-claude" data-libera="2026-10-28T10:00" data-texto="em breve claude-code plat-claude Plugin oficial que arruma o seu setup">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude Code · carrossel</p>
             <h3>Plugin oficial que arruma o seu setup</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 28 de out, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude-code" data-libera="2026-10-28T14:00" data-texto="em breve claude-code Seu assistente pessoal com skills, memória e voz">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude-code plat-claude" data-libera="2026-10-28T14:00" data-texto="em breve claude-code plat-claude Seu assistente pessoal com skills, memória e voz">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude Code · guia+video</p>
             <h3>Seu assistente pessoal com skills, memória e voz</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 28 de out, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video" data-libera="2026-10-28T18:00" data-texto="em breve design-e-video Edição de vídeo com IA: três ferramentas">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video " data-libera="2026-10-28T18:00" data-texto="em breve design-e-video  Edição de vídeo com IA: três ferramentas">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Design e vídeo · guia</p>
             <h3>Edição de vídeo com IA: três ferramentas</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 28 de out, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-10-29T10:00" data-texto="em breve chatgpt Conversas trancadas com PIN no ChatGPT">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-10-29T10:00" data-texto="em breve chatgpt plat-chatgpt Conversas trancadas com PIN no ChatGPT">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · carrossel</p>
             <h3>Conversas trancadas com PIN no ChatGPT</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 29 de out, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-10-29T14:00" data-texto="em breve repositorios Vídeo de lançamento a partir do seu projeto">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-10-29T14:00" data-texto="em breve repositorios  Vídeo de lançamento a partir do seu projeto">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · guia+video</p>
             <h3>Vídeo de lançamento a partir do seu projeto</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 29 de out, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude-code" data-libera="2026-10-29T18:00" data-texto="em breve claude-code Claude Code completo, do zero ao avançado">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude-code plat-claude" data-libera="2026-10-29T18:00" data-texto="em breve claude-code plat-claude Claude Code completo, do zero ao avançado">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude Code · curso</p>
             <h3>Claude Code completo, do zero ao avançado</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 29 de out, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video" data-libera="2026-10-30T10:00" data-texto="em breve design-e-video Imagens com texto legível no Canva">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video " data-libera="2026-10-30T10:00" data-texto="em breve design-e-video  Imagens com texto legível no Canva">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Design e vídeo · carrossel</p>
             <h3>Imagens com texto legível no Canva</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 30 de out, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude" data-libera="2026-10-30T14:00" data-texto="em breve claude Claude e Cowork completo">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude plat-claude" data-libera="2026-10-30T14:00" data-texto="em breve claude plat-claude Claude e Cowork completo">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · curso</p>
             <h3>Claude e Cowork completo</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 30 de out, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-10-30T18:00" data-texto="em breve google Do app no Gemini ao site no ar">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-10-30T18:00" data-texto="em breve google plat-google Do app no Gemini ao site no ar">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · guia</p>
             <h3>Do app no Gemini ao site no ar</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 30 de out, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude" data-libera="2026-10-31T10:00" data-texto="em breve claude Reels salvos que você realmente assiste">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude plat-claude" data-libera="2026-10-31T10:00" data-texto="em breve claude plat-claude Reels salvos que você realmente assiste">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · carrossel</p>
             <h3>Reels salvos que você realmente assiste</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 31 de out, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-10-31T14:00" data-texto="em breve google Cadernos de pesquisa dentro do chat do Gemini">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-10-31T14:00" data-texto="em breve google plat-google Cadernos de pesquisa dentro do chat do Gemini">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · guia</p>
             <h3>Cadernos de pesquisa dentro do chat do Gemini</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 31 de out, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video" data-libera="2026-10-31T18:00" data-texto="em breve design-e-video Seu primeiro vídeo com avatar de IA">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video " data-libera="2026-10-31T18:00" data-texto="em breve design-e-video  Seu primeiro vídeo com avatar de IA">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Design e vídeo · guia</p>
             <h3>Seu primeiro vídeo com avatar de IA</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 31 de out, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-11-01T10:00" data-texto="em breve google O Gemini guardando o estilo da sua marca">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-11-01T10:00" data-texto="em breve google plat-google O Gemini guardando o estilo da sua marca">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · carrossel</p>
             <h3>O Gemini guardando o estilo da sua marca</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 1 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude" data-libera="2026-11-01T14:00" data-texto="em breve claude Seu primeiro agente gerenciado, aula gratuita">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude plat-claude" data-libera="2026-11-01T14:00" data-texto="em breve claude plat-claude Seu primeiro agente gerenciado, aula gratuita">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia</p>
             <h3>Seu primeiro agente gerenciado, aula gratuita</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 1 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude-code" data-libera="2026-11-01T18:00" data-texto="em breve claude-code Quatro conexões para o Claude pesquisar e navegar">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude-code plat-claude" data-libera="2026-11-01T18:00" data-texto="em breve claude-code plat-claude Quatro conexões para o Claude pesquisar e navegar">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude Code · guia</p>
             <h3>Quatro conexões para o Claude pesquisar e navegar</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 1 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-11-02T10:00" data-texto="em breve chatgpt Revisar o que o ChatGPT sabe sobre você">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-11-02T10:00" data-texto="em breve chatgpt plat-chatgpt Revisar o que o ChatGPT sabe sobre você">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · carrossel</p>
             <h3>Revisar o que o ChatGPT sabe sobre você</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 2 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude" data-libera="2026-11-02T14:00" data-texto="em breve claude Achar clientes com dados reais e LGPD">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude plat-claude" data-libera="2026-11-02T14:00" data-texto="em breve claude plat-claude Achar clientes com dados reais e LGPD">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia</p>
             <h3>Achar clientes com dados reais e LGPD</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 2 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude" data-libera="2026-11-02T18:00" data-texto="em breve claude Agente proativo: como montar o seu">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude plat-claude" data-libera="2026-11-02T18:00" data-texto="em breve claude plat-claude Agente proativo: como montar o seu">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia</p>
             <h3>Agente proativo: como montar o seu</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 2 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude" data-libera="2026-11-03T10:00" data-texto="em breve claude Um pedido que deixa qualquer resposta mais profunda">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude plat-claude" data-libera="2026-11-03T10:00" data-texto="em breve claude plat-claude Um pedido que deixa qualquer resposta mais profunda">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · carrossel</p>
             <h3>Um pedido que deixa qualquer resposta mais profunda</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 3 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-11-03T14:00" data-texto="em breve google Apresentação e vídeo a partir das suas fontes">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-11-03T14:00" data-texto="em breve google plat-google Apresentação e vídeo a partir das suas fontes">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · guia</p>
             <h3>Apresentação e vídeo a partir das suas fontes</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 3 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video" data-libera="2026-11-03T18:00" data-texto="em breve design-e-video Vídeo de 30 segundos em um pedido só">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video " data-libera="2026-11-03T18:00" data-texto="em breve design-e-video  Vídeo de 30 segundos em um pedido só">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Design e vídeo · guia</p>
             <h3>Vídeo de 30 segundos em um pedido só</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 3 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-11-04T10:00" data-texto="em breve repositorios Truques de link do GitHub">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-11-04T10:00" data-texto="em breve repositorios  Truques de link do GitHub">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · carrossel</p>
             <h3>Truques de link do GitHub</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 4 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude" data-libera="2026-11-04T14:00" data-texto="em breve claude Publicar em várias redes com agendador">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude plat-claude" data-libera="2026-11-04T14:00" data-texto="em breve claude plat-claude Publicar em várias redes com agendador">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia</p>
             <h3>Publicar em várias redes com agendador</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 4 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude" data-libera="2026-11-04T18:00" data-texto="em breve claude Um consultor de negócios dentro de um projeto">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude plat-claude" data-libera="2026-11-04T18:00" data-texto="em breve claude plat-claude Um consultor de negócios dentro de um projeto">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia</p>
             <h3>Um consultor de negócios dentro de um projeto</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 4 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-11-05T10:00" data-texto="em breve google Foto em vídeo no Gemini">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-11-05T10:00" data-texto="em breve google plat-google Foto em vídeo no Gemini">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · carrossel</p>
             <h3>Foto em vídeo no Gemini</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 5 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-11-05T14:00" data-texto="em breve chatgpt Apresentação pronta com Slides do ChatGPT">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-11-05T14:00" data-texto="em breve chatgpt plat-chatgpt Apresentação pronta com Slides do ChatGPT">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · guia</p>
             <h3>Apresentação pronta com Slides do ChatGPT</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 5 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-11-05T18:00" data-texto="em breve chatgpt Conexões no ChatGPT: dados, vídeo e vagas">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-11-05T18:00" data-texto="em breve chatgpt plat-chatgpt Conexões no ChatGPT: dados, vídeo e vagas">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · guia</p>
             <h3>Conexões no ChatGPT: dados, vídeo e vagas</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 5 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-11-06T10:00" data-texto="em breve chatgpt Editar foto sem mudar o seu rosto">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-11-06T10:00" data-texto="em breve chatgpt plat-chatgpt Editar foto sem mudar o seu rosto">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · carrossel</p>
             <h3>Editar foto sem mudar o seu rosto</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 6 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-11-06T14:00" data-texto="em breve repositorios Servidores MCP grátis para o seu agente">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-11-06T14:00" data-texto="em breve repositorios  Servidores MCP grátis para o seu agente">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · guia</p>
             <h3>Servidores MCP grátis para o seu agente</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 6 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-11-06T18:00" data-texto="em breve google Um app de Android criado com IA">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-11-06T18:00" data-texto="em breve google plat-google Um app de Android criado com IA">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · guia</p>
             <h3>Um app de Android criado com IA</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 6 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-11-07T10:00" data-texto="em breve google Personalizar o Gemini com instruções e skills">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-11-07T10:00" data-texto="em breve google plat-google Personalizar o Gemini com instruções e skills">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · carrossel</p>
             <h3>Personalizar o Gemini com instruções e skills</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 7 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-11-07T14:00" data-texto="em breve repositorios Cem agentes brigando pela melhor resposta">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-11-07T14:00" data-texto="em breve repositorios  Cem agentes brigando pela melhor resposta">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · guia</p>
             <h3>Cem agentes brigando pela melhor resposta</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 7 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude" data-libera="2026-11-07T18:00" data-texto="em breve claude O Claude te liga antes de uma ação séria">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude plat-claude" data-libera="2026-11-07T18:00" data-texto="em breve claude plat-claude O Claude te liga antes de uma ação séria">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia</p>
             <h3>O Claude te liga antes de uma ação séria</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 7 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-11-08T10:00" data-texto="em breve chatgpt Dez jeitos de estudar com o ChatGPT">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-11-08T10:00" data-texto="em breve chatgpt plat-chatgpt Dez jeitos de estudar com o ChatGPT">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · carrossel</p>
             <h3>Dez jeitos de estudar com o ChatGPT</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 8 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude" data-libera="2026-11-08T14:00" data-texto="em breve claude Plugins oficiais por área de trabalho">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve claude plat-claude" data-libera="2026-11-08T14:00" data-texto="em breve claude plat-claude Plugins oficiais por área de trabalho">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Claude · guia</p>
             <h3>Plugins oficiais por área de trabalho</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 8 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-11-08T18:00" data-texto="em breve repositorios Vários agentes trabalhando na sua missão">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-11-08T18:00" data-texto="em breve repositorios  Vários agentes trabalhando na sua missão">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · guia</p>
             <h3>Vários agentes trabalhando na sua missão</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 8 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-11-09T10:00" data-texto="em breve google O modelo mais forte do Google no Gemini">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-11-09T10:00" data-texto="em breve google plat-google O modelo mais forte do Google no Gemini">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · carrossel</p>
             <h3>O modelo mais forte do Google no Gemini</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 9 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-11-09T14:00" data-texto="em breve chatgpt Respostas com gráfico, mapa e botões">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-11-09T14:00" data-texto="em breve chatgpt plat-chatgpt Respostas com gráfico, mapa e botões">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · guia</p>
             <h3>Respostas com gráfico, mapa e botões</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 9 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-11-09T18:00" data-texto="em breve google Skills no Gemini no lugar dos Gems">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-11-09T18:00" data-texto="em breve google plat-google Skills no Gemini no lugar dos Gems">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · guia</p>
             <h3>Skills no Gemini no lugar dos Gems</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 9 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-11-10T10:00" data-texto="em breve chatgpt Da gravação à ata pronta">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-11-10T10:00" data-texto="em breve chatgpt plat-chatgpt Da gravação à ata pronta">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · carrossel</p>
             <h3>Da gravação à ata pronta</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 10 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve outras" data-libera="2026-11-10T14:00" data-texto="em breve outras Automações no Manus">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve outras " data-libera="2026-11-10T14:00" data-texto="em breve outras  Automações no Manus">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Outras · guia</p>
             <h3>Automações no Manus</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 10 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video" data-libera="2026-11-10T18:00" data-texto="em breve design-e-video Narração com voz de IA">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video " data-libera="2026-11-10T18:00" data-texto="em breve design-e-video  Narração com voz de IA">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Design e vídeo · guia</p>
             <h3>Narração com voz de IA</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 10 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-11-11T10:00" data-texto="em breve repositorios Alternativas grátis à Adobe">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-11-11T10:00" data-texto="em breve repositorios  Alternativas grátis à Adobe">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · carrossel</p>
             <h3>Alternativas grátis à Adobe</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 11 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video" data-libera="2026-11-11T14:00" data-texto="em breve design-e-video Componentes prontos para interfaces bonitas">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video " data-libera="2026-11-11T14:00" data-texto="em breve design-e-video  Componentes prontos para interfaces bonitas">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Design e vídeo · guia</p>
             <h3>Componentes prontos para interfaces bonitas</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 11 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-11-11T18:00" data-texto="em breve repositorios Clonar o seu próprio site em React">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-11-11T18:00" data-texto="em breve repositorios  Clonar o seu próprio site em React">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · guia</p>
             <h3>Clonar o seu próprio site em React</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 11 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-11-12T10:00" data-texto="em breve repositorios Times de agentes: quatro papéis">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-11-12T10:00" data-texto="em breve repositorios  Times de agentes: quatro papéis">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · carrossel</p>
             <h3>Times de agentes: quatro papéis</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 12 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-11-12T14:00" data-texto="em breve repositorios Alternativa aberta ao NotebookLM">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-11-12T14:00" data-texto="em breve repositorios  Alternativa aberta ao NotebookLM">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · guia</p>
             <h3>Alternativa aberta ao NotebookLM</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 12 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-11-12T18:00" data-texto="em breve repositorios Seu próprio buscador com IA">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-11-12T18:00" data-texto="em breve repositorios  Seu próprio buscador com IA">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · guia</p>
             <h3>Seu próprio buscador com IA</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 12 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-11-13T10:00" data-texto="em breve google Nove ferramentas de IA grátis do Google">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-11-13T10:00" data-texto="em breve google plat-google Nove ferramentas de IA grátis do Google">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · carrossel</p>
             <h3>Nove ferramentas de IA grátis do Google</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 13 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-11-13T14:00" data-texto="em breve repositorios Agente de programação aberto">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-11-13T14:00" data-texto="em breve repositorios  Agente de programação aberto">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · guia</p>
             <h3>Agente de programação aberto</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 13 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-11-13T18:00" data-texto="em breve google NotebookLM completo, do zero ao avançado">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-11-13T18:00" data-texto="em breve google plat-google NotebookLM completo, do zero ao avançado">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · curso</p>
             <h3>NotebookLM completo, do zero ao avançado</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 13 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve cursos" data-libera="2026-11-14T10:00" data-texto="em breve cursos Como os modelos de IA são construídos">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve cursos " data-libera="2026-11-14T10:00" data-texto="em breve cursos  Como os modelos de IA são construídos">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Cursos · carrossel</p>
             <h3>Como os modelos de IA são construídos</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 14 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-11-14T14:00" data-texto="em breve chatgpt ChatGPT como scanner de documentos">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-11-14T14:00" data-texto="em breve chatgpt plat-chatgpt ChatGPT como scanner de documentos">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · carrossel</p>
             <h3>ChatGPT como scanner de documentos</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 14 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-11-14T18:00" data-texto="em breve google O que muda no Gemini gratuito">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-11-14T18:00" data-texto="em breve google plat-google O que muda no Gemini gratuito">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · carrossel</p>
             <h3>O que muda no Gemini gratuito</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 14 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video" data-libera="2026-11-15T10:00" data-texto="em breve design-e-video Editar a mesma imagem sem estragar o resto">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve design-e-video " data-libera="2026-11-15T10:00" data-texto="em breve design-e-video  Editar a mesma imagem sem estragar o resto">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Design e vídeo · carrossel</p>
             <h3>Editar a mesma imagem sem estragar o resto</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 15 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google" data-libera="2026-11-15T14:00" data-texto="em breve google Salvar seus pedidos repetidos como skills">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve google plat-google" data-libera="2026-11-15T14:00" data-texto="em breve google plat-google Salvar seus pedidos repetidos como skills">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Google · carrossel</p>
             <h3>Salvar seus pedidos repetidos como skills</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 15 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-11-15T18:00" data-texto="em breve chatgpt Space, Pages e Dots no ChatGPT">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-11-15T18:00" data-texto="em breve chatgpt plat-chatgpt Space, Pages e Dots no ChatGPT">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · carrossel</p>
             <h3>Space, Pages e Dots no ChatGPT</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 15 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve cursos" data-libera="2026-11-16T10:00" data-texto="em breve cursos Workshop gratuito de agentes que funcionam">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve cursos " data-libera="2026-11-16T10:00" data-texto="em breve cursos  Workshop gratuito de agentes que funcionam">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Cursos · carrossel</p>
             <h3>Workshop gratuito de agentes que funcionam</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 16 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios" data-libera="2026-11-16T14:00" data-texto="em breve repositorios Painel do limite de uso na borda da tela">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve repositorios " data-libera="2026-11-16T14:00" data-texto="em breve repositorios  Painel do limite de uso na borda da tela">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Repositórios · carrossel</p>
             <h3>Painel do limite de uso na borda da tela</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 16 de nov, 14h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve cursos" data-libera="2026-11-16T18:00" data-texto="em breve cursos Cinco cursos grátis de grandes universidades">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve cursos " data-libera="2026-11-16T18:00" data-texto="em breve cursos  Cinco cursos grátis de grandes universidades">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">Cursos · carrossel</p>
             <h3>Cinco cursos grátis de grandes universidades</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 16 de nov, 18h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-11-17T10:00" data-texto="em breve chatgpt Imagem que vira design editável">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-11-17T10:00" data-texto="em breve chatgpt plat-chatgpt Imagem que vira design editável">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · carrossel</p>
             <h3>Imagem que vira design editável</h3>
             <div class="conteudo-borrado" aria-hidden="true"><p>Guia em preparação, com pedidos prontos e passo a passo para você copiar e usar.</p></div>
             <div class="cadeado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>Em breve</strong><span class="regressiva">Libera em 17 de nov, 10h</span></div></div>
           </li>
-          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt" data-libera="2026-11-17T14:00" data-texto="em breve chatgpt Atalhos de imagem no ChatGPT">
+          <li class="etiqueta t-tracejada bloqueada" data-cats="embreve chatgpt plat-chatgpt" data-libera="2026-11-17T14:00" data-texto="em breve chatgpt plat-chatgpt Atalhos de imagem no ChatGPT">
             <span class="furo" aria-hidden="true"></span>
             <p class="cat">ChatGPT · carrossel</p>
             <h3>Atalhos de imagem no ChatGPT</h3>
@@ -853,5 +867,6 @@
   <script src="js/fundo3d.js" defer></script>
   <script src="js/pagina.js" defer></script>
   <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
 </body>
 </html>

@@ -361,3 +361,11 @@ details ul { margin: 0 0 14px; padding-left: 1.3em; }
 .destaque-vermelho { outline: 4px solid var(--ferrari); outline-offset: 6px; animation: ferrari-card 0.9s ease-in-out 4 !important; }
 @keyframes ferrari-card { 0%, 100% { box-shadow: 0 8px 0 rgba(0, 0, 0, 0.35), 0 0 14px rgba(225, 6, 0, 0.4); } 50% { box-shadow: 0 8px 0 rgba(0, 0, 0, 0.35), 0 0 54px 12px rgba(255, 30, 20, 0.85); } }
 @media (max-width: 520px) { .postit { padding-right: 46px; } .postit-titulo { font-size: 21px; } }
+
+/* botão do mascote que leva ao topo */
+.subir { position: fixed; right: 14px; bottom: 18px; z-index: 40; width: 84px; padding: 0; border: 0; background: none; cursor: pointer; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.5)); transition: transform 0.2s; }
+.subir:hover, .subir:focus-visible { transform: translateY(-6px); }
+.subir img { display: block; width: 100%; height: auto; }
+.chip-plat { display: inline-flex; align-items: center; gap: 8px; }
+.chip-plat svg { width: 18px; height: 18px; flex: none; }
+@media (max-width: 520px) { .subir { width: 64px; right: 8px; bottom: 12px; } }

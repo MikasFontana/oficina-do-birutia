@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Limpe a sua TV e troque a tela inicial com o Claude Code · Oficina do BirutIA</title>
+  <meta name="description" content="Tire anúncios e apps que pesam da sua TV com Android TV ou Google TV e instale uma tela inicial limpa, com backup e caminho de volta. Inclui o que fazer em Samsung, LG e Roku.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude Code</p>
+      <h1>Limpe a sua TV e troque a tela inicial com o Claude Code</h1>
+      <p class="lide">Tire anúncios e apps que pesam da sua TV com Android TV ou Google TV e instale uma tela inicial limpa, com backup e caminho de volta. Inclui o que fazer em Samsung, LG e Roku.</p>
+<p>Muita TV vem cheia de anúncios, recomendações e apps que você nunca abriu. Com o Claude Code e um projeto aberto chamado CleanYourTV, dá para <strong>desativar o que pesa</strong> e instalar uma tela inicial mais limpa. Nada é apagado: tudo que for desativado pode ser reativado.</p>
+<h2>Antes de começar</h2>
+<ul>
+<li><strong>Serve para:</strong> TV com Android TV ou Google TV (TCL, Philips, Sony, Xiaomi, Hisense e outras). Se a tela inicial tem a Google Play e o Assistente do Google, quase sempre é uma delas.</li>
+<li><strong>Não serve para:</strong> Samsung (Tizen), LG (webOS) e Roku. Elas usam sistemas fechados, que não aceitam outra tela inicial. Veja a seção sobre elas mais abaixo.</li>
+<li><strong>Você precisa de:</strong> um computador no mesmo Wi-Fi da TV, o Claude Code instalado e uns 30 minutos com o controle na mão.</li>
+</ul>
+<p class="alerta">Cuidado: este método muda configurações da TV. Leia o que o Claude propõe e aprove só o que entender. Se a TV estiver na garantia, confira a política do fabricante antes.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Ligue o modo desenvolvedor na TV</h3>
+<p>Abra Configurações e entre em Sistema, Sobre (em algumas TVs, Preferências do dispositivo, Sobre). Desça até o item da versão do sistema (pode se chamar Build) e aperte OK no controle 7 vezes seguidas. Volte uma tela, abra Opções do desenvolvedor e ligue a <strong>Depuração USB</strong>. Se houver Depuração pela rede ou sem fio, ligue também. Os nomes mudam um pouco de marca para marca.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Anote o modelo e o endereço da TV</h3>
+<p>O modelo aparece em Configurações, Sobre, ou na etiqueta atrás da TV. O endereço (IP) fica em Configurações, Rede. Se você não achar, o Claude tenta encontrar a TV na rede sozinho.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Cole o pedido no Claude Code</h3>
+<p>Abra o Claude Code no computador que está no mesmo Wi-Fi e cole o pedido abaixo.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Limpar a TV e trocar a tela inicial</p><p class="prompt-texto">Quero limpar a minha TV com Android TV ou Google TV e trocar a tela inicial por uma mais limpa, usando o projeto aberto CleanYourTV (https://github.com/Gathin23/cleanyourtv). Antes de tudo, pergunte a marca e o modelo da TV e o endereço dela na rede; se eu não souber, ajude a achar. Clone o projeto, leia o README e o PROMPT.md e siga o PROMPT.md. Explique em português simples, como se eu nunca tivesse feito isso, o que vai mudar e como a ferramenta fala com a TV. Verifique o que falta no meu computador e me ajude a instalar. Diga o que devo fazer na TV (modo desenvolvedor e depuração) e espere eu confirmar. Faça o backup antes de desativar qualquer coisa, desative em lotes pequenos e confira com uma captura de tela da TV depois de cada lote. Pergunte quais apps, assistente de voz, Chromecast e atualizações eu uso antes de mexer neles. Se a TV for Samsung (Tizen), LG (webOS) ou Roku, pare e me avise, porque este método não serve para elas. No fim, me dê o comando exato para desfazer tudo e me lembre de desligar a depuração na TV. Responda sempre em português.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Aceite o aviso na TV</h3>
+<p>Quando aparecer na TV a pergunta "Permitir depuração USB?", marque a opção de sempre permitir a partir deste computador e confirme com OK.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Responda às perguntas do Claude</h3>
+<p>Ele vai perguntar quais apps você usa, quantos ficam na barra de baixo e se quer manter o assistente de voz, o Chromecast e as atualizações. <strong>Marque o que você usa</strong>: ele só desativa o que você não marcar.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">6</span><h3>Teste com o controle</h3>
+<p>O Claude vai pedir que você aperte botões (Netflix, YouTube, entradas HDMI). Se algum não responder, diga qual, e ele ajusta.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">7</span><h3>Desligue a depuração</h3>
+<p>Ao terminar, volte em Opções do desenvolvedor e desligue a Depuração USB e a depuração pela rede. Com ela ligada, outros aparelhos da sua rede conseguem mandar comandos para a TV.</p>
+</section>
+<h2>Se algo der errado, volte atrás</h2>
+<p>O Claude guarda um backup antes de mexer em qualquer coisa. Se quiser desfazer, peça: <strong>"Restaure a minha TV como estava antes"</strong>. Ele reativa tudo que desativou.</p>
+<h2>E se a minha TV for Samsung, LG ou Roku?</h2>
+<p>O método acima não funciona, porque não dá para instalar outra tela inicial. Mas dá para melhorar. Os nomes dos menus mudam conforme o ano da TV, então use isto como roteiro:</p>
+<ul>
+<li><strong>Reinício completo:</strong> segure o botão de ligar do controle até a TV reiniciar. Se a TV continuar lenta, tire da tomada por 30 segundos. Isso libera a memória.</li>
+<li><strong>Exclua o que você não usa:</strong> na tela de Apps, abra as configurações (a engrenagem), escolha o app e use Excluir. Alguns apps também têm a opção de limpar o cache.</li>
+<li><strong>Desligue o que abre sozinho:</strong> nas configurações do Smart Hub, desative o início automático do Smart Hub e do último app, e as recomendações e os anúncios por interesse.</li>
+<li><strong>Redefina o Smart Hub:</strong> apaga os dados de todos os apps e destrava a TV. Depois, reinstale só os que você usa. O PIN padrão costuma ser 0000.</li>
+<li><strong>Troque o aparelho, não a TV:</strong> ligue um Android TV (como um stick de streaming) em uma entrada HDMI. Nele, este guia funciona de verdade, e a sua TV passa a ser só a tela.</li>
+</ul>
+<p>Segundo o projeto, ele mantém uma página própria para essas marcas, que desliga o rastreamento com o controle: cleanyour.tv/not-android.</p>
+<h2>Sobre o projeto usado</h2>
+<p>O CleanYourTV é um projeto aberto de Gathin23 (github.com/Gathin23/cleanyourtv). Não temos ligação com ele: o pedido acima é nosso e apenas indica o projeto. Leia a licença e o código antes de usar.</p>
+<h2>Baixar o material</h2>
+<p>Baixe o pedido pronto, com a lista de conferência para imprimir ou deixar à mão.</p>
+<p><a class="btn btn-laranja" href="downloads/pedido-limpar-tv.txt" download>↓ Baixar o pedido e a lista de conferência</a></p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+</body>
+</html>
