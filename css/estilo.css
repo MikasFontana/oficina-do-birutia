@@ -369,3 +369,8 @@ details ul { margin: 0 0 14px; padding-left: 1.3em; }
 .chip-plat { display: inline-flex; align-items: center; gap: 8px; }
 .chip-plat svg { width: 18px; height: 18px; flex: none; }
 @media (max-width: 520px) { .subir { width: 64px; right: 8px; bottom: 12px; } }
+
+/* botão de voltar para a página inicial */
+.voltar { display: inline-block; margin: 0 0 14px; padding: 10px 18px; border-radius: 999px; border: 3px solid var(--laranja); color: var(--laranja); font: 800 13px var(--f-texto); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: background 0.15s, color 0.15s; }
+.voltar:hover, .voltar:focus-visible { background: var(--laranja); color: var(--tinta); }
+.voltar-fim { display: block; width: max-content; margin: 28px 0 0; }
