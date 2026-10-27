@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como criar o Baixador de Vídeos · Oficina do BirutIA</title>
+  <meta name="description" content="Passo a passo para pedir à IA que crie o seu próprio Baixador de Vídeos, com os pedidos prontos para copiar. No fim, o programa pronto para baixar.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html" aria-current="page">Como criar</a>
+      </nav>
+    </header>
+
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Baixador de Vídeos / Como criar</p>
+      <h1>Crie o seu<br><span>Baixador</span></h1>
+      <p class="lide">Você não precisa saber programar. O trabalho é pedir bem, testar e ajustar. Abaixo estão os pedidos prontos para copiar, na ordem em que foram usados no vídeo.</p>
+      <p class="alerta">Use só com vídeos seus ou com autorização de quem os publicou. Os termos do YouTube e do Instagram proíbem baixar conteúdo de terceiros sem permissão.</p>
+
+      <h2>Onde fazer</h2>
+      <div class="opcoes">
+        <article class="opcao destaque">
+          <p class="cat">Recomendado</p>
+          <h3>Claude Code no computador</h3>
+          <p>Cria os arquivos direto em uma pasta sua, instala o que faltar e testa o programa. É o caminho deste passo a passo.</p>
+        </article>
+        <article class="opcao">
+          <p class="cat">Alternativa</p>
+          <h3>Claude no navegador</h3>
+          <p>O Claude escreve o código na conversa e você salva os arquivos na mão. Funciona, mas dá mais trabalho.</p>
+        </article>
+        <article class="opcao">
+          <p class="cat">Outras ferramentas</p>
+          <h3>Codex, Cowork e similares</h3>
+          <p>Os pedidos abaixo servem do mesmo jeito. Só a tela e os cliques mudam.</p>
+        </article>
+      </div>
+
+      <h2>Passo a passo</h2>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">1</span>
+        <h3>Abra a ferramenta em uma pasta vazia</h3>
+        <p>Crie uma pasta chamada <code>baixador</code> em Documentos. Abra o Claude Code dentro dela. Cada projeto fica na sua própria pasta, e a IA só mexe nela.</p>
+        <figure class="tela" aria-label="Ilustração: o Claude Code aberto na pasta baixador">
+          <div class="tela-barra"><i></i><i></i><i></i><span>Claude Code · pasta baixador</span></div>
+          <div class="tela-corpo">
+            <p class="l-sis">C:\Users\voce\Documents\baixador&gt; claude</p>
+            <p class="l-ia">● Pronto. Em que posso ajudar nesta pasta?</p>
+            <p class="l-voce">&gt; <span class="cursor"></span></p>
+          </div>
+        </figure>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">2</span>
+        <h3>Cole o primeiro pedido</h3>
+        <p>Diga o que você quer, em palavras simples, e avise que não programa. Isso faz a IA explicar tudo com calma.</p>
+        <div class="prompt" data-prompt>
+          <p class="prompt-rotulo">Pedido 1 · cole na conversa</p>
+          <p class="prompt-texto">Crie um programa para Windows que baixa vídeos do YouTube e do Instagram na melhor qualidade, em MP4. Use o yt-dlp e o ffmpeg. O programa deve instalar sozinho o que faltar, pedir só o link e salvar na pasta Downloads. Eu não sei programar: explique cada passo em palavras simples e peça a minha confirmação antes de instalar qualquer coisa.</p>
+          <button class="btn btn-claro copiar" type="button">Copiar pedido</button>
+        </div>
+        <div class="telas-duplas">
+          <figure class="tela" aria-label="Ilustração: pedido enviado no Claude Code">
+            <div class="tela-barra"><i></i><i></i><i></i><span>No computador · Claude Code</span></div>
+            <div class="tela-corpo">
+              <p class="l-voce">&gt; Crie um programa para Windows que baixa vídeos…</p>
+              <p class="l-ia">● Vou usar o yt-dlp e o ffmpeg, duas ferramentas livres. Posso instalá-las agora?</p>
+              <p class="l-voce">&gt; Sim, pode instalar.</p>
+            </div>
+          </figure>
+          <figure class="tela tela-chat" aria-label="Ilustração: o mesmo pedido no Claude pelo navegador">
+            <div class="tela-barra"><i></i><i></i><i></i><span>No navegador · claude.ai</span></div>
+            <div class="tela-corpo">
+              <p class="bolha bolha-voce">Crie um programa para Windows que baixa vídeos…</p>
+              <p class="bolha bolha-ia">Claro. Vou escrever o programa e explicar como salvar cada arquivo.</p>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">3</span>
+        <h3>Teste com um vídeo seu</h3>
+        <p>Cole o link de um vídeo do seu próprio canal ou perfil e veja se baixa em MP4. Se aparecer um erro, copie a mensagem inteira e cole na conversa, com a frase abaixo.</p>
+        <div class="prompt" data-prompt>
+          <p class="prompt-rotulo">Pedido 2 · se der erro</p>
+          <p class="prompt-texto">Apareceu este erro ao baixar. Explique o que significa e corrija o programa: [cole aqui a mensagem do erro]</p>
+          <button class="btn btn-claro copiar" type="button">Copiar pedido</button>
+        </div>
+        <figure class="tela" aria-label="Ilustração: o programa baixando um vídeo">
+          <div class="tela-barra"><i></i><i></i><i></i><span>Teste no terminal</span></div>
+          <div class="tela-corpo">
+            <p class="l-sis">Cole o link: https://youtu.be/…</p>
+            <p class="l-sis">Baixando em MP4, melhor qualidade…</p>
+            <p class="l-barra"><span style="width:78%"></span></p>
+            <p class="l-ok">✓ Salvo em Downloads</p>
+          </div>
+        </figure>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">4</span>
+        <h3>Peça uma janela de aplicativo</h3>
+        <p>Funcionando, troque o terminal por uma janela, com cara de programa de verdade.</p>
+        <div class="prompt" data-prompt>
+          <p class="prompt-rotulo">Pedido 3 · cole na conversa</p>
+          <p class="prompt-texto">Transforme em um aplicativo com janela: um campo para colar o link, opção para escolher YouTube ou Instagram, botão Baixar, barra de progresso e botão para abrir a pasta Downloads. Quem usar não deve ver o terminal.</p>
+          <button class="btn btn-claro copiar" type="button">Copiar pedido</button>
+        </div>
+        <figure class="tela tela-app" aria-label="Ilustração: janela do aplicativo com campo de link e botão Baixar">
+          <div class="tela-barra"><i></i><i></i><i></i><span>Baixador de Vídeos</span></div>
+          <div class="tela-corpo">
+            <p class="app-campo">Cole o link aqui</p>
+            <div class="app-linha"><span class="app-opcao on">YouTube</span><span class="app-opcao">Instagram</span></div>
+            <p class="app-botao">Baixar</p>
+          </div>
+        </figure>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">5</span>
+        <h3>Deixe com a sua cara</h3>
+        <p>Anexe a sua logo na conversa e diga as cores. Troque os colchetes pelos seus dados.</p>
+        <div class="prompt" data-prompt>
+          <p class="prompt-rotulo">Pedido 4 · anexe a logo e cole</p>
+          <p class="prompt-texto">Deixe a janela com a minha marca: use a logo anexada, a cor principal [#______] e a cor de destaque [#______]. Troque o nome do programa para “[nome que você escolher]”.</p>
+          <button class="btn btn-claro copiar" type="button">Copiar pedido</button>
+        </div>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">6</span>
+        <h3>Feche com instalador e atalho</h3>
+        <p>Para abrir com dois cliques, sem terminal. O Windows e o antivírus podem reclamar de programas novos. Peça a explicação junto.</p>
+        <div class="prompt" data-prompt>
+          <p class="prompt-rotulo">Pedido 5 · cole na conversa</p>
+          <p class="prompt-texto">Crie um instalador de um clique e um atalho na Área de Trabalho com o ícone da minha logo. Se o Windows ou o antivírus bloquear, explique o que devo fazer, passo a passo.</p>
+          <button class="btn btn-claro copiar" type="button">Copiar pedido</button>
+        </div>
+      </section>
+
+      <section class="pronto" aria-labelledby="t-pronto">
+        <h2 id="t-pronto">Só quer baixar e usar?</h2>
+        <p>Sem criar nada: baixe o programa que foi feito neste passo a passo, com o guia de instalação. Dá para trocar logo, cores e nome depois, usando os pedidos 4 e 5.</p>
+        <div class="botoes">
+          <a class="btn btn-laranja" href="downloads/baixador-do-biruta.zip" download>↓ Baixar o programa</a>
+          <a class="btn btn-linha" href="guia-baixador.html">Guia de instalação</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Baixe apenas conteúdo seu ou com autorização de quem o publicou.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

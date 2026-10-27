@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Um time de agentes de IA para o seu conteúdo · Oficina do BirutIA</title>
+  <meta name="description" content="Em vez de um pedido gigante, quatro papéis com tarefas claras: pesquisador, roteirista, criador e atendente. Veja o que cada um faz e o pedido para criar o seu time.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude</p>
+      <h1>Um time de agentes de IA para o seu conteúdo</h1>
+      <p class="lide">Em vez de um pedido gigante, quatro papéis com tarefas claras: pesquisador, roteirista, criador e atendente. Veja o que cada um faz e o pedido para criar o seu time.</p>
+<p>Pedir tudo a uma IA de uma vez dá uma resposta rasa. Dividir em <strong>papéis</strong>, cada um com uma função e uma regra, dá um resultado melhor. Isso é um "time de agentes": várias instruções especializadas, que passam o trabalho de uma para a outra.</p>
+<h2>Os quatro papéis</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Pesquisador</h3>
+<p>Descobre o que o público pergunta e o que os concorrentes deixam de dizer. Entrega uma lista curta, com a fonte de cada afirmação.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Roteirista</h3>
+<p>Transforma a pesquisa em roteiro. Segue o seu tom e o seu formato de gancho, desenvolvimento e chamada.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Criador</h3>
+<p>Monta a versão final: legenda, carrossel ou roteiro com cenas. Segue a identidade visual da marca.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Atendente</h3>
+<p>Responde comentários e mensagens no seu tom e separa o que precisa de você.</p>
+</section>
+<h2>Como criar o seu time</h2>
+<p>No Claude, cada papel pode ser uma <strong>skill</strong>, um <strong>projeto</strong> ou um <strong>agente</strong>, conforme a sua ferramenta. O importante é cada um ter instruções próprias.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · criar o time</p><p class="prompt-texto">Crie 4 papéis de trabalho para o meu conteúdo sobre [assunto]: Pesquisador, Roteirista, Criador e Atendente. Para cada um, escreva: a missão em uma frase, o que recebe, o que entrega, o tom e o que nunca faz. Entregue como instruções que eu possa salvar separadas.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Como usar</h2>
+<p>Passe o trabalho de papel em papel, e <strong>leia a saída de cada um</strong> antes de seguir.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · rodar um ciclo</p><p class="prompt-texto">Aja como o Pesquisador. Assunto da semana: [assunto]. Entregue 5 ideias de posts com a dúvida que cada uma responde e a fonte. Pare aí e espere a minha escolha para passar ao Roteirista.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Regras de ouro</h2>
+<ul>
+<li><strong>Um papel, uma função.</strong> Se um agente faz tudo, volta o problema do pedido gigante.</li>
+<li><strong>Você aprova cada passagem.</strong> O time acelera, e a decisão continua sua.</li>
+<li><strong>Atendente com cuidado.</strong> Nunca deixe responder sozinho sobre preço, saúde ou jurídico.</li>
+</ul>
+<p class="alerta">Um time de IA não substitui o seu olhar. Ele organiza o trabalho para o seu olhar cair onde importa.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

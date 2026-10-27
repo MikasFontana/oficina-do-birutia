@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plugins que mudam o jeito de programar com o Claude Code · Oficina do BirutIA</title>
+  <meta name="description" content="Plugins somam comandos, skills e regras ao Claude Code. Veja o que eles são, como escolher poucos e bons, e o que conferir antes de instalar qualquer um.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude Code</p>
+      <h1>Plugins que mudam o jeito de programar com o Claude Code</h1>
+      <p class="lide">Plugins somam comandos, skills e regras ao Claude Code. Veja o que eles são, como escolher poucos e bons, e o que conferir antes de instalar qualquer um.</p>
+<p>Um <strong>plugin</strong> é um pacote que acrescenta algo ao Claude Code: comandos novos, skills, agentes ou regras de trabalho. Instalar é simples, e é por isso que dá para exagerar. Cada plugin ocupa um pouco da memória de trabalho do Claude e pode executar código no seu computador.</p>
+<h2>Como funciona a instalação</h2>
+<p>O Claude Code tem um comando para plugins, chamado <code>/plugin</code>, e os plugins ficam em catálogos chamados *marketplaces*. Você adiciona um catálogo e escolhe o que instalar. Se preferir, peça ao Claude que faça e explique.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Defina o problema antes</h3>
+<p>Plugin bom resolve uma dor que você sente. Sem a dor, é só mais um item para carregar.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · achar o que serve</p><p class="prompt-texto">Quero resolver este problema no meu trabalho com o Claude Code: [descreva]. Sugira até 3 plugins que ajudem, dizendo de onde vêm, o que fazem e qual risco têm. Não instale nada.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Audite antes de instalar</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · olhar por dentro</p><p class="prompt-texto">Antes de instalar o plugin [nome], leia os arquivos dele e me diga em português: que comandos ele roda, se acessa a internet, se mexe em arquivos fora do projeto e se pede alguma chave. Aponte qualquer coisa suspeita.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Instale um por vez</h3>
+<p>Instale um, use por uma semana e só então decida se fica. Dois plugins novos de uma vez dificultam saber qual causou um problema.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Remova o que não usa</h3>
+<p>Plugin parado ainda carrega peso. Revise a lista uma vez por mês.</p>
+</section>
+<h2>O que conferir</h2>
+<ul>
+<li><strong>Origem conhecida:</strong> repositório oficial ou autor com histórico.</li>
+<li><strong>Atividade recente:</strong> foi atualizado há pouco tempo?</li>
+<li><strong>Permissões:</strong> o que ele pode fazer no seu computador?</li>
+<li><strong>Reversão:</strong> existe um jeito simples de desinstalar?</li>
+</ul>
+<p class="alerta">Plugin de terceiros é código de terceiros. Ler antes de instalar leva dois minutos e evita a maior parte dos problemas.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

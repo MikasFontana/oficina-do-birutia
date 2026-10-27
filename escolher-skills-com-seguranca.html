@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como achar e escolher skills com segurança · Oficina do BirutIA</title>
+  <meta name="description" content="Skill é uma instrução pronta que o Claude segue. É ótima para ganhar tempo, mas é código de terceiros rodando no seu computador. Veja como achar, ler e testar antes de instalar.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude Code</p>
+      <h1>Como achar e escolher skills com segurança</h1>
+      <p class="lide">Skill é uma instrução pronta que o Claude segue. É ótima para ganhar tempo, mas é código de terceiros rodando no seu computador. Veja como achar, ler e testar antes de instalar.</p>
+<p>Uma skill é um pacote de instruções, e às vezes de scripts, que ensina o Claude a fazer uma tarefa do seu jeito: montar um carrossel, revisar um texto, fazer uma planilha. Existem milhares, e a skill <strong>find-skills</strong> ajuda a encontrar a certa. O ponto de atenção é que uma skill pode mandar o Claude executar comandos. Por isso, ler antes de instalar faz parte do processo.</p>
+<h2>O que é uma skill por dentro</h2>
+<p>Uma pasta com um arquivo <code>SKILL.md</code> e, às vezes, scripts e modelos. O <code>SKILL.md</code> tem o nome, a descrição e as instruções. É texto simples, e você consegue ler em dois minutos.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Descreva o que você precisa</h3>
+<p>Peça para o Claude buscar, em vez de procurar sozinho.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · buscar skills</p><p class="prompt-texto">Use a skill find-skills para procurar skills que ajudem a [tarefa que você quer]. Me mostre as 5 melhores com: o que cada uma faz, de onde vem, quantas pessoas usam e qualquer sinal de risco. Não instale nada ainda.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Leia a skill antes de instalar</h3>
+<p>Esse é o passo que mais protege você.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · auditoria rápida</p><p class="prompt-texto">Leia o SKILL.md e todos os arquivos da skill [nome] antes de instalar. Me diga em português: o que ela instrui o Claude a fazer, se roda comandos ou scripts, se acessa a internet, se lê ou grava arquivos fora da pasta do projeto e se pede alguma senha ou chave. Aponte qualquer coisa suspeita.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Instale só uma, e teste em pasta de teste</h3>
+<p>Teste em uma pasta com arquivos que você pode perder. Veja se ela faz o que promete.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Deixe só o que você usa</h3>
+<p>Skill parada também gasta o espaço de contexto do Claude. Remova as que você não usou em um mês.</p>
+</section>
+<h2>Checklist de segurança</h2>
+<ul>
+<li>A origem é conhecida: repositório oficial ou criador com histórico?</li>
+<li>Tem muitas instalações e atividade recente?</li>
+<li>O <code>SKILL.md</code> descreve o que faz, sem instruções escondidas?</li>
+<li>Os scripts fazem só o que a descrição diz?</li>
+<li>Não pede senha, chave de API ou acesso a pastas fora do projeto?</li>
+</ul>
+<p class="alerta">Se algo parecer estranho, não instale. Uma skill a menos custa pouco, e uma instalada sem leitura pode custar caro.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

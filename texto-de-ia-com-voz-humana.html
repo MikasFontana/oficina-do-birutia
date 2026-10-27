@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como o texto de IA se entrega, e como deixá-lo com voz humana · Oficina do BirutIA</title>
+  <meta name="description" content="Texto de IA tem marcas que o leitor percebe mesmo sem saber explicar. Veja os sinais mais comuns, como corrigi-los e um pedido de revisão para usar antes de publicar.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude</p>
+      <h1>Como o texto de IA se entrega, e como deixá-lo com voz humana</h1>
+      <p class="lide">Texto de IA tem marcas que o leitor percebe mesmo sem saber explicar. Veja os sinais mais comuns, como corrigi-los e um pedido de revisão para usar antes de publicar.</p>
+<p>Você já leu um texto e achou "isso foi feito por IA" sem saber dizer por quê. Existem sinais. Eles não provam nada, mas o leitor sente, e o conteúdo perde confiança. A boa notícia é que dá para corrigir.</p>
+<h2>Sinais mais comuns</h2>
+<ul>
+<li><strong>Abertura genérica:</strong> "No mundo atual...", "Em um cenário cada vez mais...".</li>
+<li><strong>Estrutura previsível:</strong> sempre três pontos, sempre com a mesma forma.</li>
+<li><strong>Frases todas do mesmo tamanho</strong>, sem ritmo.</li>
+<li><strong>Adjetivos grandiosos:</strong> "revolucionário", "essencial", "poderoso".</li>
+<li><strong>Conclusão que repete o texto</strong> com outras palavras.</li>
+<li><strong>Ausência de exemplo real:</strong> tudo geral, nada que só você poderia contar.</li>
+</ul>
+<h2>Como humanizar</h2>
+<p>1. <strong>Comece por algo que aconteceu</strong>, e não por uma definição.</p>
+<p>2. <strong>Misture frases curtas e longas.</strong> Uma frase de três palavras quebra o ritmo.</p>
+<p>3. <strong>Use exemplos seus:</strong> um cliente (sem nome), um erro, um número real.</p>
+<p>4. <strong>Tire os adjetivos de propaganda.</strong> Diga o que a coisa faz.</p>
+<p>5. <strong>Termine com uma ação</strong>, e não com um resumo.</p>
+<h2>Pedido de revisão</h2>
+<p>Use no texto pronto, antes de publicar.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · revisão humana</p><p class="prompt-texto">Revise o texto abaixo procurando marcas de texto de IA: abertura genérica, estrutura previsível, frases do mesmo tamanho, adjetivos exagerados, conclusão repetida e falta de exemplo real. Liste cada ocorrência e proponha uma versão mais natural, com frases de tamanhos variados. Não invente fatos. Onde faltar um exemplo, escreva [colocar exemplo real]. [cole o texto]</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Ensine a sua voz</h2>
+<p>O melhor antídoto é dar à IA exemplos seus.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · escrever como eu</p><p class="prompt-texto">Leia estes 3 textos meus e descreva em 8 pontos como eu escrevo. Depois reescreva o texto abaixo com essa voz, sem inventar nada. [cole os textos e o rascunho]</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p class="alerta">Nenhum detector de IA é confiável. Escreva para o leitor, e não para passar em um teste.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

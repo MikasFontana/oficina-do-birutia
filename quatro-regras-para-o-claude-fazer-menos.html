@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como fazer o Claude Code parar de mexer no que você não pediu · Oficina do BirutIA</title>
+  <meta name="description" content="O Claude Code tende a mexer em mais coisas do que você pediu. Um arquivo de quatro regras, escrito em português, deixa o trabalho mais curto, mais seguro e mais fácil de revisar.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude Code</p>
+      <h1>Como fazer o Claude Code parar de mexer no que você não pediu</h1>
+      <p class="lide">O Claude Code tende a mexer em mais coisas do que você pediu. Um arquivo de quatro regras, escrito em português, deixa o trabalho mais curto, mais seguro e mais fácil de revisar.</p>
+<p>Quem usa o Claude Code percebe o padrão: você pede um ajuste pequeno e vem uma reforma. Arquivos que ninguém pediu, uma ferramenta nova instalada, um texto reescrito. Isso gasta o seu limite de uso e dá trabalho para revisar. A solução é um arquivo chamado <code>CLAUDE.md</code>, que o Claude Code lê no começo de toda conversa.</p>
+<h2>O que é o CLAUDE.md</h2>
+<p>Um arquivo de texto na pasta do projeto, ou na sua pasta pessoal para valer em tudo. Ele guarda as regras do jogo. Não precisa ser longo: quanto mais curto, mais ele é seguido.</p>
+<h2>As quatro regras</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Entenda antes de mexer</h3>
+<p>Antes de alterar, o Claude lê o que já existe e diz o que entendeu. Se faltar informação, pergunta. Não supõe.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Faça a menor mudança que resolve</h3>
+<p>Só o que foi pedido. Nada de melhorar o que estava funcionando, renomear ou reorganizar por conta própria.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Não invente</h3>
+<p>Nome de função, número, fonte ou resultado que ele não conferiu não entra na resposta. Quando não souber, escreve "a confirmar".</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Prove que funcionou</h3>
+<p>Ao terminar, mostra como conferiu: rodou o teste, abriu a página, comparou o resultado. Se não conseguiu conferir, diz isso.</p>
+</section>
+<h2>O arquivo pronto</h2>
+<p>Copie para um arquivo <code>CLAUDE.md</code> na pasta do seu projeto.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Conteúdo do CLAUDE.md</p><p class="prompt-texto"># Regras de trabalho. 1) Entenda antes de mexer: leia o que já existe, diga o que entendeu e pergunte se faltar informação. Não suponha. 2) Faça a menor mudança que resolve o pedido: nada de reorganizar, renomear ou melhorar o que não foi pedido. 3) Não invente: nome, número, fonte ou resultado que você não conferiu fica marcado como "a confirmar". 4) Prove que funcionou: ao terminar, mostre como conferiu. Se não conseguiu conferir, diga. Responda de forma curta e em português do Brasil.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Como instalar</h2>
+<ul>
+<li><strong>Só neste projeto:</strong> peça "Crie o arquivo CLAUDE.md na pasta com este texto" e cole o conteúdo.</li>
+<li><strong>Em todos os projetos:</strong> peça para guardar o mesmo texto no seu <code>CLAUDE.md</code> pessoal, na pasta <code>.claude</code> do seu usuário.</li>
+</ul>
+<h2>Como saber se está funcionando</h2>
+<p>Peça um ajuste pequeno e observe se ele mexeu só no que foi pedido. Se não, deixe a regra mais curta e mais direta. Regra longa demais é ignorada.</p>
+<p class="alerta">Regra não substitui revisão. Em um projeto importante, olhe o que mudou antes de aceitar.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

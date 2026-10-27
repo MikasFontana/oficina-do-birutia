@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deixe a sua interface animada com skills de Three.js e GSAP · Oficina do BirutIA</title>
+  <meta name="description" content="Com skills de Three.js, GSAP e motion design instaladas, o Claude cria animações melhores a partir de um pedido simples. Veja o que cada uma faz e como pedir.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Deixe a sua interface animada com skills de Three.js e GSAP</h1>
+      <p class="lide">Com skills de Three.js, GSAP e motion design instaladas, o Claude cria animações melhores a partir de um pedido simples. Veja o que cada uma faz e como pedir.</p>
+<p>Sem ajuda, a IA anima do jeito mais comum: tudo aparece com um fade. Uma <strong>skill</strong> ensina o Claude a usar uma ferramenta de animação do jeito que quem entende usaria. Foi com skills assim que fizemos o fundo 3D desta página.</p>
+<h2>Quatro famílias que valem a pena</h2>
+<ul>
+<li><strong>Three.js:</strong> cenas em 3D no navegador, como as formas flutuando no fundo deste site.</li>
+<li><strong>GSAP:</strong> animações de entrada, rolagem e sequências com controle fino de tempo.</li>
+<li><strong>Motion design:</strong> princípios de movimento, como antecipação, peso e folga. Servem para qualquer ferramenta.</li>
+<li><strong>DNA de design:</strong> extrai o estilo visual de um exemplo para a IA seguir.</li>
+</ul>
+<h2>Como achar e instalar</h2>
+<p>Use o guia de escolha de skills deste site, e leia cada skill antes de instalar. Para encontrar, peça:</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · buscar</p><p class="prompt-texto">Procure skills gratuitas e populares para animação com Three.js, GSAP e princípios de motion design. Mostre as 5 melhores, com a origem e o que fazem. Não instale nada ainda.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Como pedir uma animação</h2>
+<p>O segredo é descrever <strong>o movimento e a sensação</strong>, não só o objeto.</p>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Entrada de uma seção</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · entrada com intenção</p><p class="prompt-texto">Anime a entrada da seção [nome]: o título sobe com um leve overshoot, o texto aparece 0,15 s depois e os cartões entram um a um com intervalo de 0,1 s. Respeite a opção de reduzir movimento do sistema.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Fundo em 3D</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · cena 3D</p><p class="prompt-texto">Crie um fundo 3D com formas geométricas flutuando devagar nas cores [cores], que reagem de leve ao mouse e à rolagem. Use poucas formas no celular. Se o 3D não carregar, a página deve continuar funcionando.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Revisão</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 4 · revisar o movimento</p><p class="prompt-texto">Revise as animações da página com os princípios de motion design: tem algo rápido demais, parado demais ou que atrapalha a leitura? Liste e proponha ajustes simples.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>Cuidados</h2>
+<ul>
+<li><strong>Acessibilidade:</strong> quem tem sensibilidade a movimento precisa de uma versão mais calma.</li>
+<li><strong>Desempenho:</strong> animação em excesso deixa a página lenta no celular. Teste em um aparelho simples.</li>
+<li><strong>Menos é mais:</strong> escolha um momento de destaque e deixe o resto quieto.</li>
+</ul>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

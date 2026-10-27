@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transformar um livro técnico em uma skill do Claude · Oficina do BirutIA</title>
+  <meta name="description" content="Em vez de anexar o livro inteiro toda vez, você extrai os princípios e cria uma skill curta que o Claude consulta quando precisa. Menos limite gasto, respostas mais seguras.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Transformar um livro técnico em uma skill do Claude</h1>
+      <p class="lide">Em vez de anexar o livro inteiro toda vez, você extrai os princípios e cria uma skill curta que o Claude consulta quando precisa. Menos limite gasto, respostas mais seguras.</p>
+<p>Livros e manuais técnicos têm centenas de páginas. Anexar tudo a cada pergunta consome muito limite e dilui a resposta. A alternativa é <strong>destilar</strong> o livro: guardar só o que é regra, método e checklist, em uma skill que o Claude consulta quando o assunto aparecer.</p>
+<h2>O que entra na skill</h2>
+<ul>
+<li>Os <strong>princípios</strong> e as regras do livro, com as suas palavras.</li>
+<li><strong>Passos e checklists</strong> que se aplicam no seu trabalho.</li>
+<li><strong>Exemplos curtos</strong> de aplicação.</li>
+<li>O <strong>título e o autor</strong>, e o aviso de que é um resumo.</li>
+</ul>
+<h2>O que não entra</h2>
+<ul>
+<li>Trechos longos copiados. Direitos autorais valem para livros: resuma, não reproduza.</li>
+<li>O livro inteiro. Se tudo entra, nada se destaca.</li>
+</ul>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Converta o livro para texto limpo</h3>
+<p>Se for PDF, converta para Markdown. Veja o guia do MarkItDown deste site.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Extraia os princípios</h3>
+<p>Trabalhe um capítulo por vez.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · destilar um capítulo</p><p class="prompt-texto">Leia este capítulo e escreva, com as suas palavras, os 5 princípios principais, o passo a passo que ele propõe e 2 erros comuns que ele alerta. Não copie trechos. Marque "a confirmar" onde o texto for ambíguo. [capítulo]</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Monte a skill</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · criar a skill</p><p class="prompt-texto">Com base nos resumos abaixo, crie uma skill chamada "[nome]". Ela deve entrar em ação quando eu perguntar sobre [tema]; consultar os princípios; citar de qual capítulo vem cada recomendação; e dizer quando a pergunta foge do que o livro cobre. Mantenha o arquivo curto. [cole os resumos]</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Teste com perguntas que você conhece</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · teste</p><p class="prompt-texto">Use a skill para responder estas 3 perguntas de que eu já sei a resposta pelo livro: [perguntas]. Diga em que parte da skill se baseou, e avise se faltou algo.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Mantenha atualizada</h3>
+<p>Se o livro tiver nova edição, refaça os capítulos que mudaram.</p>
+</section>
+<h2>Cuidados</h2>
+<ul>
+<li><strong>Direitos autorais:</strong> a skill é para o seu uso. Não publique resumos longos de obras de terceiros.</li>
+<li><strong>Confira a fidelidade.</strong> Resumos de IA podem torcer o sentido. Compare com o livro nos pontos importantes.</li>
+</ul>
+<p class="alerta">A skill guarda o método. O livro continua sendo a fonte de verdade.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

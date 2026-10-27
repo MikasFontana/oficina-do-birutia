@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aprender qualquer assunto mais rápido com NotebookLM e Obsidian · Oficina do BirutIA</title>
+  <meta name="description" content="Um sistema em três camadas: as suas fontes ficam em um caderno de pesquisa, a IA resume e questiona, e só o que é novo vai para as suas notas. Menos repetição, mais retenção.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Google</p>
+      <h1>Aprender qualquer assunto mais rápido com NotebookLM e Obsidian</h1>
+      <p class="lide">Um sistema em três camadas: as suas fontes ficam em um caderno de pesquisa, a IA resume e questiona, e só o que é novo vai para as suas notas. Menos repetição, mais retenção.</p>
+<p>O maior desperdício de estudar é reler o que você já sabe. O sistema abaixo evita isso: a IA lê as <strong>suas fontes</strong>, mostra o que é novo para você e as notas guardam apenas isso.</p>
+<h2>As três camadas</h2>
+<p>1. <strong>Fontes:</strong> os materiais que você escolheu (artigos, PDFs, vídeos), carregados em uma ferramenta de caderno de pesquisa, como o NotebookLM, que responde com base nelas e cita de onde tirou.</p>
+<p>2. <strong>Estudo:</strong> a IA resume, explica e faz perguntas sobre as fontes.</p>
+<p>3. <strong>Memória:</strong> só o que você ainda não sabia vira nota no Obsidian, ligada às suas outras notas.</p>
+<p class="alerta">Os recursos do NotebookLM e dos cadernos do Google mudam com frequência. Confira na ferramenta o que está disponível hoje.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Escolha de 3 a 5 fontes boas</h3>
+<p>Qualidade vale mais que quantidade. Prefira fontes que se complementam, e não que repetem a mesma coisa.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Pergunte o que você ainda não sabe</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · mapa do assunto</p><p class="prompt-texto">Com base nestas fontes, monte um mapa do assunto: os 7 conceitos centrais, como se relacionam e quais pontos as fontes tratam de forma diferente. Diga em que fonte está cada coisa.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Descubra o que é novo para você</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · só o novo</p><p class="prompt-texto">Eu já sei o seguinte sobre o assunto: [liste]. Com base nas fontes, aponte somente o que vai além disso: ideias novas, exceções e erros comuns. Ignore o que repete o que eu já sei.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Teste a si mesmo</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · perguntas de revisão</p><p class="prompt-texto">Crie 8 perguntas para eu me testar sobre o que é novo, da mais simples para a mais difícil, e só depois de eu responder mostre a resposta certa, com a fonte.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Guarde no Obsidian</h3>
+<p>Crie uma nota por ideia nova, em suas palavras, e ligue com notas relacionadas. Veja o guia do Obsidian deste site.</p>
+</section>
+<h2>Boas práticas</h2>
+<ul>
+<li><strong>Escreva com as suas palavras.</strong> Copiar o resumo da IA não ensina.</li>
+<li><strong>Revise em intervalos:</strong> um dia, uma semana, um mês.</li>
+<li><strong>Confira as respostas</strong> com a fonte. A IA pode errar mesmo citando.</li>
+</ul>
+<p class="alerta">Estudar com IA funciona quando você continua pensando. Se a IA pensa por você, a retenção cai.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

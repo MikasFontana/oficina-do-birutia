@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organize o seu Drive com o Claude, sem apagar nada · Oficina do BirutIA</title>
+  <meta name="description" content="Pasta cheia de arquivos soltos, duplicados e nomes como &quot;final_v3_agora&quot;. Um método em duas etapas: primeiro a IA propõe, depois você aprova e ela move, com a lista para desfazer.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude</p>
+      <h1>Organize o seu Drive com o Claude, sem apagar nada</h1>
+      <p class="lide">Pasta cheia de arquivos soltos, duplicados e nomes como &quot;final_v3_agora&quot;. Um método em duas etapas: primeiro a IA propõe, depois você aprova e ela move, com a lista para desfazer.</p>
+<p>Organizar arquivos na mão leva horas. Entregar o Drive inteiro a uma IA sem plano pode virar bagunça pior. O método abaixo tem uma regra: <strong>a IA só propõe, e você aprova antes de qualquer coisa ser movida</strong>. Nada é apagado.</p>
+<h2>Antes de começar</h2>
+<ul>
+<li>Trabalhe com <strong>uma pasta por vez</strong>, não com o Drive inteiro.</li>
+<li>Faça uma cópia de segurança da pasta, ou confirme que o Drive guarda versões.</li>
+<li>Use a IA em uma pasta do seu computador ou na que o Drive mostra como unidade (o Claude Code e o Cowork leem pastas locais).</li>
+<li>Não coloque a IA em pasta com dados sensíveis de terceiros.</li>
+</ul>
+<h2>O método</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Faça o diagnóstico</h3>
+<p>A IA lê e descreve, sem mexer em nada.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · diagnóstico</p><p class="prompt-texto">Leia a lista de arquivos desta pasta, sem abrir, sem mover e sem apagar nada. Me diga: quantos arquivos há por tipo, quais parecem duplicados, quais têm nome genérico e quais parecem ser do mesmo assunto. Termine com 3 observações do que mais bagunça a pasta.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Peça uma proposta de pastas</h3>
+<p>Você vê o desenho antes de qualquer mudança.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · proposta de estrutura</p><p class="prompt-texto">Com base no que você viu, proponha uma estrutura de pastas simples, com no máximo 3 níveis, em português. Mostre como uma árvore e diga qual arquivo iria para cada pasta. Não mova nada. Se um arquivo não se encaixar, coloque em "A decidir".</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Peça a lista de renomeações</h3>
+<p>O nome certo diz o que o arquivo é, sem precisar abri-lo.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · nomes novos</p><p class="prompt-texto">Proponha novos nomes para os arquivos com nome genérico, no formato AAAA-MM-DD - assunto - versão. Leia o conteúdo só quando precisar. Entregue em uma tabela com "nome atual" e "nome novo". Não renomeie nada ainda.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Aprove e mova</h3>
+<p>Só depois de ler as tabelas.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 4 · executar com segurança</p><p class="prompt-texto">Aprovo a estrutura e os nomes que você propôs. Agora mova e renomeie. Regras: não apague nada; se houver dois arquivos iguais, mova o mais antigo para a pasta "Duplicados para revisar"; e salve em um arquivo "desfazer.csv" o caminho antigo e o novo de cada arquivo, para eu poder voltar.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Confira</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 5 · conferência</p><p class="prompt-texto">Compare a pasta de agora com o diagnóstico inicial. Me mostre quantos arquivos foram movidos, renomeados e deixados em "A decidir". Confirme que o total de arquivos é o mesmo de antes.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p class="alerta">Duplicado só se apaga na mão, depois de você abrir os dois e escolher. A IA nunca decide isso sozinha.</p>
+</section>
+<h2>Para manter organizado</h2>
+<p>Crie uma pasta <strong>Entrada</strong> e jogue tudo nela. Uma vez por semana, peça os pedidos 2 e 4 só para o que está lá.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

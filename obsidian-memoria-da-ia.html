@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obsidian pode ser a memória da sua IA · Oficina do BirutIA</title>
+  <meta name="description" content="Como montar um cofre de notas que a sua IA lê, atualiza e organiza sozinha, com os pedidos prontos e o modelo para baixar.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude / Obsidian</p>
+      <h1>Obsidian pode ser a <span>memória</span> da sua IA</h1>
+      <p class="lide">Toda conversa com a IA recomeça do zero, e o que você decidiu ontem se perde. Uma pasta de notas resolve isso: a IA lê, trabalha e escreve de volta. Este é o cofre que usamos na agência, mostrado por dentro.</p>
+
+      <div class="botoes">
+        <a class="btn btn-laranja" href="downloads/cofre-modelo.zip" download>↓ Baixar o cofre modelo</a>
+        <a class="btn btn-linha" href="#passos">Ver o passo a passo</a>
+      </div>
+
+      <h2>A ideia</h2>
+      <p>A memória fica em arquivos seus, em uma pasta do seu computador. O Obsidian só mostra essa pasta de um jeito bonito, com ligações entre as notas. Qualquer IA que leia e escreva arquivos (Claude Code, Cowork e outras) passa a conhecer o seu trabalho. Se você trocar de ferramenta amanhã, a memória continua com você.</p>
+
+      <figure class="grafo" aria-label="Ilustração: notas ligadas entre si, como no mapa do Obsidian">
+        <svg viewBox="0 0 640 260" role="img" aria-label="Mapa de notas ligadas">
+          <g stroke="rgba(255,255,255,0.28)" stroke-width="2" fill="none">
+            <path d="M320 130 L170 70"/><path d="M320 130 L170 190"/><path d="M320 130 L470 60"/><path d="M320 130 L480 200"/>
+            <path d="M170 70 L80 120"/><path d="M170 190 L80 120"/><path d="M470 60 L570 110"/><path d="M480 200 L570 110"/><path d="M170 70 L250 24"/><path d="M480 200 L400 238"/>
+          </g>
+          <g font-family="IBM Plex Mono, monospace" font-size="13" fill="#fff" text-anchor="middle">
+            <circle class="no" cx="320" cy="130" r="26" fill="#ff7f00"/><text x="320" y="170">Início</text>
+            <circle class="no" cx="170" cy="70" r="16" fill="#6236c7"/><text x="170" y="48">Projeto A</text>
+            <circle class="no" cx="170" cy="190" r="16" fill="#6236c7"/><text x="170" y="222">Projeto B</text>
+            <circle class="no" cx="470" cy="60" r="14" fill="#8a63f0"/><text x="470" y="38">Aprendizado</text>
+            <circle class="no" cx="480" cy="200" r="14" fill="#8a63f0"/><text x="480" y="232">Diário</text>
+            <circle class="no" cx="80" cy="120" r="10" fill="#8a63f0"/>
+            <circle class="no" cx="570" cy="110" r="10" fill="#8a63f0"/>
+            <circle class="no" cx="250" cy="24" r="8" fill="#3a3d44" stroke="#8a63f0" stroke-width="2"/>
+            <circle class="no" cx="400" cy="238" r="8" fill="#3a3d44" stroke="#8a63f0" stroke-width="2"/>
+          </g>
+        </svg>
+      </figure>
+
+      <h2>O cofre por dentro</h2>
+      <p>Cada pasta responde a uma pergunta simples: o que chegou, o que estamos fazendo, o que aprendemos, o que aconteceu hoje.</p>
+      <pre class="arvore" aria-label="Estrutura de pastas do cofre"><span class="p">Cofre</span>
+├─ <span class="p">00-Entrada</span>       o que chegou e ainda não foi organizado
+├─ <span class="p">10-Projetos</span>      uma pasta por projeto, com a nota de status
+├─ <span class="p">30-Conhecimento</span>  aprendizados curtos, uma ideia por nota
+├─ <span class="p">50-Diario</span>        uma nota por dia
+├─ <span class="p">90-Arquivo</span>       o que terminou (nada é apagado)
+├─ <span class="p">_modelos</span>         moldes de nota
+└─ <span class="p">Início.md</span>        a página inicial do cofre</pre>
+      <p class="alerta">Dois detalhes que fazem diferença: a pasta <strong>Entrada</strong>, onde você joga qualquer coisa sem pensar, e a regra de <strong>nunca apagar</strong>. A IA só move para o Arquivo.</p>
+
+      <h2 id="passos">Passo a passo</h2>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">1</span>
+        <h3>Instale o Obsidian e crie o cofre</h3>
+        <p>Baixe em <code>obsidian.md/download</code> (grátis). Escolha <strong>Criar novo cofre</strong> e uma pasta fixa, como Documentos. Ou baixe o cofre modelo acima, extraia e use <strong>Abrir pasta como cofre</strong>.</p>
+        <span></span>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">2</span>
+        <h3>Conecte a pasta à sua IA</h3>
+        <p>No Claude Code, abra a conversa dentro da pasta do cofre. No Cowork, escolha a pasta. A IA precisa poder ler e escrever nela, e só nela.</p>
+        <span></span>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">3</span>
+        <h3>Peça para ela entender o cofre</h3>
+        <p>Primeiro a IA lê e explica, sem mexer em nada. Se a explicação estiver certa, siga.</p>
+        <div class="prompt" data-prompt>
+          <p class="prompt-rotulo">Pedido 1 · cole na conversa</p>
+          <p class="prompt-texto">Leia a estrutura desta pasta e o arquivo LEIA-ME.md. Depois me explique, em palavras simples, o que cada pasta guarda e onde você vai registrar cada tipo de coisa. Não crie nem mova nada ainda.</p>
+          <button class="btn btn-claro copiar" type="button">Copiar pedido</button>
+        </div>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">4</span>
+        <h3>Combine a regra de registro</h3>
+        <p>É este pedido que faz o cofre se alimentar sozinho. No Claude Code, a regra pode ficar no arquivo <code>CLAUDE.md</code>, e ele a segue em toda conversa.</p>
+        <div class="prompt" data-prompt>
+          <p class="prompt-rotulo">Pedido 2 · cole na conversa</p>
+          <p class="prompt-texto">Ao fim de todo trabalho relevante que fizermos juntos, registre no cofre: (1) o diário do dia em 50-Diario, com o modelo Diário; (2) a nota de status do projeto em 10-Projetos; (3) uma nota de aprendizado em 30-Conhecimento para cada ideia que vale reaproveitar. Depois, avise em UMA linha o que registrou. Nunca apague nada: se algo ficar velho, mova para 90-Arquivo. Se faltar informação, escreva “a confirmar”.</p>
+          <button class="btn btn-claro copiar" type="button">Copiar pedido</button>
+        </div>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">5</span>
+        <h3>Jogue o material bruto na Entrada</h3>
+        <p>Resumo de conversa, link, print, ideia solta. Depois, peça para a IA organizar.</p>
+        <div class="prompt" data-prompt>
+          <p class="prompt-rotulo">Pedido 3 · processar a entrada</p>
+          <p class="prompt-texto">Leia tudo que está em 00-Entrada. Para cada arquivo: descubra a que projeto ele pertence, crie ou atualize a nota do projeto, extraia os aprendizados em notas curtas e mova o original para a pasta do projeto. No fim, me mostre uma lista do que foi feito e do que ficou em dúvida. Não invente nada.</p>
+          <button class="btn btn-claro copiar" type="button">Copiar pedido</button>
+        </div>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">6</span>
+        <h3>Pergunte: onde paramos?</h3>
+        <p>O melhor uso do dia a dia. Ao abrir o computador, em vez de lembrar de tudo, você pergunta.</p>
+        <div class="prompt" data-prompt>
+          <p class="prompt-rotulo">Pedido 4 · pergunta diária</p>
+          <p class="prompt-texto">Leia o diário dos últimos 7 dias e a nota de status de cada projeto ativo. Me diga, projeto por projeto, em no máximo duas linhas: onde paramos e qual é o próximo passo. Termine com a pendência mais antiga.</p>
+          <button class="btn btn-claro copiar" type="button">Copiar pedido</button>
+        </div>
+      </section>
+
+      <h2>Deixe a rotina rodar sozinha</h2>
+      <p>Aqui está o que mais pesa no nosso dia a dia. Cada projeto de IA recebe uma tarefa agendada que resume a semana. A de cada ferramenta roda em um horário, e por último uma tarefa consolida tudo no cofre.</p>
+      <ol class="linha-tempo">
+        <li><strong>11h</strong><span>Cada projeto no ChatGPT gera o resumo da semana.</span></li>
+        <li><strong>12h</strong><span>Cada projeto no Claude gera o seu resumo.</span></li>
+        <li><strong>13h</strong><span>O Claude lê todos os resumos que chegaram em Entrada e atualiza o cofre.</span></li>
+      </ol>
+      <div class="prompt" data-prompt>
+        <p class="prompt-rotulo">Pedido 5 · agende em cada projeto</p>
+        <p class="prompt-texto">Resuma o que aconteceu neste projeto desde a última atualização: o que foi feito, o que mudou, decisões novas com o motivo e os próximos passos. Entregue como um arquivo Markdown chamado “Atualização - [nome do projeto] - [data].md”, para eu colocar em 00-Entrada. Não inclua senhas nem dados pessoais de terceiros.</p>
+        <button class="btn btn-claro copiar" type="button">Copiar pedido</button>
+      </div>
+      <p class="alerta">Rodar uma vez por semana, e não a cada conversa, economiza o seu limite de uso da IA. Aprendemos isso na prática.</p>
+
+      <h2>Cuidados que aprendemos na prática</h2>
+      <details>
+        <summary>Sincronizar com o Google Drive</summary>
+        <p>O aplicativo do Drive tem dois modos. No modo <strong>espelhar</strong>, ele tenta baixar tudo para o computador, e isso pode lotar o disco. Prefira o modo <strong>streaming</strong>, e marque só a pasta do cofre como <strong>Disponível off-line</strong>.</p>
+      </details>
+      <details>
+        <summary>Histórico com Git</summary>
+        <p>Se você usar o Git para guardar o histórico, deixe a pasta do Git <strong>fora</strong> do Drive. Dois sistemas de sincronização na mesma pasta podem corromper o histórico.</p>
+      </details>
+      <details>
+        <summary>O que não entra no cofre</summary>
+        <p>Vídeos e imagens pesadas ficam fora, e o cofre guarda só o caminho deles. Senhas, chaves e dados sensíveis de terceiros também ficam fora. Trabalhos pequenos, que não se repetem, não valem uma ficha.</p>
+      </details>
+      <details>
+        <summary>Dados de clientes e LGPD</summary>
+        <p>O arquivo fica no seu computador, mas o conteúdo vai para a IA quando ela lê. Evite CPF, dados de saúde e informações pessoais, ou use só as iniciais.</p>
+      </details>
+      <details>
+        <summary>A IA organizou errado</summary>
+        <p>Por isso a regra “nunca apagar”. Peça: “desfaça o que você moveu e me mostre a lista antes de mover de novo”. Se você usa o Git, volte para o registro anterior.</p>
+      </details>
+
+      <section class="pronto" aria-labelledby="t-pronto">
+        <h2 id="t-pronto">Quer começar pronto?</h2>
+        <p>Baixe o cofre modelo, com as pastas, os modelos de nota, a página Início e os cinco pedidos em um arquivo. Abra no Obsidian e siga o passo 2.</p>
+        <div class="botoes">
+          <a class="btn btn-laranja" href="downloads/cofre-modelo.zip" download>↓ Baixar o cofre modelo</a>
+        </div>
+      </section>
+      <p class="nota-fonte">Conferido em 27/10/2026. O Obsidian e as ferramentas de IA mudam com frequência.</p>
+    </main>
+
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

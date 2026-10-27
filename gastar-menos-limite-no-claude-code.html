@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como gastar menos do limite de uso no Claude Code · Oficina do BirutIA</title>
+  <meta name="description" content="O limite acaba rápido quando a conversa fica longa, os arquivos são enormes e os pedidos são soltos. Seis hábitos que fazem o mesmo trabalho gastando bem menos.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude Code</p>
+      <h1>Como gastar menos do limite de uso no Claude Code</h1>
+      <p class="lide">O limite acaba rápido quando a conversa fica longa, os arquivos são enormes e os pedidos são soltos. Seis hábitos que fazem o mesmo trabalho gastando bem menos.</p>
+<p>O limite de uso do Claude Code não depende só de quanto você pede, mas de <strong>quanto texto ele precisa carregar</strong> a cada resposta. Conversa longa, arquivo grande e instrução repetida pesam. Estes seis hábitos reduzem o consumo sem piorar o resultado.</p>
+<h2>Os seis hábitos</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Uma conversa por assunto</h3>
+<p>Ao trocar de tarefa, comece uma conversa nova (comando <code>/clear</code>). Carregar uma conversa antiga inteira para pedir algo sem relação é o maior desperdício.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Resuma quando a conversa ficar longa</h3>
+<p>O comando <code>/compact</code> condensa o que foi feito e libera espaço. Use quando o assunto continua, mas a conversa já está comprida.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Mantenha o CLAUDE.md curto</h3>
+<p>O arquivo de regras é lido sempre. Uma página direta funciona melhor que dez. Veja o guia das quatro regras.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Converta arquivos pesados</h3>
+<p>PDF e Word gastam mais que texto limpo. Converta para Markdown antes de anexar. Veja o guia do MarkItDown.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Peça pouco e específico</h3>
+<p>"Arrume o projeto" faz o Claude ler tudo. "Ajuste a cor do botão na página inicial" faz ele ler uma parte.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · delimitar o escopo</p><p class="prompt-texto">Antes de começar, liste os arquivos que você pretende ler para esta tarefa e me peça confirmação. Leia só o necessário. Tarefa: [descreva].</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">6</span><h3>Rodar tarefas fixas uma vez por semana</h3>
+<p>Rotinas que não são urgentes, como resumo e organização, podem rodar em horário marcado, e não a cada conversa.</p>
+</section>
+<h2>Plugins ajudam?</h2>
+<p>Alguns plugins prometem economizar limite, por reduzir respostas longas ou resumir sozinhos. Podem ajudar, mas <strong>cada plugin também ocupa espaço</strong>. Teste um de cada vez, olhando se o consumo realmente caiu.</p>
+<h2>Como medir</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · olhar o consumo</p><p class="prompt-texto">Me mostre, em palavras simples, o que mais está pesando nesta conversa: arquivos lidos, instruções fixas e histórico. Sugira o que eu posso cortar sem perder o trabalho.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p class="alerta">Economizar limite não é pedir menos. É pedir sem repetir o contexto.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como editei um vídeo com o Claude, do roteiro ao arquivo final · Oficina do BirutIA</title>
+  <meta name="description" content="O vídeo de estreia do canal foi feito assim: roteiro, voz, animação em código, efeitos sonoros e trilha. Veja cada etapa e o pedido que usamos.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude</p>
+      <h1>Como editei um vídeo com o Claude, do roteiro ao arquivo final</h1>
+      <p class="lide">O vídeo de estreia do canal foi feito assim: roteiro, voz, animação em código, efeitos sonoros e trilha. Veja cada etapa e o pedido que usamos.</p>
+<p>Editar com a IA não é pedir "faça um vídeo". É dividir o trabalho em etapas pequenas, aprovar cada uma e só então seguir. Este é o método que usamos no vídeo de estreia do canal.</p>
+<h2>O caminho</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Escreva o roteiro por cenas</h3>
+<p>Um vídeo curto fica melhor com cenas de 5 a 12 segundos, cada uma com uma ideia só.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · roteiro</p><p class="prompt-texto">Escreva o roteiro de um vídeo vertical de até 90 segundos sobre [assunto], dividido em 8 cenas. Para cada cena, dê: o texto falado, o que aparece na tela e a duração estimada. Linguagem falada, frases curtas, sem jargão.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Faça a narração</h3>
+<p>Grave a sua voz ou use uma voz clonada <strong>sua</strong>. O importante é gerar um áudio por cena, e não um áudio gigante. Assim, cada cena tem a duração exata da fala.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Monte a animação em código</h3>
+<p>Com o Remotion, o Claude cria cada cena e ajusta o tempo ao áudio dela. Peça prévias antes de renderizar.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · cenas animadas</p><p class="prompt-texto">Crie a cena 1 em Remotion, com a duração do áudio dela. Fundo [cor], título animado, ícones simples e legenda sincronizada com a fala. Mostre três quadros de prévia antes de renderizar.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Acrescente os sons</h3>
+<p>Efeitos pequenos fazem o vídeo parecer profissional: um estalo quando uma caixa aparece, um som leve na troca de cena.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · efeitos sonoros</p><p class="prompt-texto">Coloque um efeito sonoro curto sempre que uma caixa de texto aparecer e um som leve em cada troca de cena. Mantenha todos baixos para não competirem com a voz.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Coloque a trilha com a voz por cima</h3>
+<p>A música precisa abaixar sozinha quando a pessoa fala. Isso se chama *ducking* e é feito com o FFmpeg.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 4 · trilha que abaixa na fala</p><p class="prompt-texto">Misture a trilha [arquivo] com a narração usando o FFmpeg, de modo que a música abaixe automaticamente enquanto há voz e volte a subir nas pausas. Deixe a voz sempre mais alta que a música.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">6</span><h3>Confira antes de entregar</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 5 · revisão final</p><p class="prompt-texto">Revise o vídeo pronto: o texto na tela corresponde ao que é falado? Há cortes bruscos? A legenda passa da zona segura do celular? O áudio tem chiado? Liste o que encontrar, sem corrigir ainda.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>Erros que nos custaram tempo</h2>
+<ul>
+<li><strong>Voz com chiado ou sotaque estranho:</strong> quase sempre vem da amostra de voz. Use uma gravação limpa, sem eco.</li>
+<li><strong>Texto na tela fora do tempo:</strong> meça a duração do áudio de cada cena, em vez de estimar.</li>
+<li><strong>Renderizar tudo de uma vez:</strong> gere uma cena de teste e só depois o vídeo inteiro.</li>
+</ul>
+<p class="alerta">Use apenas a sua voz, ou a voz de quem autorizou por escrito.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

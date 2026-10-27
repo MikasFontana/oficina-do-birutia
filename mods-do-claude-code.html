@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O que são mods do Claude Code e três coisas que você pode criar · Oficina do BirutIA</title>
+  <meta name="description" content="Um mod muda o comportamento ou a aparência do Claude Code para o seu jeito de trabalhar: um painel que atualiza sozinho, um aviso, um atalho. Veja três usos e como pedir.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude Code</p>
+      <h1>O que são mods do Claude Code e três coisas que você pode criar</h1>
+      <p class="lide">Um mod muda o comportamento ou a aparência do Claude Code para o seu jeito de trabalhar: um painel que atualiza sozinho, um aviso, um atalho. Veja três usos e como pedir.</p>
+<p>Um <strong>mod</strong> é uma pequena mudança que você acrescenta à interface ou ao comportamento do Claude Code, sem programar na mão. Em vez de ficar repetindo a mesma tarefa, você pede ao Claude para criar o mod, e ele passa a existir ao lado da conversa.</p>
+<p class="alerta">Esse recurso é recente e muda entre versões. Confira na sua versão do aplicativo o nome exato do recurso e onde os mods ficam guardados.</p>
+<h2>Três usos que fazem sentido</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Um painel ao lado da conversa</h3>
+<p>Um painel fixo que mostra o que importa: tarefas do dia, status de um projeto, números de uma campanha. Ele se atualiza enquanto você trabalha.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · painel</p><p class="prompt-texto">Crie um mod que mostre, em um painel ao lado da conversa, a lista de tarefas do arquivo [caminho] e marque as concluídas. O painel deve se atualizar sozinho quando o arquivo mudar.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Um aviso quando algo acontece</h3>
+<p>Um alerta curto quando uma tarefa longa termina, ou quando o Claude precisa da sua resposta, para você não ficar olhando a tela.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · aviso</p><p class="prompt-texto">Crie um mod que me mostre um aviso quando uma tarefa demorada terminar ou quando você precisar de uma resposta minha. Deve ser discreto e sumir sozinho.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Um atalho para o que você repete</h3>
+<p>Um comando curto que executa um pedido que você usa sempre, como "resumir o dia" ou "registrar no cofre".</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · atalho</p><p class="prompt-texto">Crie um mod com um comando chamado /resumo que leia o que fizemos hoje e escreva um resumo de 5 linhas com o que ficou pendente. Mostre como usá-lo.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>Boas práticas</h2>
+<ul>
+<li><strong>Um mod, uma função.</strong> Mods pequenos são fáceis de entender e de desligar.</li>
+<li><strong>Leia o que ele faz.</strong> Peça ao Claude para explicar em português o que o mod executa.</li>
+<li><strong>Desligue o que não usa.</strong> Mod esquecido também pesa.</li>
+<li><strong>Teste em uma pasta de teste</strong> antes de usar no trabalho real.</li>
+</ul>
+<p class="alerta">Um mod roda no seu computador com as suas permissões. Trate como qualquer programa: crie só o que você entende.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

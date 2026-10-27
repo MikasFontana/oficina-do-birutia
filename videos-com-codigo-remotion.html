@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vídeos feitos com código pelo Claude Code · Oficina do BirutIA</title>
+  <meta name="description" content="O Remotion transforma código em vídeo. Com o Claude Code, você descreve a cena e ele escreve, testa e renderiza. Foi assim que fizemos o primeiro vídeo do canal.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Vídeos feitos com código pelo Claude Code</h1>
+      <p class="lide">O Remotion transforma código em vídeo. Com o Claude Code, você descreve a cena e ele escreve, testa e renderiza. Foi assim que fizemos o primeiro vídeo do canal.</p>
+<p>Editor de vídeo comum funciona com arrastar e soltar. O <strong>Remotion</strong> funciona com código: cada quadro do vídeo é uma página feita em React, e o resultado sai em MP4. Isso parece pior até você perceber a vantagem: o Claude Code escreve o código, e mudar uma cor, um tempo ou um texto leva segundos, em vez de refazer a edição.</p>
+<h2>Quando vale a pena</h2>
+<ul>
+<li>Vídeos curtos e repetidos, como Reels, anúncios e vinhetas.</li>
+<li>Animação com texto, ícones e gráficos, que muda de acordo com dados.</li>
+<li>Quem já tem ritmo de produção e quer manter o mesmo estilo em todos os vídeos.</li>
+</ul>
+<p>Para edição de uma gravação longa com cortes finos, um editor tradicional ainda é mais prático.</p>
+<h2>O que você precisa</h2>
+<ul>
+<li>Node.js instalado no computador.</li>
+<li>O Claude Code aberto em uma pasta vazia.</li>
+<li>O FFmpeg, que o Remotion usa para montar o arquivo final. Se faltar, o Claude explica a instalação.</li>
+</ul>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Crie o projeto</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · criar o projeto</p><p class="prompt-texto">Crie um projeto Remotion nesta pasta para vídeos verticais de 1080 por 1920, a 30 quadros por segundo. Explique em palavras simples o que cada pasta faz. Depois abra o estúdio de pré-visualização e me diga como acessar.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Descreva uma cena</h3>
+<p>Comece por uma só, de 5 segundos. Falar em cores, fontes e movimento ajuda mais que falar em "bonito".</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · primeira cena</p><p class="prompt-texto">Crie uma cena de 5 segundos com fundo escuro, um título grande que entra com um leve salto e um subtítulo que aparece em seguida. Use a fonte [nome da fonte] e as cores [cor 1] e [cor 2]. Quero ver um quadro parado antes de renderizar.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Veja antes de renderizar</h3>
+<p>Renderizar demora. Peça quadros de prévia, em tamanho menor, para aprovar o visual.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · prévia</p><p class="prompt-texto">Gere 3 imagens de prévia da cena, nos segundos 1, 3 e 5, em metade do tamanho. Aponte o que você acha que pode melhorar, e espere a minha aprovação antes de renderizar o vídeo.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Coloque a narração</h3>
+<p>Cada cena deve durar o tempo da fala dela. O Claude pode medir o áudio e ajustar.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 4 · sincronizar com a voz</p><p class="prompt-texto">Coloque o áudio [arquivo] na cena. Ajuste a duração da cena para o tamanho do áudio, com meio segundo de folga no fim. Se o texto na tela aparecer antes ou depois da fala, sincronize.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Renderize</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 5 · gerar o arquivo</p><p class="prompt-texto">Renderize o vídeo em MP4 com boa qualidade e salve na pasta de saída. Depois, confirme que o arquivo abre e me diga a duração e o tamanho.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>O que aprendemos fazendo</h2>
+<ul>
+<li>Dividir o vídeo em <strong>cenas</strong>, uma por arquivo, torna cada ajuste pequeno e seguro.</li>
+<li><strong>Guarde as cores e fontes em um só lugar</strong>, para trocar a identidade do vídeo inteiro de uma vez.</li>
+<li><strong>Aprove quadros</strong> antes de renderizar. O tempo gasto em prévia economiza muito mais tempo de renderização.</li>
+</ul>
+<p class="alerta">Confira a licença no site oficial do Remotion antes de usar em projeto comercial. As regras dependem do tamanho da empresa.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

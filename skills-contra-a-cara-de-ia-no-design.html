@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills para o seu design não ter cara de IA · Oficina do BirutIA</title>
+  <meta name="description" content="Páginas e artes feitas por IA costumam sair parecidas: mesmo degradê, mesma fonte, mesmo layout. Skills de design e os pedidos certos ajudam a fugir do genérico.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Skills para o seu design não ter cara de IA</h1>
+      <p class="lide">Páginas e artes feitas por IA costumam sair parecidas: mesmo degradê, mesma fonte, mesmo layout. Skills de design e os pedidos certos ajudam a fugir do genérico.</p>
+<p>Peça um site à IA sem orientação e quase sempre sai igual: fundo claro cor de creme, ou fundo escuro com um verde-limão, a mesma fonte elegante e os mesmos cartões. Não é defeito, é o <strong>caminho mais provável</strong>. Para fugir dele, você precisa dar direção, e skills de design ajudam a fazer isso de forma repetível.</p>
+<h2>O que uma skill de design faz</h2>
+<p>Ela ensina o Claude a tomar decisões: escolher um estilo ligado ao assunto, montar uma paleta, combinar fontes, pensar na hierarquia e revisar o resultado como um diretor de arte. Existem várias gratuitas, e você as encontra pelo guia de escolha de skills deste site. Leia cada uma antes de instalar.</p>
+<h2>Pedidos que tiram o genérico</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Ancore no assunto</h3>
+<p>Cores e formas devem vir do <strong>mundo do tema</strong>, e não de uma lista de tendências.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · partir do assunto</p><p class="prompt-texto">Antes de desenhar, descreva o mundo visual de [assunto]: materiais, objetos, cores reais e linguagem. Proponha uma paleta de 5 cores nomeadas, duas fontes e uma ideia central para a página. Evite fundo creme com serifa e fundo preto com um acento neon.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Peça uma ideia ousada, só uma</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · um risco calculado</p><p class="prompt-texto">Escolha um único elemento de destaque que torne esta página inconfundível, e deixe o resto discreto. Explique por que ele combina com o assunto.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Revise como diretor de arte</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · revisão</p><p class="prompt-texto">Revise a página como um diretor de arte exigente: o que parece genérico, o que não tem hierarquia e o que atrapalha a leitura? Liste o que cortar. Considere também celular e acessibilidade.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Dê referências</h3>
+<p>Mostre dois ou três sites ou imagens de que você gosta e peça para o Claude extrair o que há em comum: espaçamento, tipografia, ritmo.</p>
+</section>
+<h2>Cuidados</h2>
+<ul>
+<li><strong>Contraste e leitura</strong> vêm antes do estilo.</li>
+<li><strong>Movimento</strong> com moderação, e com uma opção para reduzir.</li>
+<li><strong>Não copie</strong> a identidade de outra marca. Inspire-se no princípio, e não na aparência.</li>
+</ul>
+<p class="alerta">Um design com personalidade é uma sequência de decisões pequenas e conscientes. A skill ajuda a lembrar delas, mas a escolha final é sua.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

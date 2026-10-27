@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guia do Baixador de Vídeos · Oficina do BirutIA</title>
+  <meta name="description" content="Passo a passo para instalar e usar o Baixador de Vídeos, e o que fazer se o antivírus ou o Windows reclamarem.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / <a href="como-fazer-baixador.html">Baixador de Vídeos</a> / Programa pronto</p>
+      <h1>Baixador<br>de <span>Vídeos</span></h1>
+      <p class="lide">Cola o link do YouTube ou do Instagram, e o vídeo cai na pasta Downloads em MP4, na melhor qualidade. A instalação leva alguns minutos e só precisa ser feita uma vez.</p>
+      <p class="alerta">Baixe apenas vídeos seus ou com autorização de quem os publicou. Os termos do YouTube e do Instagram proíbem baixar conteúdo de terceiros sem permissão.</p>
+
+      <h2>Passo a passo</h2>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">1</span>
+        <h3>Baixe o pacote</h3>
+        <p>Um arquivo .zip pequeno, com o programa, o instalador e este guia em texto.</p>
+        <a class="btn btn-laranja" href="downloads/baixador-do-biruta.zip" download>↓ Baixar o pacote</a>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">2</span>
+        <h3>Extraia em uma pasta fixa</h3>
+        <p>Clique com o botão direito no .zip e escolha <strong>Extrair tudo</strong>. Use uma pasta que você não vai mover, como Documentos. Não abra os arquivos de dentro do .zip sem extrair antes.</p>
+        <span></span>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">3</span>
+        <h3>Instale (só uma vez)</h3>
+        <p>Dê dois cliques em <code>1 - Instalar (so uma vez)</code>. Se o Windows perguntar algo, clique em <strong>Sim</strong>. Aguarde até aparecer "Pronto!". O instalador coloca as duas ferramentas livres que fazem o trabalho (yt-dlp e ffmpeg) e cria o atalho <strong>Baixador do BirutIA</strong> na Área de Trabalho.</p>
+        <span></span>
+      </section>
+
+      <section class="passo-guia">
+        <span class="num" aria-hidden="true">4</span>
+        <h3>Use</h3>
+        <p>Abra o atalho, cole o link (Ctrl + V), clique em <strong>Baixar</strong> e espere a barra chegar a 100%. O botão <strong>Abrir pasta Downloads</strong> mostra o vídeo.</p>
+        <img class="janela" src="img/janela-baixador.png" alt="Janela do Baixador do BirutIA: logo do robô, campo para colar o link e o botão roxo Baixar" width="540" height="400">
+      </section>
+
+      <h2>Se algo der errado</h2>
+
+      <details>
+        <summary>O antivírus mandou arquivos para a quarentena</summary>
+        <p>É um alarme falso. O programa roda o PowerShell sem mostrar janela e baixa arquivos, e alguns antivírus desconfiam disso por padrão.</p>
+        <ol>
+          <li>Abra o antivírus e vá em <strong>Quarentena</strong>.</li>
+          <li>Restaure os arquivos do Baixador e escolha adicionar exceção.</li>
+          <li>Adicione a pasta inteira do Baixador como exceção. Os nomes dos menus mudam conforme a versão.</li>
+        </ol>
+        <p>O antivírus também pode reclamar do yt-dlp ou do ffmpeg, que o instalador coloca em outra pasta. Restaure da mesma forma.</p>
+      </details>
+
+      <details>
+        <summary>O atalho não abre</summary>
+        <p>Dê dois cliques em <code>Abrir Baixador (ver erro)</code>, dentro da pasta do Baixador. Uma janela preta mostra o motivo exato. Copie a mensagem e mostre ao Claude para ele corrigir com você.</p>
+      </details>
+
+      <details>
+        <summary>O Windows bloqueou o programa</summary>
+        <p>O Windows costuma bloquear scripts por padrão. O Baixador já abre com a liberação embutida, só para a execução dele, sem mudar nenhuma configuração do seu computador. Se mesmo assim aparecer um aviso, use <code>Abrir Baixador (ver erro)</code> e peça ajuda ao Claude com a mensagem.</p>
+      </details>
+
+      <details>
+        <summary>O vídeo não baixa</summary>
+        <p>No Instagram, só funcionam vídeos de perfis públicos. Perfis privados e stories não baixam. O YouTube e o Instagram mudam as regras com frequência, e o programa pode parar de funcionar um dia. Se isso acontecer, peça ao Claude: "atualize o yt-dlp e ajuste o Baixador".</p>
+      </details>
+
+      <h2>Deixe com a sua cara</h2>
+      <details open>
+        <summary>Trocar logo, cores e nome</summary>
+        <p>O programa é livre e foi feito para você mudar.</p>
+        <ol>
+          <li><strong>Logo:</strong> troque o arquivo <code>cabeca.png</code> por uma imagem sua, de preferência quadrada.</li>
+          <li><strong>Cores e nome:</strong> abra <code>BaixadorVideos.ps1</code> com o Bloco de Notas, ou peça ao Claude: "Mude o Baixador para as cores X e Y e o nome Z."</li>
+        </ol>
+      </details>
+    </main>
+
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Baixe apenas conteúdo seu ou com autorização de quem o publicou.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

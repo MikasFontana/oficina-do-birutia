@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apresentação com IA: do briefing ao arquivo que você pode usar · Oficina do BirutIA</title>
+  <meta name="description" content="Uma apresentação boa começa antes dos slides: no briefing e no roteiro. Veja o caminho em cinco passos, com os pedidos, para chegar a um arquivo que você pode usar.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude</p>
+      <h1>Apresentação com IA: do briefing ao arquivo que você pode usar</h1>
+      <p class="lide">Uma apresentação boa começa antes dos slides: no briefing e no roteiro. Veja o caminho em cinco passos, com os pedidos, para chegar a um arquivo que você pode usar.</p>
+<p>Quem abre a ferramenta e pede "faça uma apresentação" recebe uma apresentação genérica. A diferença está em <strong>pensar antes de desenhar</strong>. Este caminho vai do briefing ao arquivo.</p>
+<p class="alerta">Recursos de apresentação variam conforme o plano. Se o seu não tiver, os pedidos servem para gerar o roteiro e o texto de cada slide, que você monta no programa que usa.</p>
+<h2>Os cinco passos</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Faça o briefing</h3>
+<p>Responda: quem vai assistir, o que precisa sentir ou decidir ao final, quanto tempo você tem e o que não pode faltar.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Peça a mensagem central</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · a ideia</p><p class="prompt-texto">Quero apresentar [assunto] para [público] em [N] minutos, para que decidam [decisão]. Escreva a mensagem central em uma frase e 3 argumentos que a sustentam, do mais forte para o mais fraco.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Peça o roteiro de slides</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · roteiro</p><p class="prompt-texto">Com base nisso, proponha um roteiro de [N] slides. Para cada um: o título como uma afirmação, e não como um tema; 3 tópicos curtos; e o que eu devo dizer em voz alta. Comece com o problema e termine com a ação.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Gere a apresentação</h3>
+<p>Peça o arquivo e escolha o estilo: [cores, fonte, tom].</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · montar</p><p class="prompt-texto">Monte a apresentação a partir do roteiro, com as cores [cores] e a fonte [fonte]. Use poucas palavras por slide e deixe espaço em branco. Sugira onde um gráfico ou imagem ajudaria.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Revise e ensaie</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 4 · revisão</p><p class="prompt-texto">Revise a apresentação como alguém que não conhece o assunto: onde ficaria perdido, o que está longo demais e o que falta? Depois, escreva 5 perguntas difíceis que o público poderia fazer e as respostas que eu poderia dar.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>Erros comuns</h2>
+<ul>
+<li><strong>Slides com muito texto.</strong> O slide apoia a fala, e não a substitui.</li>
+<li><strong>Títulos que são temas</strong> ("Resultados") em vez de afirmações ("As vendas subiram 30%"). Confira o número antes.</li>
+<li><strong>Dados inventados.</strong> Marque "a confirmar" e preencha você.</li>
+</ul>
+<p class="alerta">Abra o arquivo final em outro computador ou no celular antes de apresentar. Fontes e formatos às vezes mudam.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

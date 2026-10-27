@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF e Word em Markdown para gastar menos limite · Oficina do BirutIA</title>
+  <meta name="description" content="Arquivos como PDF e Word carregam muita formatação que a IA não precisa. Converter para Markdown deixa o texto limpo e usa menos do seu limite. Veja como fazer com o MarkItDown.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>PDF e Word em Markdown para gastar menos limite</h1>
+      <p class="lide">Arquivos como PDF e Word carregam muita formatação que a IA não precisa. Converter para Markdown deixa o texto limpo e usa menos do seu limite. Veja como fazer com o MarkItDown.</p>
+<p>Quando você anexa um PDF na IA, ela lê muito mais do que o texto: lê estrutura, quebras de página e formatação. Isso gasta o seu limite de uso e mistura o que importa com o que não importa. O <strong>Markdown</strong> é texto simples, com títulos e listas, e a IA o entende muito bem.</p>
+<p>O <strong>MarkItDown</strong> é uma ferramenta gratuita e de código aberto, criada pela Microsoft, que converte vários tipos de arquivo em Markdown.</p>
+<h2>O que ele converte</h2>
+<p>Documentos como PDF e Word, planilhas, apresentações, páginas da web e alguns outros formatos. A lista completa está no repositório oficial.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Peça a instalação</h3>
+<p>Precisa do Python instalado.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · instalar</p><p class="prompt-texto">Instale o MarkItDown da Microsoft neste computador com o Python e me mostre como converter um arquivo pelo terminal. Confirme que funcionou convertendo [arquivo de teste] em Markdown.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Converta um arquivo</h3>
+<p>No terminal, o comando tem a forma abaixo. Troque os nomes pelos seus.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Comando de exemplo</p><p class="prompt-texto">markitdown "relatorio.pdf" -o "relatorio.md"</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Converta uma pasta inteira</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · converter em lote</p><p class="prompt-texto">Converta todos os PDF e Word da pasta [caminho] para Markdown com o MarkItDown, salvando cada um com o mesmo nome e a extensão .md em uma pasta chamada "convertidos". Não apague nem altere os originais. Ao final, liste o que foi convertido e o que falhou.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Use o resultado</h3>
+<p>Anexe o <code>.md</code> na conversa, em vez do PDF original. Compare o resultado com o original antes de confiar: tabelas e colunas podem sair bagunçadas.</p>
+</section>
+<h2>Limites que você precisa conhecer</h2>
+<ul>
+<li><strong>PDF escaneado</strong> (uma foto de página) não tem texto para extrair. Precisa de reconhecimento de texto (OCR), que é outra etapa.</li>
+<li><strong>Tabelas complexas</strong> podem perder o formato. Confira os números.</li>
+<li><strong>Dados sensíveis:</strong> converter não protege nada. Se o arquivo tem dado pessoal, o texto convertido também tem.</li>
+</ul>
+<p class="alerta">Confira a documentação oficial do MarkItDown para os comandos mais atuais.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

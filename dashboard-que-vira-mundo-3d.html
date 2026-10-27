@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Um dashboard que vira um mundo 3D clicável · Oficina do BirutIA</title>
+  <meta name="description" content="Em vez de gráficos de sempre, os números do seu negócio viram uma cidade ou uma oficina em 3D, onde cada prédio ou máquina conta uma parte da história. Veja como pedir, na ordem.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude</p>
+      <h1>Um dashboard que vira um mundo 3D clicável</h1>
+      <p class="lide">Em vez de gráficos de sempre, os números do seu negócio viram uma cidade ou uma oficina em 3D, onde cada prédio ou máquina conta uma parte da história. Veja como pedir, na ordem.</p>
+<p>Dashboard comum é útil e cansativo. Um mundo em 3D, em que cada elemento representa um número, prende mais a atenção e é ótimo para apresentar resultados. A ideia é simples: <strong>escolha uma metáfora</strong> e deixe o Claude montar a cena em Three.js.</p>
+<h2>O método em seis pedidos</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Escolha a metáfora</h3>
+<p>Pergunte antes de construir.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · metáfora</p><p class="prompt-texto">Tenho estes números do meu negócio: [lista]. Sugira 3 metáforas em 3D para mostrá-los, por exemplo cidade, oficina ou jardim, dizendo o que cada número viraria. Escolho uma depois.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Prepare os dados</h3>
+<p>Os números ficam em um arquivo à parte, para você atualizar sem mexer na cena.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · dados separados</p><p class="prompt-texto">Coloque todos os números em um arquivo de dados em formato JSON, separado do código da cena. Explique como atualizá-los.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Monte a cena base</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · cena base</p><p class="prompt-texto">Crie a cena 3D da metáfora escolhida com Three.js: chão, luz suave e os elementos com tamanho proporcional aos números. Nas cores [cores]. Faça um fundo simples e leve.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Torne clicável</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 4 · interação</p><p class="prompt-texto">Ao clicar em um elemento, mostre um cartão com o nome, o valor e uma frase explicando o que ele significa. Ao passar o mouse, o elemento deve se destacar. Permita girar a câmera com o mouse ou o dedo.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Cuide do celular e do acesso</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 5 · celular e acessibilidade</p><p class="prompt-texto">Adapte a cena para o celular, com menos detalhes e toque em vez de mouse. Se o 3D não carregar, mostre uma tabela com os mesmos números. Respeite a opção de reduzir movimento.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">6</span><h3>Dê vida</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 6 · movimento</p><p class="prompt-texto">Acrescente movimento discreto: elementos que crescem na entrada, uma leve flutuação e a câmera que se aproxima do item selecionado. Nada que atrapalhe a leitura dos números.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>Quando não usar</h2>
+<ul>
+<li>Quando a decisão depende de comparar números com precisão. Gráfico comum ainda é melhor.</li>
+<li>Quando o público é muito leigo em tecnologia e vai acessar de aparelho antigo.</li>
+</ul>
+<p class="alerta">Os números continuam sendo o que importa. O 3D é a embalagem, e a tabela de apoio garante que ninguém fica sem a informação.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

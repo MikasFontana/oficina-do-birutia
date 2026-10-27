@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seu assistente pessoal com IA, montado em um fim de semana · Oficina do BirutIA</title>
+  <meta name="description" content="Um assistente que conhece o seu trabalho, lembra do que ficou combinado e responde &quot;onde paramos?&quot;. Veja o que montar no sábado e no domingo, com os pedidos.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude</p>
+      <h1>Seu assistente pessoal com IA, montado em um fim de semana</h1>
+      <p class="lide">Um assistente que conhece o seu trabalho, lembra do que ficou combinado e responde &quot;onde paramos?&quot;. Veja o que montar no sábado e no domingo, com os pedidos.</p>
+<p>O assistente pessoal com IA não é um programa único. É a <strong>soma de três coisas</strong>: uma memória (onde fica o que você faz), regras de trabalho (como ele age) e rotinas (o que roda sozinho). Em um fim de semana, dá para montar uma versão simples e útil.</p>
+<h2>Sábado: memória e regras</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Monte a memória</h3>
+<p>Crie um cofre de notas com o Obsidian, como no guia deste site. É nele que o assistente vai ler e escrever.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Escreva as regras de trabalho</h3>
+<p>Um arquivo curto que diz como ele deve agir.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · regras do assistente</p><p class="prompt-texto">Crie o arquivo de regras do meu assistente pessoal: responder em português do Brasil, em frases curtas; nunca inventar dados; ao fim de cada trabalho relevante, registrar no cofre em uma nota do dia; e avisar em uma linha o que registrou. Meu nome é [nome] e meu trabalho é [trabalho].</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Ensine "onde paramos?"</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · retomada</p><p class="prompt-texto">Quando eu perguntar "onde paramos?", leia o diário dos últimos 7 dias e as notas de status dos projetos ativos. Responda por projeto, em até 2 linhas: onde estamos e o próximo passo.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>Domingo: skills e rotinas</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Crie duas skills do que você mais repete</h3>
+<p>Escolha tarefas que você faz toda semana, como relatório, resposta a cliente ou roteiro. Veja o guia de skills para o Instagram como modelo.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Programe a rotina semanal</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · rotina</p><p class="prompt-texto">Crie uma rotina semanal, na [dia e hora], que leia as notas novas da pasta Entrada, atualize as notas dos projetos e escreva um resumo da semana com pendências. Não apague nada.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">6</span><h3>Opcional: um painel</h3>
+<p>Um painel com tarefas e prazos, ao lado da conversa, usando um mod.</p>
+</section>
+<h2>O que esperar</h2>
+<ul>
+<li>No primeiro mês, o assistente erra e você ajusta as regras. É normal.</li>
+<li>Ele só sabe o que você registra. Sem memória, não há assistente.</li>
+<li>Comece com <strong>uma</strong> rotina. Depois acrescente.</li>
+</ul>
+<p class="alerta">Não coloque senhas, dados de cartão ou informações sensíveis de terceiros na memória do assistente.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>

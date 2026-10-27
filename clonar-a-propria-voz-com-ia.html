@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clonar a própria voz com IA, de graça e no seu computador · Oficina do BirutIA</title>
+  <meta name="description" content="É possível clonar a sua voz com ferramentas de código aberto, sem pagar nada. Contamos o que funcionou, o que deu errado e os cuidados que não podem faltar.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Clonar a própria voz com IA, de graça e no seu computador</h1>
+      <p class="lide">É possível clonar a sua voz com ferramentas de código aberto, sem pagar nada. Contamos o que funcionou, o que deu errado e os cuidados que não podem faltar.</p>
+<p>Para o canal, precisávamos de uma narração com a voz do Michel, sem ficar gravando toda hora. Testamos o <strong>Chatterbox</strong>, um modelo de voz de código aberto e gratuito, que roda no próprio computador. Este guia conta o caminho e os problemas que apareceram.</p>
+<h2>O que você precisa</h2>
+<ul>
+<li>Um computador com placa de vídeo da NVIDIA ajuda muito. Rodamos em uma com 8 GB de memória.</li>
+<li>Python instalado e o Claude Code para fazer a instalação por você.</li>
+<li>Uma <strong>amostra da sua voz</strong>: de 10 a 30 segundos, em lugar silencioso, sem eco nem música.</li>
+</ul>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Grave uma boa amostra</h3>
+<p>A qualidade da voz clonada depende quase toda da amostra. Fale do jeito que você quer ser ouvido: no ritmo e no sotaque finais. Se a amostra tem chiado, o resultado também terá.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Peça a instalação</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 1 · instalar</p><p class="prompt-texto">Instale o Chatterbox em um ambiente virtual do Python nesta pasta, com suporte à minha placa de vídeo. Explique cada passo e me peça confirmação antes de baixar arquivos grandes. No fim, gere uma frase de teste com a minha amostra [arquivo].</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Teste e compare</h3>
+<p>Gere a mesma frase várias vezes e escolha a melhor. A voz tem variação a cada geração.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 2 · escolher a melhor versão</p><p class="prompt-texto">Gere a frase [texto] 5 vezes com a minha amostra. Transcreva cada resultado e compare com o texto original. Me entregue as 2 versões que mais se parecem com o texto, para eu ouvir.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Limpe o áudio</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido 3 · tirar o chiado</p><p class="prompt-texto">Filtre o áudio gerado com o FFmpeg para reduzir o chiado e normalizar o volume, sem deixar a voz abafada. Entregue o antes e o depois.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>Problemas que tivemos</h2>
+<ul>
+<li><strong>Sotaque de outro país:</strong> o modelo imita a amostra. Uma amostra com o sotaque que você quer resolve melhor que qualquer ajuste depois.</li>
+<li><strong>Chiado:</strong> apareceu em amostras ruins. Limpar a amostra antes foi mais eficaz que limpar o resultado.</li>
+<li><strong>Palavras estrangeiras:</strong> nomes como "Claude" saem com pronúncia americana. Escrever a palavra do jeito que se fala ajuda.</li>
+<li><strong>Palavra engolida:</strong> de vez em quando uma sílaba some. Por isso geramos várias versões e escolhemos.</li>
+</ul>
+<h2>Cuidados que valem mais que a técnica</h2>
+<ul>
+<li><strong>Clone só a sua voz</strong>, ou a de alguém que autorizou por escrito. Voz é um dado pessoal.</li>
+<li><strong>Avise o público</strong> se a narração for gerada, quando isso fizer diferença para quem ouve.</li>
+<li>Não use a voz clonada para falar o que você não diria.</li>
+</ul>
+<p class="alerta">Existem outras ferramentas de voz de código aberto. Confira a licença de cada uma antes de usar em projeto comercial.</p>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+</body>
+</html>
