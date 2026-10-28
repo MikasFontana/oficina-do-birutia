@@ -66,7 +66,7 @@ var LINK_FORMULARIO = "https://docs.google.com/forms/d/e/1FAIpQLSeSofeChquem0vQq
           li.setAttribute("data-cats", li.getAttribute("data-cats").replace("embreve", "guias"));
           var c = li.querySelector(".cadeado"); if (c) c.remove();
           var b = li.querySelector(".conteudo-borrado"); if (b) b.remove();
-          grade.insertBefore(li, grade.firstElementChild); // o que acabou de abrir vai para o começo
+          if (Array.prototype.indexOf.call(grade.children, li) > 2) grade.insertBefore(li, grade.firstElementChild); // se abriu longe do topo, vai para o começo
         } else {
           var r = li.querySelector(".regressiva");
           if (r) r.textContent = chegou ? "Chegando em instantes" : texto(alvo - agoraMs());
