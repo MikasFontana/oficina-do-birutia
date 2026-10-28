@@ -57,6 +57,26 @@ var LINK_FORMULARIO = "https://docs.google.com/forms/d/e/1FAIpQLSeSofeChquem0vQq
         setTimeout(function () { li.classList.remove("destaque-vermelho"); }, 4200);
       }, 80);
     });
+    // os 3 últimos lançamentos ficam em vidro vermelho; os demais alternam roxo e laranja
+    var colorir = function () {
+      var agora = agoraMs();
+      var cartoes = Array.prototype.slice.call(grade.children);
+      var recentes = cartoes.filter(function (li) {
+        var d = Date.parse(li.getAttribute("data-lancamento") || "");
+        return !li.classList.contains("bloqueada") && d <= agora;
+      }).sort(function (a, b) { return Date.parse(b.getAttribute("data-lancamento")) - Date.parse(a.getAttribute("data-lancamento")); }).slice(0, 3);
+      var n = 0;
+      cartoes.forEach(function (li) {
+        var vermelho = recentes.indexOf(li) !== -1;
+        li.classList.toggle("t-vermelho", vermelho);
+        var tag = li.querySelector(".tag-dia");
+        if (vermelho && !tag) { tag = document.createElement("span"); tag.className = "tag-dia"; tag.textContent = "Lançamento do dia"; li.insertBefore(tag, li.firstChild); }
+        if (!vermelho && tag) tag.remove();
+        if (li.classList.contains("bloqueada")) return;
+        li.classList.remove("t-roxo", "t-laranja");
+        if (!vermelho) li.classList.add(n++ % 2 === 0 ? "t-roxo" : "t-laranja");
+      });
+    };
     var atualizar = function () {
       Array.prototype.forEach.call(grade.querySelectorAll("[data-libera]"), function (li) {
         var alvo = Date.parse(li.getAttribute("data-libera"));
@@ -73,6 +93,7 @@ var LINK_FORMULARIO = "https://docs.google.com/forms/d/e/1FAIpQLSeSofeChquem0vQq
         }
       });
       avisar();
+      colorir();
     };
     atualizar();
     setInterval(atualizar, 30000);

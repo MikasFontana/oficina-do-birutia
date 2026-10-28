@@ -421,3 +421,11 @@ details ul { margin: 0 0 14px; padding-left: 1.3em; }
 @media (prefers-reduced-motion: reduce) { .fmt-pop { animation: none; } }
 .formatos summary::marker { content: ""; }
 .formatos summary { position: relative; }
+
+/* lançamentos recentes: os 3 últimos a abrir ficam em vidro vermelho, com a etiqueta "Lançamento do dia" */
+.t-vermelho { background: linear-gradient(150deg, rgba(255, 40, 30, 0.62), rgba(157, 4, 0, 0.5)); color: #fff; border: 1px solid rgba(255, 255, 255, 0.32); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 8px 0 rgba(0, 0, 0, 0.35), 0 0 30px rgba(225, 6, 0, 0.4); backdrop-filter: blur(12px) saturate(150%); -webkit-backdrop-filter: blur(12px) saturate(150%); }
+.t-vermelho .btn-escuro { background: #fff; color: var(--tinta); }
+.t-vermelho .selo { display: none; }
+.tag-dia { position: absolute; top: 16px; left: 26px; padding: 4px 12px 3px; border-radius: 999px; background: #fff; color: var(--ferrari-escuro); font: 800 11px var(--f-texto); letter-spacing: 0.1em; text-transform: uppercase; }
+.bloqueada .acoes { display: none; }
+.tag-dia { top: 30px; font-size: 10px; padding: 3px 10px 2px; }
