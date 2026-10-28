@@ -98,7 +98,7 @@ document.addEventListener("contextmenu", function (e) {
     if (nome.length < 2) { erro.textContent = "Informe o seu nome."; f.nome.focus(); return; }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { erro.textContent = "Confira o e-mail: ele parece incompleto."; f.email.focus(); return; }
     erro.textContent = "";
-    var arquivo = alvo.getAttribute("href"), material = NOMES[arquivo.split("/").pop()] || arquivo.split("/").pop();
+    var arquivo = alvo.getAttribute("href"), material = alvo.getAttribute("data-material") || NOMES[arquivo.split("/").pop()] || arquivo.split("/").pop();
     baixar(arquivo); // dentro do clique, para o navegador permitir
     try {
       var d = new FormData();
