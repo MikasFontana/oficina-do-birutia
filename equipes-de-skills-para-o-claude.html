@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equipes de skills grátis para o seu Claude: marketing, redes, design, finanças e jurídico · Oficina do BirutIA</title>
+  <meta name="description" content="Seis pacotes de skills gratuitos, com o autor, a licença e o comando certo de cada um, e um primeiro pedido nosso para testar. Aqui você só aponta para a fonte: nada é copiado.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">Como funciona</a>
+        <a href="como-fazer-baixador.html">Como criar</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude Code</p>
+      <h1>Equipes de skills grátis para o seu Claude: marketing, redes, design, finanças e jurídico</h1>
+      <p class="lide">Seis pacotes de skills gratuitos, com o autor, a licença e o comando certo de cada um, e um primeiro pedido nosso para testar. Aqui você só aponta para a fonte: nada é copiado.</p>
+<p>Uma skill é uma pasta de instruções que o Claude segue sempre do mesmo jeito. Alguns autores publicam <strong>pacotes inteiros, de graça</strong>, que fazem o Claude trabalhar como uma equipe de marketing, de redes sociais, de design, de finanças ou de contratos. Este guia reúne os melhores que encontramos, com o link da fonte, o nome de quem criou e a licença de cada um.</p>
+<h2>Como usamos esta lista</h2>
+<ul>
+<li><strong>Não copiamos nada.</strong> Cada comando baixa o pacote direto do repositório do autor, e as atualizações vêm de lá.</li>
+<li><strong>O crédito é de quem fez.</strong> Os nomes e as licenças abaixo foram conferidos nas páginas dos projetos em 27/10/2026.</li>
+<li><strong>O nosso trabalho</strong> é escolher, avisar dos cuidados e dar um primeiro pedido para testar.</li>
+</ul>
+<p class="alerta">Antes de instalar qualquer skill, abra o arquivo <code>SKILL.md</code> dela e leia. Skill é instrução (e às vezes código) que roda no seu computador. Veja o guia "Como achar e escolher skills com segurança".</p>
+<h2>As seis equipes</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Marketing, de Corey Haines</h3>
+<p>Cerca de 50 skills (52 na nossa contagem): anúncio, texto de venda, SEO, conversão, e-mail, preço, lançamento e análise. Licença <strong>MIT</strong>. Para instalar no Claude Code:</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Instalar a equipe de marketing</p><p class="prompt-texto">npx skills add coreyhaines31/marketingskills</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p>Repositório: github.com/coreyhaines31/marketingskills</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Redes sociais, de Charlie Hills</h3>
+<p>17 skills, pensadas para o LinkedIn e úteis em qualquer rede: voz, post, roteiro de vídeo curto, gancho, carrossel e miniatura. Licença <strong>MIT</strong>. No Claude Code, são dois comandos:</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Instalar a equipe de redes sociais</p><p class="prompt-texto">/plugin marketplace add charlie947/social-media-skills /plugin install social-media-skills</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p>Repositório: github.com/charlie947/social-media-skills</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Design, três skills que se completam</h3>
+<ul>
+<li><strong>UI/UX Pro Max</strong> (nextlevelbuilder): monta o sistema de design para o seu tipo de negócio. Licença <strong>MIT</strong>.</li>
+<li><strong>Taste Skill</strong> (Leonxlnx): ajuda a fugir do visual com cara de feito por IA. Licença <strong>MIT</strong>. Pede Node 22 ou mais novo e um navegador instalado.</li>
+<li><strong>frontend-design</strong> (Anthropic): dá direção estética ao código.</li>
+</ul>
+<p>Cada uma tem a sua instalação no repositório. Ex.: github.com/nextlevelbuilder/ui-ux-pro-max-skill e github.com/Leonxlnx/taste-skill.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Finanças e 5. Jurídico, plugins oficiais da Anthropic</h3>
+<p>Estão no repositório <code>anthropics/knowledge-work-plugins</code>, com licença <strong>Apache 2.0</strong>. O plugin financeiro trata de lançamentos, conciliação, análise de variação e fechamento do mês. O jurídico trata de revisão de contrato, triagem de NDA e risco.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Instalar finanças e jurídico</p><p class="prompt-texto">claude plugin marketplace add anthropics/knowledge-work-plugins claude plugin install finance@knowledge-work-plugins claude plugin install legal@knowledge-work-plugins</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p class="alerta">Cuidado: o resultado dessas duas equipes é <strong>rascunho</strong>. Quem decide é o seu contador e o seu advogado. Peça sempre o padrão brasileiro (contabilidade em CPC, contratos pela lei brasileira e LGPD) e que cada ponto cite de onde saiu.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">6</span><h3>Documentos (Word, PDF, PowerPoint e Excel)</h3>
+<p>As skills de documentos da Anthropic têm o código disponível para consulta, mas com <strong>licença própria, e não de código aberto</strong>. Por isso não as copiamos nem as redistribuímos: use pelo marketplace oficial <code>anthropics/skills</code>, que já traz as skills de documentos.</p>
+</section>
+<h2>Um primeiro pedido para cada equipe</h2>
+<p>Instale uma equipe por vez e teste com um trabalho real desta semana.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Marketing: ensinar o seu negócio ao Claude</p><p class="prompt-texto">Antes de qualquer texto de marketing, quero que você aprenda sobre o meu negócio. Use a skill de contexto de produto do pacote instalado e me faça uma pergunta por vez sobre: o que eu vendo e para quem, o problema do cliente nas palavras dele, quem são os concorrentes, as objeções mais comuns e onde os clientes me encontram. No fim, salve o resumo no arquivo que a skill indicar e me mostre antes de seguir.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Redes sociais: escrever com a sua voz</p><p class="prompt-texto">Quero que as skills de redes sociais escrevam com a minha voz. Leia estes textos meus: [colar de 3 a 5 textos]. Descreva em até 8 pontos como eu escrevo (tamanho das frases, palavras que repito, o que evito) e salve como guia de voz. Só depois escreva 3 ganchos sobre [assunto] nessa voz.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Design: direção visual antes do código</p><p class="prompt-texto">Vou criar a página de [negócio]. Use as skills de design instaladas para propor a direção visual (paleta, fontes e estrutura) antes de escrever código. Justifique cada escolha em uma frase e espere a minha aprovação. Evite o visual padrão de página feita por IA.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Finanças: comparar dois meses</p><p class="prompt-texto">Com o plugin financeiro, compare [mês] com [mês anterior] a partir dos números abaixo. Explique cada variação acima de [valor ou porcentagem], diga a causa provável e a pergunta que preciso responder para confirmar. Use o padrão contábil brasileiro e marque tudo como rascunho para o meu contador. Não invente nenhum número. Números: [colar aqui]</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Jurídico: triagem de contrato</p><p class="prompt-texto">Com o plugin jurídico, leia o contrato anexo do ponto de vista de [contratante ou contratado], pela lei brasileira. Resuma em 5 linhas e marque as cláusulas de risco em verde, amarelo e vermelho, citando o número de cada cláusula. Liste as perguntas para levar ao meu advogado. É um rascunho, não um parecer.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Antes de usar o que a equipe entregou</h2>
+<ul>
+<li>Marketing e redes: nenhum número, depoimento ou garantia foi inventado.</li>
+<li>Finanças: os valores batem com o seu extrato, linha por linha, e o contador revisou.</li>
+<li>Jurídico: cada ponto cita a cláusula e o advogado revisou antes da assinatura.</li>
+<li>Os pacotes mudam com frequência: confira a página do projeto antes de instalar e atualize de vez em quando.</li>
+</ul>
+<h2>Quem fez cada coisa</h2>
+<p>Corey Haines (marketing), Charlie Hills (redes sociais), nextlevelbuilder (UI/UX Pro Max), Leonxlnx (Taste Skill) e Anthropic (finanças, jurídico, documentos e frontend-design). Não temos ligação com nenhum deles. A licença de cada um está no repositório, e vale a de lá, não a deste guia.</p>
+<h2>Baixar o material</h2>
+<p>Baixe a lista de conferência com os links, as licenças e os comandos, para guardar.</p>
+<p><a class="btn btn-laranja" href="downloads/curadoria-de-skills.txt" download>↓ Baixar a curadoria de skills</a></p>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · sem custo · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+</body>
+</html>

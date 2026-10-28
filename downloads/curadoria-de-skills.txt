@@ -1,0 +1,50 @@
+CURADORIA DE SKILLS - Oficina do BirutIA (conferido em 27/10/2026)
+
+Nada daqui é copiado: cada comando baixa direto do repositório do autor.
+A licença de cada projeto é a que está no repositório dele.
+Antes de instalar, leia o SKILL.md de cada skill.
+
+As seis equipes
+
+1. Marketing, de Corey Haines
+Cerca de 50 skills (52 na nossa contagem): anúncio, texto de venda, SEO, conversão, e-mail, preço, lançamento e análise. Licença MIT. Para instalar no Claude Code:
+
+COMANDO:
+npx skills add coreyhaines31/marketingskills
+
+Repositório: github.com/coreyhaines31/marketingskills
+
+2. Redes sociais, de Charlie Hills
+17 skills, pensadas para o LinkedIn e úteis em qualquer rede: voz, post, roteiro de vídeo curto, gancho, carrossel e miniatura. Licença MIT. No Claude Code, são dois comandos:
+
+COMANDO:
+/plugin marketplace add charlie947/social-media-skills
+/plugin install social-media-skills
+
+Repositório: github.com/charlie947/social-media-skills
+
+3. Design, três skills que se completam
+- UI/UX Pro Max (nextlevelbuilder): monta o sistema de design para o seu tipo de negócio. Licença MIT.
+- Taste Skill (Leonxlnx): ajuda a fugir do visual com cara de feito por IA. Licença MIT. Pede Node 22 ou mais novo e um navegador instalado.
+- frontend-design (Anthropic): dá direção estética ao código.
+
+Cada uma tem a sua instalação no repositório. Ex.: github.com/nextlevelbuilder/ui-ux-pro-max-skill e github.com/Leonxlnx/taste-skill.
+
+4. Finanças e 5. Jurídico, plugins oficiais da Anthropic
+Estão no repositório anthropics/knowledge-work-plugins, com licença Apache 2.0. O plugin financeiro trata de lançamentos, conciliação, análise de variação e fechamento do mês. O jurídico trata de revisão de contrato, triagem de NDA e risco.
+
+COMANDO:
+claude plugin marketplace add anthropics/knowledge-work-plugins
+claude plugin install finance@knowledge-work-plugins
+claude plugin install legal@knowledge-work-plugins
+
+Cuidado: o resultado dessas duas equipes é rascunho. Quem decide é o seu contador e o seu advogado. Peça sempre o padrão brasileiro (contabilidade em CPC, contratos pela lei brasileira e LGPD) e que cada ponto cite de onde saiu.
+
+6. Documentos (Word, PDF, PowerPoint e Excel)
+As skills de documentos da Anthropic têm o código disponível para consulta, mas com licença própria, e não de código aberto. Por isso não as copiamos nem as redistribuímos: use pelo marketplace oficial anthropics/skills, que já traz as skills de documentos.
+
+
+Quem fez cada coisa
+
+Corey Haines (marketing), Charlie Hills (redes sociais), nextlevelbuilder (UI/UX Pro Max), Leonxlnx (Taste Skill) e Anthropic (finanças, jurídico, documentos e frontend-design). Não temos ligação com nenhum deles. A licença de cada um está no repositório, e vale a de lá, não a deste guia.
+

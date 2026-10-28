@@ -374,3 +374,14 @@ details ul { margin: 0 0 14px; padding-left: 1.3em; }
 .voltar { display: inline-block; margin: 0 0 14px; padding: 10px 18px; border-radius: 999px; border: 3px solid var(--laranja); color: var(--laranja); font: 800 13px var(--f-texto); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: background 0.15s, color 0.15s; }
 .voltar:hover, .voltar:focus-visible { background: var(--laranja); color: var(--tinta); }
 .voltar-fim { display: block; width: max-content; margin: 28px 0 0; }
+
+/* quem somos */
+.quem p { max-width: 62ch; }
+.quem-lide { font-size: 1.2em; font-weight: 700; }
+.quem-links { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0 8px; }
+
+/* faixa final: skills por negócio, em breve */
+.faixa-embreve { position: relative; margin: 48px 0 0; padding: 34px 28px 30px; border: 3px dashed var(--roxo-claro); border-radius: 18px; background: rgba(124, 77, 240, 0.12); text-align: center; }
+.faixa-embreve h2 { margin: 8px 0 10px; }
+.faixa-embreve p { max-width: 60ch; margin: 0 auto; }
+.faixa-selo { display: inline-block; padding: 6px 16px 3px; border-radius: 999px; background: var(--laranja); color: var(--tinta); font: 800 13px var(--f-texto); letter-spacing: 0.1em; text-transform: uppercase; }
