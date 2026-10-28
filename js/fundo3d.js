@@ -43,14 +43,81 @@
       new T.TetrahedronGeometry(1.2, 0),
       new T.CylinderGeometry(0.8, 0.8, 0.55, 6)
     ];
+    // ferramentas de oficina, no mesmo estilo (cor chapada, faces retas): engrenagem, chave inglesa, chave de fenda e porca
+    function extrudar(forma, prof) {
+      var g = new T.ExtrudeGeometry(forma, { depth: prof, bevelEnabled: false });
+      g.center();
+      return g;
+    }
+    function engrenagem() {
+      var f = new T.Shape(), dentes = 8, ro = 1, ri = 0.78;
+      for (var k = 0; k < dentes * 4; k++) {
+        var a = k / (dentes * 4) * Math.PI * 2;
+        var r = (k % 4 === 1 || k % 4 === 2) ? ro : ri;
+        if (k === 0) f.moveTo(Math.cos(a) * r, Math.sin(a) * r); else f.lineTo(Math.cos(a) * r, Math.sin(a) * r);
+      }
+      f.closePath();
+      var furo = new T.Path();
+      furo.absarc(0, 0, 0.32, 0, Math.PI * 2, true);
+      f.holes.push(furo);
+      return new T.Mesh(extrudar(f, 0.4));
+    }
+    function porca() {
+      var f = new T.Shape();
+      for (var k = 0; k < 6; k++) {
+        var a = k / 6 * Math.PI * 2;
+        if (k === 0) f.moveTo(Math.cos(a) * 0.95, Math.sin(a) * 0.95); else f.lineTo(Math.cos(a) * 0.95, Math.sin(a) * 0.95);
+      }
+      f.closePath();
+      var furo = new T.Path();
+      furo.absarc(0, 0, 0.4, 0, Math.PI * 2, true);
+      f.holes.push(furo);
+      return new T.Mesh(extrudar(f, 0.5));
+    }
+    function chaveInglesa() {
+      var f = new T.Shape(), r = 0.62, cy = 0.95, hx = 0.17, jx = 0.2;
+      var a0 = Math.atan2(-Math.sqrt(r * r - hx * hx), hx), a1 = Math.atan2(Math.sqrt(r * r - jx * jx), jx), k, a;
+      f.moveTo(-hx, -1.3);
+      f.lineTo(hx, -1.3);
+      f.lineTo(hx, cy + r * Math.sin(a0));
+      for (k = 0; k <= 12; k++) { a = a0 + (a1 - a0) * k / 12; f.lineTo(Math.cos(a) * r, cy + Math.sin(a) * r); }
+      f.lineTo(jx, cy + 0.05);
+      f.lineTo(-jx, cy + 0.05);
+      for (k = 0; k <= 12; k++) { a = (Math.PI - a1) + ((Math.PI - a0) - (Math.PI - a1)) * k / 12; f.lineTo(Math.cos(a) * r, cy + Math.sin(a) * r); }
+      f.lineTo(-hx, -1.3);
+      f.closePath();
+      return new T.Mesh(extrudar(f, 0.25));
+    }
+    function chaveDeFenda() {
+      var g = new T.Group();
+      var cabo = new T.Mesh(new T.CylinderGeometry(0.3, 0.26, 1.1, 8)); cabo.position.y = 0.9;
+      var haste = new T.Mesh(new T.CylinderGeometry(0.07, 0.07, 1.5, 8)); haste.position.y = -0.2;
+      var ponta = new T.Mesh(new T.BoxGeometry(0.22, 0.28, 0.05)); ponta.position.y = -1.05;
+      g.add(cabo, haste, ponta);
+      return g;
+    }
+    var ferramentas = [engrenagem, chaveInglesa, chaveDeFenda, porca];
+
     var cores = [0x6236c7, 0x8a63f0, 0xff7f00, 0x3a3d44, 0x6236c7];
     var formas = [];
     var N = window.innerWidth < 700 ? 11 : 18;
+    var cotaFerr = window.innerWidth < 700 ? 4 : 8; // 2 de cada no computador, 1 de cada no celular
+    var feitas = 0;
     for (var i = 0; i < N; i++) {
       var cor = cores[Math.floor(rnd() * cores.length)];
       var fio = rnd() < 0.28;
-      var mat = new T.MeshStandardMaterial({ color: cor, flatShading: true, roughness: 0.45, metalness: 0.15, wireframe: fio, transparent: true, opacity: fio ? 0.55 : 0.92 });
-      var m = new T.Mesh(geos[Math.floor(rnd() * geos.length)], mat);
+      var gi = Math.floor(rnd() * geos.length);
+      var ferr = feitas < cotaFerr && gi !== 2 && gi !== 3; // mantém os cubos e o anel laranja
+      var mat = new T.MeshStandardMaterial({ color: cor, flatShading: true, roughness: 0.45, metalness: 0.15, wireframe: fio && !ferr, transparent: true, opacity: (fio && !ferr) ? 0.55 : 0.92 });
+      var m;
+      if (ferr) {
+        m = ferramentas[feitas % ferramentas.length]();
+        m.traverse(function (o) { if (o.isMesh) o.material = mat; });
+        m.rotation.z = (feitas + 1) * 0.9;
+        feitas++;
+      } else {
+        m = new T.Mesh(geos[gi], mat);
+      }
       m.position.set((rnd() - 0.5) * 30, (rnd() - 0.5) * 18, -13 + rnd() * 9);
       var e = 0.45 + rnd() * 0.8;
       m.scale.set(e, e, e);
