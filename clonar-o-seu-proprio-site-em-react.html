@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clonar o seu próprio site em React · Oficina do BirutIA</title>
+  <meta name="description" content="O Open Lovable lê uma página pelo Firecrawl e a recria como app React que você edita conversando com a IA. Use só em sites seus ou autorizados.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Clonar o seu próprio site em React</h1>
+      <p class="lide">O Open Lovable lê uma página pelo Firecrawl e a recria como app React que você edita conversando com a IA. Use só em sites seus ou autorizados.</p>
+<p>O <strong>Open Lovable</strong> (repositório firecrawl/open-lovable, licença MIT, conferido no GitHub) é um projeto aberto, feito pela equipe do Firecrawl, no qual você conversa com a IA para montar um app React. O diferencial é a clonagem: você informa o endereço de um site, ele lê a página e a recria como app moderno que você pode editar. É um projeto de exemplo: exige configurar chaves e rodar no terminal.</p>
+<h2>Use apenas com conteúdo seu</h2>
+<p>Clone o <strong>seu próprio</strong> site (por exemplo, para modernizá-lo) ou sites que você tem autorização para reproduzir. Copiar o site de outra empresa pode violar direitos autorais e marca. Para estudar, use como referência e crie conteúdo próprio.</p>
+<h2>O que você precisa</h2>
+<p>Node e pnpm, uma chave do Firecrawl, a chave de um provedor de IA (Gemini, Anthropic, OpenAI ou Groq) e um ambiente de execução isolado (o README indica as opções). O nome exato de cada variável está no README.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Baixe o projeto</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Baixar</p><p class="prompt-texto">git clone https://github.com/firecrawl/open-lovable.git cd open-lovable</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Instale as dependências</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Instalar</p><p class="prompt-texto">pnpm install</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Configure as chaves</h3>
+<p>Crie o arquivo <code>.env.local</code> e preencha conforme o README. Nunca envie esse arquivo ao GitHub.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Rode</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Rodar</p><p class="prompt-texto">pnpm dev</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p>Acesse http://localhost:3000 e informe o endereço do seu site ou descreva o app.</p>
+</section>
+<h2>Pedido para refinar</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Refinar o resultado</p><p class="prompt-texto">Compare a versão em React com o site original e liste o que ficou diferente. Corrija somente o que for visual, sem alterar textos nem links, e deixe os componentes organizados em arquivos separados.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">Você paga pelo uso das APIs que conectar. Acompanhe o consumo.</p>
+<p class="alerta">Comandos e versões mudam: confira o README antes de instalar.</p>
+<p class="alerta">Revise o código gerado antes de publicar.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] O site clonado é meu ou autorizado</li>
+<li>[ ] Chaves fora do GitHub</li>
+<li>[ ] Revisei o código gerado</li>
+<li>[ ] Testei no celular</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Open Lovable, da equipe Firecrawl (github.com/firecrawl/open-lovable). Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="clonar-o-seu-proprio-site-em-react.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Clonar o seu próprio site em React (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="clonar-o-seu-proprio-site-em-react.docx" data-nome="Word" data-desc="Para editar" data-material="Clonar o seu próprio site em React (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="clonar-o-seu-proprio-site-em-react.md" data-nome=".md" data-desc="Para usar com IA" data-material="Clonar o seu próprio site em React (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="clonar-o-seu-proprio-site-em-react.pdf" download data-material="Clonar o seu próprio site em React (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

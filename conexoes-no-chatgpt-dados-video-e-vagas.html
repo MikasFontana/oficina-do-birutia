@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conexões no ChatGPT: dados, vídeo e vagas · Oficina do BirutIA</title>
+  <meta name="description" content="Como instalar plugins no ChatGPT e três exemplos: Firecrawl (dados de sites), Remotion (vídeo por código) e Indeed (vagas).">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / ChatGPT</p>
+      <h1>Conexões no ChatGPT: dados, vídeo e vagas</h1>
+      <p class="lide">Como instalar plugins no ChatGPT e três exemplos: Firecrawl (dados de sites), Remotion (vídeo por código) e Indeed (vagas).</p>
+<p><strong>Plugins</strong> no ChatGPT juntam instruções de como fazer uma tarefa e a conexão com a sua conta em outro serviço. Segundo a OpenAI, o diretório existe nos planos do ChatGPT, mas instalar e usar cada um depende do plano, do espaço de trabalho e da região. Se um plugin não aparecer, ainda não foi liberado para você. Em contas de empresa, o administrador decide quais ficam disponíveis.</p>
+<h2>Como instalar</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Abra os Plugins na barra lateral</h3>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Busque pelo nome e leia a página</h3>
+<p>Ali aparecem as habilidades e o que precisa ser configurado.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Instale e conecte a conta, se pedido</h3>
+<p>Leia o que está sendo autorizado. Desconecte o que não usa mais.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Use na conversa</h3>
+<p>Mencione com <code>@</code> e o nome do plugin, ou use o botão "+".</p>
+</section>
+<h2>Exemplo 1: Firecrawl (dados de sites)</h2>
+<p>Busca e lê páginas, inclusive documentos. Exige conta no Firecrawl e gasta créditos dela. Use só em sites públicos, respeite os termos de uso e não colete dados pessoais de terceiros.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Identidade visual de um site</p><p class="prompt-texto">@firecrawl Leia o site [endereço] e extraia a identidade visual: cores principais com o código, fontes, estilo dos botões, tom de voz dos textos e uso de imagens. Monte uma tabela de referência para um projeto meu.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Estudo de concorrente</p><p class="prompt-texto">@firecrawl Examine o site do concorrente [endereço] e traga: produtos ou serviços, preços que aparecerem, promessa principal, provas (depoimentos, números) e chamadas para ação. Compare com o meu negócio, que é [descrição], e aponte três pontos de diferenciação.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Lista para planilha</p><p class="prompt-texto">@firecrawl Acesse [página com lista] e extraia todos os itens em tabela com as colunas [nome, preço, link, descrição curta]. Se houver várias páginas, siga a paginação.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Exemplo 2: Remotion (vídeo por código, no Codex)</h2>
+<p>O Remotion cria vídeo com código; no app do ChatGPT para computador, funciona pelo Codex. Na primeira vez, o Codex pode pedir para instalar programas no seu computador: aprove somente o que entender. Confira a licença no site do Remotion antes de usar em trabalho de clientes.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Legenda em vídeo</p><p class="prompt-texto">$remotion Pegue o vídeo [arquivo.mp4] desta pasta, transcreva a fala e coloque legendas palavra por palavra no centro da tela, em fonte grossa, branca com contorno preto, destacando em [cor] a palavra falada. Formato vertical 9:16. Mostre a prévia antes de renderizar.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Animação do zero</p><p class="prompt-texto">$remotion Crie um vídeo vertical de 15 segundos com fundo [cor] mostrando três dicas sobre [assunto], uma por vez, com o texto entrando de baixo para cima e um número grande ao lado de cada dica. Renderize em MP4.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Exemplo 3: Indeed (vagas)</h2>
+<p>Conecta o seu perfil e currículo do Indeed. Segundo o Indeed, o ChatGPT acessa dados do perfil e preferências de vaga, e a candidatura é feita no site do Indeed. A disponibilidade por país não está clara: confira se o app aparece na sua conta.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Vagas para mim</p><p class="prompt-texto">@Indeed Com base no meu perfil, busque vagas de [cargo] em [cidade ou remoto]. Liste as dez melhores em tabela: empresa, cargo, cidade, modelo de trabalho, por que combina comigo e o link.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Ajustar o currículo</p><p class="prompt-texto">@Indeed Compare a vaga [nome ou link] com o meu perfil: quais requisitos eu cumpro, quais faltam e como reescrever o resumo do currículo para destacar o que a vaga pede, sem inventar experiência.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Treino de entrevista</p><p class="prompt-texto">@Indeed Com base na vaga [nome] da empresa [nome], faça uma simulação de entrevista: uma pergunta por vez, espere a minha resposta, dê uma nota de 0 a 10 e mostre como eu poderia responder melhor.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">Conectar um app dá ao ChatGPT acesso a dados daquela conta.</p>
+<p class="alerta">Confira dados extraídos, legendas e informações de vagas antes de usar com clientes ou enviar candidaturas.</p>
+<p class="alerta">Os nomes e caminhos mudam: procure por "Plugins" na barra lateral ou nas configurações.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] O plugin aparece na minha conta</li>
+<li>[ ] Li as permissões antes de conectar</li>
+<li>[ ] Usei só em sites públicos</li>
+<li>[ ] Revisei os resultados</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Plugins da OpenAI, Firecrawl, Remotion e Indeed, cada um com documentação própria. Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="conexoes-no-chatgpt-dados-video-e-vagas.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Conexões no ChatGPT: dados, vídeo e vagas (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="conexoes-no-chatgpt-dados-video-e-vagas.docx" data-nome="Word" data-desc="Para editar" data-material="Conexões no ChatGPT: dados, vídeo e vagas (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="conexoes-no-chatgpt-dados-video-e-vagas.md" data-nome=".md" data-desc="Para usar com IA" data-material="Conexões no ChatGPT: dados, vídeo e vagas (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="conexoes-no-chatgpt-dados-video-e-vagas.pdf" download data-material="Conexões no ChatGPT: dados, vídeo e vagas (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

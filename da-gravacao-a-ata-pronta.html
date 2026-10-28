@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Da gravação à ata pronta · Oficina do BirutIA</title>
+  <meta name="description" content="Envie o áudio de uma reunião ao ChatGPT e peça ata, resumo, tarefas e e-mail de acompanhamento, com o cuidado de gravar com autorização.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / ChatGPT</p>
+      <h1>Da gravação à ata pronta</h1>
+      <p class="lide">Envie o áudio de uma reunião ao ChatGPT e peça ata, resumo, tarefas e e-mail de acompanhamento, com o cuidado de gravar com autorização.</p>
+<p>Segundo a referência consultada, o ChatGPT passou a aceitar arquivos de áudio nos planos pagos (não no Free), com formatos como MP3, M4A e WAV e limite de tamanho por arquivo. Arquivo de vídeo é recusado: exporte só o áudio. Disponibilidade e limites variam por plano, região e versão; confira na Central de Ajuda da OpenAI ("Uploading files and audio to ChatGPT").</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Grave com autorização</h3>
+<p>Avise todos, no início, que a reunião será gravada e para quê.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Exporte o áudio</h3>
+<p>Se o aplicativo salvou em vídeo, converta para MP3 ou M4A.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Anexe na conversa</h3>
+<p>Pelo botão de mais ao lado da caixa de mensagem.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Peça com clareza</h3>
+<p>Diga quem participou e qual era o objetivo.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Ata da reunião</p><p class="prompt-texto">Este áudio é a reunião sobre [assunto] com [participantes e cargos]. Monte a ata com: decisões tomadas, tarefas com responsável e prazo, dúvidas em aberto e próximos passos. Se algum responsável ou prazo não foi dito com clareza, escreva "não definido" e não invente.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Confira na gravação</h3>
+<p>A transcrição pode errar nomes, números e quem falou.</p>
+</section>
+<h2>Outros pedidos</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Transcrição marcada</p><p class="prompt-texto">Transcreva este áudio em português, separando por quem fala quando for possível identificar. Marque com [inaudível] o que você não entendeu e com [verificar] nomes, números e valores.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pergunta direta</p><p class="prompt-texto">Neste áudio, o que foi dito sobre [prazo, preço, entrega ou responsável]? Mostre o trecho e, se puder, indique em que parte da gravação aparece.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">E-mail de acompanhamento</p><p class="prompt-texto">Com base nesta reunião, escreva um e-mail para [nome e empresa], tom [cordial ou direto]. Resuma o combinado em tópicos, liste os próximos passos com datas e termine com uma pergunta que confirme o combinado. Máximo de 150 palavras.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Aula ou palestra</p><p class="prompt-texto">Este áudio é uma [aula, palestra ou podcast] sobre [tema]. Entregue as quatro ideias principais, os exemplos citados, os termos que devo pesquisar depois e quatro perguntas para testar o que entendi.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Se a gravação for longa</h2>
+<p>Divida em partes de 30 a 40 minutos e peça o resumo de cada uma.</p>
+<h2>Avisos</h2>
+<p class="alerta">Só grave e envie conversas de quem sabe que está sendo gravado.</p>
+<p class="alerta">Voz e conteúdo de conversas podem ser dados pessoais (LGPD): informe a finalidade, guarde só o necessário e apague o arquivo depois.</p>
+<p class="alerta">Conversas com dados de saúde ou financeiros seguem a política da sua empresa. Em dúvida, não envie.</p>
+<p class="alerta">O que vai ao cliente passa pela sua revisão.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Todos avisados da gravação</li>
+<li>[ ] Áudio no formato aceito</li>
+<li>[ ] Nomes, prazos e valores conferidos</li>
+<li>[ ] Arquivo apagado quando não for mais necessário</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Recurso da OpenAI (Central de Ajuda e notas de lançamento do ChatGPT). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="da-gravacao-a-ata-pronta.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Da gravação à ata pronta (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="da-gravacao-a-ata-pronta.docx" data-nome="Word" data-desc="Para editar" data-material="Da gravação à ata pronta (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="da-gravacao-a-ata-pronta.md" data-nome=".md" data-desc="Para usar com IA" data-material="Da gravação à ata pronta (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="da-gravacao-a-ata-pronta.pdf" download data-material="Da gravação à ata pronta (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

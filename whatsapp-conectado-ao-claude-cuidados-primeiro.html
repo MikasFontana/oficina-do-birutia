@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WhatsApp conectado ao Claude (cuidados primeiro) · Oficina do BirutIA</title>
+  <meta name="description" content="Um projeto aberto e não oficial liga o WhatsApp ao Claude Desktop. Entenda os riscos antes de qualquer instalação e veja um uso mínimo, só de leitura.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Outras</p>
+      <h1>WhatsApp conectado ao Claude (cuidados primeiro)</h1>
+      <p class="lide">Um projeto aberto e não oficial liga o WhatsApp ao Claude Desktop. Entenda os riscos antes de qualquer instalação e veja um uso mínimo, só de leitura.</p>
+<p>Existe um projeto aberto (lharries/whatsapp-mcp, licença MIT) que conecta o WhatsApp ao Claude Desktop por meio de um servidor MCP: o Claude pode buscar conversas, resumir grupos e rascunhar respostas. Conferi no GitHub que o repositório original não recebe atualização desde julho de 2025; a referência cita um *fork* mantido (verygoodplugins/whatsapp-mcp), que não verifiquei. <strong>Este guia é uma apresentação com cuidados; não ensina a automatizar envios.</strong></p>
+<h2>Leia antes de qualquer instalação</h2>
+<ul>
+<li><strong>É uma integração não oficial.</strong> Segundo a referência, os termos do WhatsApp proíbem acesso automatizado e a conta pode ser bloqueada. Confira os termos atuais do WhatsApp.</li>
+<li><strong>Risco de bloqueio:</strong> a ponte entra como "aparelho conectado". Envio em massa ou automático chama atenção.</li>
+<li><strong>Mensagens maliciosas:</strong> uma mensagem recebida pode tentar manipular o agente (injeção de instruções). Nunca deixe que ele envie algo sozinho.</li>
+<li><strong>Privacidade:</strong> suas conversas e as de outras pessoas passariam pelo modelo de IA que você usa (LGPD).</li>
+<li><strong>Projeto parado:</strong> código sem manutenção pode ter falhas de segurança.</li>
+</ul>
+<h2>Se mesmo assim quiser testar</h2>
+<p>1. Use um <strong>número secundário</strong>, nunca o principal ou o da empresa.</p>
+<p>2. Habilite somente ferramentas de <strong>leitura</strong>.</p>
+<p>3. Deixe todo envio dependente da sua aprovação explícita.</p>
+<p>4. Siga o README do projeto, que pede ambiente de programação (Go, Python) e um código QR para conectar o aparelho.</p>
+<p>5. Desconecte o aparelho nas configurações do WhatsApp quando terminar.</p>
+<h2>Pedidos de leitura (exemplos)</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Resumo dos grupos</p><p class="prompt-texto">Resuma o que aconteceu hoje nos meus grupos do WhatsApp. Mostre só o que precisa de mim: quem pediu, o que pediu e até quando.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">O que combinei</p><p class="prompt-texto">O que combinei com [nome] sobre [assunto]? Procure na conversa e traga valores, datas e o que ficou pendente.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Rascunho com aprovação</p><p class="prompt-texto">Escreva um rascunho de resposta à última mensagem de [nome]. Mostre o texto e NÃO envie. Só envie se eu escrever "pode enviar".</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Alternativa mais segura</h2>
+<p>Para atendimento de empresa, prefira a API oficial do WhatsApp Business e ferramentas homologadas.</p>
+<h2>Avisos</h2>
+<p class="alerta">Você pode perder a conta do WhatsApp.</p>
+<p class="alerta">Nunca autorize envio automático.</p>
+<p class="alerta">Dados de terceiros nas conversas exigem cuidado.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Li os termos do WhatsApp</li>
+<li>[ ] Uso número secundário</li>
+<li>[ ] Só leitura habilitada</li>
+<li>[ ] Aparelho desconectado ao terminar</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Projeto de lharries (github.com/lharries/whatsapp-mcp). Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="whatsapp-conectado-ao-claude-cuidados-primeiro.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="WhatsApp conectado ao Claude (cuidados primeiro) (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="whatsapp-conectado-ao-claude-cuidados-primeiro.docx" data-nome="Word" data-desc="Para editar" data-material="WhatsApp conectado ao Claude (cuidados primeiro) (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="whatsapp-conectado-ao-claude-cuidados-primeiro.md" data-nome=".md" data-desc="Para usar com IA" data-material="WhatsApp conectado ao Claude (cuidados primeiro) (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="whatsapp-conectado-ao-claude-cuidados-primeiro.pdf" download data-material="WhatsApp conectado ao Claude (cuidados primeiro) (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

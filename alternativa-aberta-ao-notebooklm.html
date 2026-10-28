@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alternativa aberta ao NotebookLM · Oficina do BirutIA</title>
+  <meta name="description" content="O Open Notebook roda no seu computador, guarda seus arquivos com você e deixa escolher a IA. Veja como instalar com Docker.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Alternativa aberta ao NotebookLM</h1>
+      <p class="lide">O Open Notebook roda no seu computador, guarda seus arquivos com você e deixa escolher a IA. Veja como instalar com Docker.</p>
+<p>O <strong>Open Notebook</strong> (repositório lfnovo/open-notebook, licença MIT, ativo no GitHub) é uma alternativa aberta ao NotebookLM/Gemini Notebook. Você envia PDFs, vídeos, áudios e páginas da web, conversa com a IA com respostas baseadas nas suas fontes e escolhe o modelo: serviços pagos (OpenAI, Anthropic, Gemini) ou modelos locais. Roda no seu computador ou servidor, e os arquivos ficam com você. Isso ajuda com material sensível, mas lembre: ao usar um modelo de nuvem, o texto enviado a ele sai do seu computador.</p>
+<h2>Antes de começar</h2>
+<p>Instale o Docker Desktop e deixe-o aberto. Comandos e versões mudam: confira o README do projeto.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Baixe o arquivo de configuração</h3>
+<p>Em uma pasta vazia, no terminal:</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Baixar a configuração</p><p class="prompt-texto">curl -o docker-compose.yml https://raw.githubusercontent.com/lfnovo/open-notebook/main/docker-compose.yml</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p>Abra o arquivo e leia antes de executar.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Suba o sistema</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Iniciar</p><p class="prompt-texto">docker compose up -d</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Abra no navegador</h3>
+<p>Aguarde alguns segundos e acesse http://localhost:8502.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Configure a IA</h3>
+<p>Cadastre a chave do serviço que usa ou aponte para um modelo local.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Crie o primeiro caderno</h3>
+<p>Envie três ou quatro fontes sobre um assunto.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Primeira pergunta</p><p class="prompt-texto">Resuma os pontos principais das fontes deste caderno e cite, para cada ponto, de qual fonte ele saiu. Se algo não estiver nas fontes, diga que não está.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>O que dá para fazer</h2>
+<p>Pesquisa com citações, busca por significado, geração de áudios a partir das fontes e automação por interface de programação.</p>
+<h2>Avisos</h2>
+<p class="alerta">Modelos locais exigem um computador potente.</p>
+<p class="alerta">Chaves de API ficam em arquivo local, nunca no GitHub.</p>
+<p class="alerta">Confira respostas importantes na fonte citada.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Li o arquivo de configuração antes de executar</li>
+<li>[ ] Defini onde o modelo roda (local ou nuvem)</li>
+<li>[ ] Testei com fontes sem dados pessoais</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Open Notebook, de lfnovo (github.com/lfnovo/open-notebook). Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="alternativa-aberta-ao-notebooklm.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Alternativa aberta ao NotebookLM (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="alternativa-aberta-ao-notebooklm.docx" data-nome="Word" data-desc="Para editar" data-material="Alternativa aberta ao NotebookLM (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="alternativa-aberta-ao-notebooklm.md" data-nome=".md" data-desc="Para usar com IA" data-material="Alternativa aberta ao NotebookLM (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="alternativa-aberta-ao-notebooklm.pdf" download data-material="Alternativa aberta ao NotebookLM (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

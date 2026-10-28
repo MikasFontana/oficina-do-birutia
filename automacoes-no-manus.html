@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automações no Manus · Oficina do BirutIA</title>
+  <meta name="description" content="O Manus 2.0 permite automações agendadas ou disparadas por eventos. Veja como criar a primeira com segurança.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Outras</p>
+      <h1>Automações no Manus</h1>
+      <p class="lide">O Manus 2.0 permite automações agendadas ou disparadas por eventos. Veja como criar a primeira com segurança.</p>
+<p>O <strong>Manus</strong> é um agente de IA. Segundo a referência consultada, a versão 2.0 (lançada em 28/09/2026) trouxe *Automations*: você diz o que deve acontecer e quando, e o agente começa a tarefa sozinho. As informações de desempenho e preços vêm da empresa e não foram conferidas por nós; verifique no site do Manus e na documentação de Automations. Há plano gratuito com créditos limitados, e cada execução gasta créditos.</p>
+<h2>Três tipos</h2>
+<ul>
+<li><strong>Agendada:</strong> em dia e horário fixos (resumo diário, relatório semanal).</li>
+<li><strong>Por evento:</strong> começa quando algo acontece em um app conectado (chegou um e-mail com anexo, entrou um pedido).</li>
+<li><strong>Avançada (beta):</strong> você descreve o fluxo inteiro em texto.</li>
+</ul>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Abra Automations e escolha o tipo</h3>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Conecte o app necessário</h3>
+<p>Sem autorização, a automação para. Conecte apenas o que ela precisa.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Defina o gatilho com precisão</h3>
+<p>Troque "fim do dia" por "dias úteis às 18h, horário de Brasília".</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Descreva o resultado e o destino</h3>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Teste antes de ligar</h3>
+<p>Um caso que deve disparar e outro que deve ser ignorado.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">6</span><h3>Acompanhe as execuções</h3>
+<p>Pause e corrija se algo sair torto.</p>
+</section>
+<h2>Pedidos prontos</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Resumo do dia (agendada)</p><p class="prompt-texto">Todo dia útil às [horário], horário de Brasília, leia os e-mails recebidos desde o mesmo horário do dia anterior. Separe em três blocos: precisa da minha resposta hoje, pode esperar, só informativo. Para cada item do primeiro bloco, escreva um rascunho curto no meu tom [descreva]. Entregue tudo em um único resumo e nunca envie nada sem a minha aprovação.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Relatório semanal (agendada)</p><p class="prompt-texto">Toda [dia da semana] às [horário], reúna os dados de [fonte] da semana anterior e monte um relatório de uma página: o que subiu, o que caiu, o maior destaque e dois pontos de atenção, comparando com a semana anterior. Salve em [destino]. Se faltar algum dado, avise no topo e siga com o que houver.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Nota fiscal por e-mail (por evento)</p><p class="prompt-texto">Quando chegar um e-mail com anexo em PDF e a palavra [nota fiscal ou boleto] no assunto, extraia fornecedor, valor, vencimento e número. Acrescente uma linha na planilha [nome] e salve o anexo na pasta [nome]. Se algum campo não estiver legível, marque como "conferir" e me avise.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Preparação de reunião (por evento de agenda)</p><p class="prompt-texto">Uma hora antes de cada compromisso com a palavra [cliente] no título, busque no meu e-mail as últimas conversas com os participantes e monte um resumo: quem é a pessoa, o que foi combinado, pendências e perguntas para eu fazer. Entregue em [destino].</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">Comece com frequência diária ou semanal; automação frequente gasta créditos o tempo todo.</p>
+<p class="alerta">Peça rascunho em tudo que sai para cliente, fornecedor ou banco. Enviar, pagar e publicar ficam com você.</p>
+<p class="alerta">E-mails, pedidos e notas fiscais têm dados pessoais (LGPD): use só o necessário e guarde o resultado em local restrito.</p>
+<p class="alerta">A automação avançada está em beta e menus podem mudar.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Testei com caso que dispara e caso que não dispara</li>
+<li>[ ] Conectei só os apps necessários</li>
+<li>[ ] Defini quem aprova antes de enviar</li>
+<li>[ ] Acompanho o gasto de créditos</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Manus (anúncio "Introducing Manus 2.0" e documentação). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="automacoes-no-manus.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Automações no Manus (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="automacoes-no-manus.docx" data-nome="Word" data-desc="Para editar" data-material="Automações no Manus (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="automacoes-no-manus.md" data-nome=".md" data-desc="Para usar com IA" data-material="Automações no Manus (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="automacoes-no-manus.pdf" download data-material="Automações no Manus (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

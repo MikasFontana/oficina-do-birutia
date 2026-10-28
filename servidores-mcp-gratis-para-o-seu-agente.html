@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servidores MCP grátis para o seu agente · Oficina do BirutIA</title>
+  <meta name="description" content="Oito servidores MCP que dão ao agente documentação atual, navegador, banco de dados e mais, com os comandos de instalação e os cuidados de cada um.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Servidores MCP grátis para o seu agente</h1>
+      <p class="lide">Oito servidores MCP que dão ao agente documentação atual, navegador, banco de dados e mais, com os comandos de instalação e os cuidados de cada um.</p>
+<p>Um servidor <strong>MCP</strong> dá ao agente acesso a uma ferramenta real, em vez de ele responder de memória. Esta lista segue a referência consultada. Os comandos podem mudar com novas versões e alguns serviços têm planos pagos ou exigem chave: confira a página de cada projeto antes de instalar. Comece por poucos, porque cada servidor ocupa espaço de trabalho do agente.</p>
+<h2>A lista</h2>
+<ul>
+<li><strong>Context7:</strong> traz a documentação atual de bibliotecas.</li>
+<li><strong>Playwright MCP:</strong> o agente usa um navegador de verdade.</li>
+<li><strong>Firecrawl:</strong> lê e pesquisa sites; exige chave (tem plano gratuito).</li>
+<li><strong>Supabase MCP:</strong> lê o desenho do banco de dados, escreve consultas e roda migrações. Dá acesso a dados: use em projeto de teste.</li>
+<li><strong>Chrome DevTools:</strong> lê erros, rede e desempenho de uma página.</li>
+<li><strong>Stripe MCP:</strong> cria produtos, clientes e faturas. Use em modo de teste.</li>
+<li><strong>Desktop Commander:</strong> acesso ao terminal e aos arquivos. Revise cada ação antes de aprovar.</li>
+<li><strong>Sequential Thinking:</strong> quebra problemas difíceis em passos revisáveis.</li>
+</ul>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Instale o Node.js</h3>
+<p>Os servidores rodam com <code>npx</code>.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Rode o comando de cada servidor, fora do Claude Code</h3>
+<p>Troque os trechos em maiúsculas pelos seus dados.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Comandos de instalação (Claude Code)</p><p class="prompt-texto">claude mcp add context7 -- npx -y @upstash/context7-mcp claude mcp add playwright -- npx @playwright/mcp@latest claude mcp add firecrawl -e FIRECRAWL_API_KEY=SUA_CHAVE -- npx -y firecrawl-mcp claude mcp add chrome-devtools -- npx chrome-devtools-mcp@latest claude mcp add sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p>Para Supabase, Stripe e Desktop Commander, use os comandos das páginas oficiais, pois exigem token, acesso a dinheiro ou acesso ao seu computador.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Confira</h3>
+<p>No Claude Code, digite <code>/mcp</code> para ver os servidores conectados.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Cursor e Claude Desktop</h3>
+<p>Eles usam um arquivo de configuração (<code>.cursor/mcp.json</code> no Cursor). Copie o trecho do servidor desejado da documentação dele e apague os que não usar.</p>
+</section>
+<h2>Avisos</h2>
+<p class="alerta">Instale somente servidores de fontes conhecidas. Eles rodam no seu computador.</p>
+<p class="alerta">Chaves e tokens ficam em variável de ambiente, nunca em chats ou em arquivos enviados ao GitHub.</p>
+<p class="alerta">Servidores com acesso a terminal, banco de dados ou pagamentos exigem o máximo de cuidado: use contas e projetos de teste e aprove cada ação.</p>
+<p class="alerta">Respeite os termos de uso dos sites que o agente consultar.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Comecei com um ou dois servidores</li>
+<li>[ ] Chaves guardadas com segurança</li>
+<li>[ ] Testei em ambiente de teste</li>
+<li>[ ] Removi o que não uso</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Projetos de Upstash, Microsoft, Firecrawl, Supabase, Google, Stripe, Desktop Commander e do Model Context Protocol. Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="servidores-mcp-gratis-para-o-seu-agente.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Servidores MCP grátis para o seu agente (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="servidores-mcp-gratis-para-o-seu-agente.docx" data-nome="Word" data-desc="Para editar" data-material="Servidores MCP grátis para o seu agente (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="servidores-mcp-gratis-para-o-seu-agente.md" data-nome=".md" data-desc="Para usar com IA" data-material="Servidores MCP grátis para o seu agente (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="servidores-mcp-gratis-para-o-seu-agente.pdf" download data-material="Servidores MCP grátis para o seu agente (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

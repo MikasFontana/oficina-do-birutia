@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alternativas grátis à Adobe · Oficina do BirutIA</title>
+  <meta name="description" content="Um conjunto de aplicativos abertos, escritos em Rust, com interface inspirada em programas conhecidos de edição. Ainda em fase inicial: veja o que esperar.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Alternativas grátis à Adobe</h1>
+      <p class="lide">Um conjunto de aplicativos abertos, escritos em Rust, com interface inspirada em programas conhecidos de edição. Ainda em fase inicial: veja o que esperar.</p>
+<p><strong>Crafting Apps</strong> é uma família de aplicativos de código aberto do time da ArtCraft, apresentados como alternativas a programas de edição bem conhecidos, sem assinatura e sem copiar código da Adobe. Confirmei no GitHub o primeiro deles, o <strong>PhotoCraft</strong> (repositório storytold/photocraft): editor de imagens escrito em Rust, com licença MIT ou Apache-2.0 à sua escolha, que abre e salva arquivos PSD com camadas, roda no computador e também no navegador. O restante da família descrita na referência consultada (ilustração, vídeo, fotos, efeitos, diagramação e PDF) deve ser conferido no site da ArtCraft.</p>
+<h2>Seja realista</h2>
+<p>O próprio projeto afirma que o PhotoCraft está em <strong>versão alfa inicial</strong> e ainda não substitui o Photoshop no trabalho profissional diário. Faltam recursos de IA generativa, cerca de quinze ferramentas, e a compatibilidade com plugins é um ponto fraco. Alguns formatos têm limites (por exemplo, arquivos PSD salvos podem não ficar idênticos byte a byte aos originais).</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Prefira o site oficial</h3>
+<p>A página do aplicativo no site da ArtCraft (getartcraft.com) é indicada como o caminho mais fácil.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Ou baixe pelo GitHub</h3>
+<p>Na aba Releases há versões para Windows, macOS e Linux, além de uma versão para navegador. Baixe somente do repositório oficial.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Teste com cópias</h3>
+<p>Abra uma cópia dos seus arquivos e mantenha o programa que você já usa para trabalhos de clientes.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Ajude o projeto</h3>
+<p>Por ser aberto, é possível relatar problemas e pedir recursos no GitHub.</p>
+</section>
+<h2>Para quem programa</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Instalar pelo código</p><p class="prompt-texto">git clone https://github.com/storytold/photocraft cd photocraft cargo run --release -p photocraft</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p>Exige a ferramenta Rust (Cargo). Leia o README antes.</p>
+<h2>Avisos</h2>
+<p class="alerta">Baixe programas apenas dos endereços oficiais e confira a origem do arquivo.</p>
+<p class="alerta">Não use o nome ou os logotipos do projeto em versões modificadas: a marca ArtCraft não está coberta pela licença do código.</p>
+<p class="alerta">Para trabalho profissional, não troque suas ferramentas atuais por um programa em alfa sem testar bastante.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Baixei de fonte oficial</li>
+<li>[ ] Testei com cópia dos arquivos</li>
+<li>[ ] Conferi os limites de formatos</li>
+<li>[ ] Mantive minha ferramenta atual para clientes</li>
+</ul>
+<h2>Quem fez</h2>
+<p>PhotoCraft e Crafting Apps são da equipe ArtCraft (github.com/storytold/photocraft). Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="alternativas-gratis-a-adobe.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Alternativas grátis à Adobe (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="alternativas-gratis-a-adobe.docx" data-nome="Word" data-desc="Para editar" data-material="Alternativas grátis à Adobe (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="alternativas-gratis-a-adobe.md" data-nome=".md" data-desc="Para usar com IA" data-material="Alternativas grátis à Adobe (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="alternativas-gratis-a-adobe.pdf" download data-material="Alternativas grátis à Adobe (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

@@ -429,3 +429,6 @@ details ul { margin: 0 0 14px; padding-left: 1.3em; }
 .tag-dia { position: absolute; top: 16px; left: 26px; padding: 4px 12px 3px; border-radius: 999px; background: #fff; color: var(--ferrari-escuro); font: 800 11px var(--f-texto); letter-spacing: 0.1em; text-transform: uppercase; }
 .bloqueada .acoes { display: none; }
 .tag-dia { top: 30px; font-size: 10px; padding: 3px 10px 2px; }
+
+.figura { margin: 22px 0; }
+.figura img { max-width: 100%; height: auto; border-radius: 14px; border: 1px solid rgba(255,255,255,0.2); }

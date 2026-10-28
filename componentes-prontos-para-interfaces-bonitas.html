@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Componentes prontos para interfaces bonitas · Oficina do BirutIA</title>
+  <meta name="description" content="Conecte um catálogo de componentes de interface ao seu agente de programação para parar de gerar telas com cara de modelo genérico.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Design e vídeo</p>
+      <h1>Componentes prontos para interfaces bonitas</h1>
+      <p class="lide">Conecte um catálogo de componentes de interface ao seu agente de programação para parar de gerar telas com cara de modelo genérico.</p>
+<p>O <strong>21st.dev</strong> é um catálogo de componentes de interface (React e Tailwind). Um conector (MCP) liga esse catálogo ao seu agente de programação, que passa a buscar componentes prontos, instalar no projeto e adaptar ao seu conteúdo. O repositório do conector (21st-dev/magic-mcp, licença ISC) existe e está ativo. O número de componentes, os limites do plano gratuito e a forma de gerar a chave mudam: confira em 21st.dev/mcp.</p>
+<p>Este guia pressupõe que você já usa um agente de programação (Claude Code, Cursor ou similar).</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Crie a conta e gere a chave de API em 21st.dev/mcp</h3>
+<p>Trate a chave como senha.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Instale pelo comando indicado na página oficial</h3>
+<p>Ele pede o nome do seu editor e abre o login no navegador. Se preferir, configure manualmente o bloco de MCP do seu editor com a chave, seguindo a documentação.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Reinicie o editor e teste</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Teste</p><p class="prompt-texto">Use o 21st para buscar componentes de seção de abertura (hero) para uma página de consultoria e me mostre as opções.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>Pedidos prontos</h2>
+<p>O segredo é pedir que ele <strong>busque primeiro</strong> e só crie do zero se não achar nada bom.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Página completa</p><p class="prompt-texto">Use o 21st para montar a página do meu produto [descrição]. Para cada seção (abertura, benefícios, prova social, preços, perguntas frequentes e chamada final), busque componentes prontos no catálogo, mostre duas opções de cada e só depois instale as escolhidas. Mantenha a mesma paleta e tipografia em todas as seções.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Melhorar uma tela feia</p><p class="prompt-texto">Esta tela está com cara de modelo genérico. Use o 21st para buscar componentes equivalentes com design mais refinado e substitua um por um, sem mudar a lógica nem os textos.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Faixa de logos</p><p class="prompt-texto">Crie uma faixa com logotipos das ferramentas que uso: [lista]. Busque os logotipos em SVG pelo 21st, deixe todos em cinza e com cor ao passar o mouse.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Painel administrativo</p><p class="prompt-texto">Monte um painel com cartões de métricas, gráfico de linha e tabela dos últimos pedidos, usando componentes do 21st, responsivo para celular.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Dica</h2>
+<p>Antes de construir, navegue no catálogo, salve três ou quatro componentes que combinam entre si e peça ao agente que use esses como referência para o resto.</p>
+<h2>Avisos</h2>
+<p class="alerta">Chave de API não vai em arquivos que sobem ao GitHub.</p>
+<p class="alerta">Confira a licença de cada componente antes de usar em projeto comercial.</p>
+<p class="alerta">Teste o resultado no celular e com leitor de tela, quando possível: acessibilidade faz parte do design.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Chave guardada com segurança</li>
+<li>[ ] Testei a busca</li>
+<li>[ ] Revisei licença e acessibilidade dos componentes</li>
+<li>[ ] Defini a paleta antes de montar a página</li>
+</ul>
+<h2>Quem fez</h2>
+<p>21st.dev (catálogo) e o conector magic-mcp. Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="componentes-prontos-para-interfaces-bonitas.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Componentes prontos para interfaces bonitas (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="componentes-prontos-para-interfaces-bonitas.docx" data-nome="Word" data-desc="Para editar" data-material="Componentes prontos para interfaces bonitas (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="componentes-prontos-para-interfaces-bonitas.md" data-nome=".md" data-desc="Para usar com IA" data-material="Componentes prontos para interfaces bonitas (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="componentes-prontos-para-interfaces-bonitas.pdf" download data-material="Componentes prontos para interfaces bonitas (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

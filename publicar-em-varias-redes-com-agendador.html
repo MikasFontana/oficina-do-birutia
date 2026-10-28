@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publicar em várias redes com agendador · Oficina do BirutIA</title>
+  <meta name="description" content="Conecte o Claude a um agendador de redes sociais para adaptar, agendar e publicar o mesmo conteúdo em cada plataforma, com a sua aprovação.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude</p>
+      <h1>Publicar em várias redes com agendador</h1>
+      <p class="lide">Conecte o Claude a um agendador de redes sociais para adaptar, agendar e publicar o mesmo conteúdo em cada plataforma, com a sua aprovação.</p>
+<p>O Claude não publica nas redes sozinho: ele usa um <strong>agendador</strong> conectado. Este guia usa o <strong>Postiz</strong>, que, segundo a referência consultada, tem conector no diretório do Claude, suporta dezenas de canais e possui versão de código aberto (github.com/gitroomhq/postiz-app). Os planos são pagos, com período de teste; confira preços, teste e redes aceitas no site do Postiz. Existem alternativas, como o PostEverywhere.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Crie a conta e conecte duas ou três redes</h3>
+<p>Comece pequeno.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Conecte o Postiz ao Claude</h3>
+<p>Procure o Postiz no diretório de conectores do Claude, clique em conectar e autorize o acesso.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Teste com um post</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Teste de adaptação</p><p class="prompt-texto">Mostre quais redes estão conectadas ao Postiz. Depois adapte o texto abaixo para Instagram, LinkedIn e X, respeitando o tamanho e o tom de cada rede. Mostre as três versões e espere a minha aprovação antes de agendar.  TEXTO: [cole o post]</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Agende</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Agendar</p><p class="prompt-texto">Agende as versões aprovadas para [dia] às [horário]. Se houver dados de desempenho das minhas contas, sugira antes os melhores horários.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Monte o calendário do mês</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Calendário de conteúdo</p><p class="prompt-texto">Meu negócio: [o que vendo e para quem]. Monte um calendário de conteúdo para o próximo mês nas redes conectadas: um post por dia útil, alternando formatos (dica, bastidor, prova, oferta), adaptados a cada rede. Entregue em tabela (data, rede, formato, texto, horário). Só agende depois que eu aprovar a tabela.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>Avisos</h2>
+<p class="alerta">Revise sempre antes de agendar: um erro sai em todas as redes ao mesmo tempo.</p>
+<p class="alerta">Cada rede tem formato próprio de imagem e vídeo (por exemplo, 9:16 para Reels).</p>
+<p class="alerta">Algumas redes e listas podem não ser suportadas pelo agendador; confira a lista oficial.</p>
+<p class="alerta">Não publique fotos ou dados de pessoas sem autorização.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Conectei poucas redes primeiro</li>
+<li>[ ] Aprovei cada versão antes de agendar</li>
+<li>[ ] Conferi formatos de imagem e vídeo</li>
+<li>[ ] Revisei preço do plano e fim do teste</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Postiz (postiz.com) e Anthropic (conectores). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="publicar-em-varias-redes-com-agendador.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Publicar em várias redes com agendador (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="publicar-em-varias-redes-com-agendador.docx" data-nome="Word" data-desc="Para editar" data-material="Publicar em várias redes com agendador (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="publicar-em-varias-redes-com-agendador.md" data-nome=".md" data-desc="Para usar com IA" data-material="Publicar em várias redes com agendador (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="publicar-em-varias-redes-com-agendador.pdf" download data-material="Publicar em várias redes com agendador (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

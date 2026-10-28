@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cem agentes brigando pela melhor resposta · Oficina do BirutIA</title>
+  <meta name="description" content="A skill Arena, para o Claude Code, faz dezenas de agentes competirem em um torneio até sobrar uma resposta. Veja como instalar, o custo e quando vale a pena.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Cem agentes brigando pela melhor resposta</h1>
+      <p class="lide">A skill Arena, para o Claude Code, faz dezenas de agentes competirem em um torneio até sobrar uma resposta. Veja como instalar, o custo e quando vale a pena.</p>
+<p>Quando a resposta da IA não agrada, o comum é pedir de novo. A <strong>Arena</strong> (repositório Jakeschincariol/arena-skill, licença MIT, conferido no GitHub) propõe outro caminho: o comando <code>/arena</code> cria muitos subagentes que recebem a mesma tarefa, cada um com uma estratégia de raciocínio diferente. Eles se atacam em duplas, um juiz pontua e quem perde sai, até sobrar uma resposta, acompanhada dos ataques que ela resistiu.</p>
+<p>Todos os subagentes escrevem somente dentro de uma pasta <code>.arena</code>; os seus arquivos não são alterados.</p>
+<h2>Instalação</h2>
+<p>Precisa do Claude Code e do Python. Há três caminhos descritos no repositório; o mais simples é pedir ao próprio Claude Code:</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Instalar pelo Claude Code</p><p class="prompt-texto">Instale esta skill a partir de https://github.com/Jakeschincariol/arena-skill e depois confirme que o comando /arena funciona.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p>Leia o README do repositório antes, como faria com qualquer skill de terceiros.</p>
+<h2>Comandos principais</h2>
+<ul>
+<li><code>/arena</code>: usa o seu último pedido como tarefa e a resposta rejeitada como a que precisa ser superada.</li>
+<li><code>/arena --quick</code>: 16 agentes, modo do dia a dia.</li>
+<li><code>/arena --agents N</code>: escolhe a quantidade (o padrão é 100).</li>
+<li><code>/arena --seed S</code>: repete as mesmas estratégias e o mesmo chaveamento.</li>
+</ul>
+<h2>O custo é seu</h2>
+<p>A skill é gratuita, mas cada subagente gasta o limite do seu plano. Pelo repositório, o modo padrão faz cerca de 595 chamadas e o <code>--quick</code> cerca de 91. Comece pelo <code>--quick</code> e deixe o modo completo para o que realmente importa. Os subagentes não enxergam a sua conversa, só o arquivo da tarefa: se um requisito não estiver nele, todos erram juntos. Tarefa vaga gera resposta vaga, só que em várias versões.</p>
+<h2>Pedidos para testar</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Título da página de vendas</p><p class="prompt-texto">/arena --quick Escreva o título e o subtítulo da página de vendas do meu [produto]. Público: [quem compra]. Dor principal: [dor]. Resultado entregue: [resultado]. Tom: [tom]. Título com no máximo 12 palavras.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Plano de lançamento</p><p class="prompt-texto">/arena --quick Monte um plano de 7 dias para lançar [produto]. Tenho [horas] por dia, audiência de [tamanho] no [canal] e nenhum orçamento para anúncios. Quero o que fazer em cada dia e o conteúdo de cada postagem.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Objeção de preço</p><p class="prompt-texto">/arena --quick Escreva a melhor resposta para quando um cliente diz "está caro" sobre [produto ou serviço]. Entregas: [lista]. Perfil do cliente: [perfil]. Deve caber em uma mensagem de WhatsApp e não pode oferecer desconto.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Escolher o projeto</p><p class="prompt-texto">/arena --quick Tenho três projetos e apenas [horas] por semana: [A], [B], [C]. Meu objetivo para 90 dias é [objetivo]. Diga qual fazer primeiro, por quê, e o que cortar.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">Os juízes também são o Claude: revise o resultado antes de usar.</p>
+<p class="alerta">A tarefa vira um arquivo no seu computador. Retire nomes e telefones de clientes antes.</p>
+<p class="alerta">Confira quanto do seu limite sobra antes de rodar o modo completo.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Li o README antes de instalar</li>
+<li>[ ] Comecei pelo <code>--quick</code></li>
+<li>[ ] Escrevi a tarefa com todo o contexto</li>
+<li>[ ] Revisei a resposta vencedora</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Arena é de Jake Schincariol (github.com/Jakeschincariol/arena-skill, licença MIT). Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="cem-agentes-brigando-pela-melhor-resposta.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Cem agentes brigando pela melhor resposta (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="cem-agentes-brigando-pela-melhor-resposta.docx" data-nome="Word" data-desc="Para editar" data-material="Cem agentes brigando pela melhor resposta (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="cem-agentes-brigando-pela-melhor-resposta.md" data-nome=".md" data-desc="Para usar com IA" data-material="Cem agentes brigando pela melhor resposta (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="cem-agentes-brigando-pela-melhor-resposta.pdf" download data-material="Cem agentes brigando pela melhor resposta (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

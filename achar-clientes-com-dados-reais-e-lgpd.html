@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Achar clientes com dados reais e LGPD · Oficina do BirutIA</title>
+  <meta name="description" content="Conecte o Firecrawl ao Claude e peça uma lista de empresas com sinais públicos de que precisam do seu serviço, com fonte e respeito à LGPD.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude</p>
+      <h1>Achar clientes com dados reais e LGPD</h1>
+      <p class="lide">Conecte o Firecrawl ao Claude e peça uma lista de empresas com sinais públicos de que precisam do seu serviço, com fonte e respeito à LGPD.</p>
+<p>O <strong>Firecrawl</strong> é um serviço que permite ao Claude buscar e ler páginas da internet. A <strong>Alexandria</strong> é uma biblioteca de conhecimento criada por ele para agentes de IA, que reúne fontes de dados e a web em uma só conexão; a empresa informou que ela funciona no Claude e no Claude Code. O número de fontes varia entre as páginas da empresa, por isso este guia não afirma nenhuma quantidade. Há plano gratuito com créditos limitados.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Conecte</h3>
+<p>No Claude, abra os conectores, procure por Firecrawl e entre com a sua conta (login pelo navegador, sem colar chave). No Claude Code, o comando é:</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Conexão no Claude Code</p><p class="prompt-texto">claude mcp add --transport http firecrawl https://mcp.firecrawl.dev/v2/mcp-oauth</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Ative o conector na conversa</h3>
+<p>Pelo menu "+" da conversa.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Faça o pedido</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pedido · achar empresas com necessidade</p><p class="prompt-texto">Use o Firecrawl para encontrar empresas do Brasil que estão contratando [tipo de profissional ligado ao meu serviço]. Para cada uma, traga: nome, site, o sinal de contratação encontrado (com o link da fonte), por que ela poderia precisar de [meu serviço] e, somente se for informação pública, quem responde pela área. Se não houver fonte, diga que não encontrou. Não invente.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Confira as fontes</h3>
+<p>Abra os links antes de qualquer contato.</p>
+</section>
+<h2>Abordagem com respeito à LGPD</h2>
+<ul>
+<li>Use só dados de contato que sejam públicos.</li>
+<li>Identifique-se e diga de onde veio o contato.</li>
+<li>Ofereça uma forma simples de a pessoa pedir para não receber mais mensagens.</li>
+</ul>
+<h2>Avisos</h2>
+<p class="alerta">Cada consulta gasta créditos do seu plano.</p>
+<p class="alerta">Respeite os termos de uso e o robots dos sites consultados.</p>
+<p class="alerta">Uma lista da IA é ponto de partida, não verdade: confirme antes de usar.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Conector ligado</li>
+<li>[ ] Pedido exige fonte para cada empresa</li>
+<li>[ ] Fontes abertas e conferidas</li>
+<li>[ ] Mensagem se identifica e oferece saída</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Firecrawl (changelog e documentação oficial). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="achar-clientes-com-dados-reais-e-lgpd.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Achar clientes com dados reais e LGPD (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="achar-clientes-com-dados-reais-e-lgpd.docx" data-nome="Word" data-desc="Para editar" data-material="Achar clientes com dados reais e LGPD (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="achar-clientes-com-dados-reais-e-lgpd.md" data-nome=".md" data-desc="Para usar com IA" data-material="Achar clientes com dados reais e LGPD (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="achar-clientes-com-dados-reais-e-lgpd.pdf" download data-material="Achar clientes com dados reais e LGPD (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

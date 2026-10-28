@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personalizar o Gemini com instruções e skills · Oficina do BirutIA</title>
+  <meta name="description" content="Instruções fixas, skills para tarefas repetidas e apps conectados: tudo para deixar o Gemini com o seu jeito.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Google</p>
+      <h1>Personalizar o Gemini com instruções e skills</h1>
+      <p class="lide">Instruções fixas, skills para tarefas repetidas e apps conectados: tudo para deixar o Gemini com o seu jeito.</p>
+<p>Segundo a referência consultada, o app do Gemini ganhou um menu de personalização (em inglês, *Customize*) reunindo três coisas: instruções que valem para toda conversa, <strong>skills</strong> (conjuntos de instruções salvas para tarefas que você repete) e apps conectados. A liberação é gradual, a lista de apps varia por conta e país, e as skills são, por enquanto, para maiores de 18 anos. Se algo não bater com a sua tela, procure o mesmo nome em Configurações e na Ajuda do Gemini.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Abra o menu de personalização</h3>
+<p>Se ainda não aparecer, a instrução fixa do passo 2 costuma funcionar pelas Configurações.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Escreva as instruções fixas</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Instruções fixas</p><p class="prompt-texto">Sou [profissão] e trabalho com [área ou tipo de cliente]. Responda sempre em português do Brasil, em tom [direto, leve ou formal], com frases curtas. Comece pela resposta e explique depois, se necessário. Quando faltar informação importante, pergunte antes de supor. Quando citar número ou fato, diga de onde veio.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Crie a primeira skill</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Skill: escrever no meu estilo</p><p class="prompt-texto">Vou colar três textos que escrevi. Analise o meu jeito de escrever (tamanho das frases, palavras que uso, como começo e termino) e monte regras do meu estilo. Depois salve essas regras como uma skill chamada "meu estilo" para eu usar sempre que pedir um texto. Textos: [cole aqui]</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<p>Para chamar uma skill, digite <code>@</code> e o nome dela na caixa de mensagem.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Conecte poucos apps</h3>
+<p>Cada app ligado dá ao Gemini acesso ao que há nele. Ligue um, teste, e só depois o seguinte.</p>
+</section>
+<h2>Outros pedidos úteis</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Skill: ata de reunião</p><p class="prompt-texto">Crie uma skill chamada "ata" que, ao receber a transcrição ou anotações de uma reunião, devolva: decisões, tarefas com responsável e prazo, dúvidas em aberto e um resumo de quatro linhas para enviar à equipe.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">E-mail com app conectado</p><p class="prompt-texto">Veja os e-mails dos últimos sete dias que ainda estão sem resposta e mostre os cinco mais importantes, com um rascunho curto de resposta para cada. Não envie nada: eu reviso e envio.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Semana organizada</p><p class="prompt-texto">Veja a minha agenda da próxima semana e diga quais dias estão cheios, onde cabe um bloco de duas horas para [tarefa] e quais reuniões parecem dispensáveis. Apenas sugira, sem alterar a agenda.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">Peça sempre rascunho e revise antes de enviar e-mail, marcar compromisso ou mexer em arquivos.</p>
+<p class="alerta">Não coloque CPF, senhas, dados de saúde ou informações de clientes nas instruções e skills.</p>
+<p class="alerta">Para apagar o que o Gemini guardou, revise as instruções e o histórico de atividade.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Instruções fixas salvas</li>
+<li>[ ] Uma skill criada e testada</li>
+<li>[ ] Apenas os apps necessários conectados</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Recurso do Google (notas de versão do app Gemini e Ajuda do Gemini). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="personalizar-o-gemini-com-instrucoes-e-skills.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Personalizar o Gemini com instruções e skills (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="personalizar-o-gemini-com-instrucoes-e-skills.docx" data-nome="Word" data-desc="Para editar" data-material="Personalizar o Gemini com instruções e skills (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="personalizar-o-gemini-com-instrucoes-e-skills.md" data-nome=".md" data-desc="Para usar com IA" data-material="Personalizar o Gemini com instruções e skills (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="personalizar-o-gemini-com-instrucoes-e-skills.pdf" download data-material="Personalizar o Gemini com instruções e skills (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

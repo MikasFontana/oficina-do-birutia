@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agente proativo: como montar o seu · Oficina do BirutIA</title>
+  <meta name="description" content="O Claude Duet avisa antes de você pedir, mas ainda tem lista de espera nos EUA. Veja o que ele é e como montar algo parecido com o Claude que você já tem.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude</p>
+      <h1>Agente proativo: como montar o seu</h1>
+      <p class="lide">O Claude Duet avisa antes de você pedir, mas ainda tem lista de espera nos EUA. Veja o que ele é e como montar algo parecido com o Claude que você já tem.</p>
+<p>O <strong>Claude Duet</strong> é um agente proativo da Anthropic, em prévia de pesquisa. Segundo a página oficial, você passa tarefas por mensagem, ele trabalha em um computador próprio na nuvem com os apps que você conectar e avisa quando termina ou precisa de uma decisão, além de enviar um resumo diário do que pede atenção. Há lista de espera para assinantes Pro e Max, somente nos EUA, e a página avisa que ele pode interpretar mal uma conversa ou errar a urgência de um assunto.</p>
+<p>Outros detalhes (número de conexões, limites do plano) variam entre as fontes; confira na página oficial: claude.com/product/claude-duet.</p>
+<h2>Se você está fora dos EUA: monte uma versão simples</h2>
+<p>Não é o Duet, mas dá resultado parecido com recursos que já existem.</p>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Conecte os seus aplicativos ao Claude</h3>
+<p>Nas configurações, em conectores: e-mail, agenda e arquivos. Comece com poucos; mais conexões gastam mais do limite do plano.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Crie um projeto chamado "Meu assistente"</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Instruções do projeto</p><p class="prompt-texto">Você é meu assistente executivo. Eu trabalho com [meu negócio]. Sua função é me poupar tempo e avisar somente do que importa. Regras: 1) Nunca envie mensagem, faça pagamento, assine ou apague algo sem me mostrar antes e esperar a minha aprovação. 2) Nunca mexa com investimentos nem transfira dinheiro. 3) Seja breve: no máximo cinco itens por aviso, do mais ao menos urgente. 4) Quando puder adiantar, deixe o rascunho pronto e peça só a minha aprovação.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Agende o resumo da manhã</h3>
+<p>Em uma tarefa agendada (por exemplo, no Cowork do aplicativo Claude Desktop), todo dia útil de manhã:</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Resumo da manhã</p><p class="prompt-texto">Faça o meu resumo da manhã. Consulte o meu e-mail, a minha agenda de hoje e as pendências que eu informei. Entregue: 1) compromissos de hoje, com horário; 2) e-mails que pedem resposta hoje, com rascunho de cada resposta; 3) prazos dos próximos sete dias; 4) cobranças vencidas ou prestes a vencer. Se um item estiver vazio, escreva "nada por aqui".</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Agende checagens ao longo do dia</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Checagem de horário comercial</p><p class="prompt-texto">Confira o meu e-mail e a minha agenda desde a última checagem. Avise somente se houver algo urgente: cliente esperando, reunião alterada, cobrança vencida ou prazo para hoje. Se estiver tudo certo, responda apenas "tudo tranquilo".</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>Avisos</h2>
+<p class="alerta">Não use VPN para contornar a restrição de país: isso pode violar os termos de uso da sua conta.</p>
+<p class="alerta">Em qualquer agente, mantenha a regra de aprovação humana antes de enviar, pagar, assinar ou apagar.</p>
+<p class="alerta">Rascunhos de resposta são para você revisar, nunca para enviar sem ler.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Poucas conexões, só as necessárias</li>
+<li>[ ] Regras de aprovação escritas no projeto</li>
+<li>[ ] Resumo da manhã testado por alguns dias</li>
+<li>[ ] Limite do plano acompanhado</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Claude Duet é da Anthropic. Guia escrito pela Oficina do BirutIA, com base na página oficial e no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="agente-proativo-como-montar-o-seu.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Agente proativo: como montar o seu (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="agente-proativo-como-montar-o-seu.docx" data-nome="Word" data-desc="Para editar" data-material="Agente proativo: como montar o seu (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="agente-proativo-como-montar-o-seu.md" data-nome=".md" data-desc="Para usar com IA" data-material="Agente proativo: como montar o seu (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="agente-proativo-como-montar-o-seu.pdf" download data-material="Agente proativo: como montar o seu (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

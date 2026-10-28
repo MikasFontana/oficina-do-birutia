@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Truques de link do GitHub · Oficina do BirutIA</title>
+  <meta name="description" content="Trocar uma palavra no endereço de um repositório abre diagramas, wikis, editores e textos prontos para IA. Veja os principais e os cuidados.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Truques de link do GitHub</h1>
+      <p class="lide">Trocar uma palavra no endereço de um repositório abre diagramas, wikis, editores e textos prontos para IA. Veja os principais e os cuidados.</p>
+<p>Todo repositório do GitHub tem o endereço <code>github.com/dono/projeto</code>. Alguns sites de terceiros usam o mesmo formato: você troca o domínio e mantém o resto. Abaixo, uma seleção. Todos, exceto o editor do próprio GitHub, são serviços independentes, que podem mudar regras, limites ou sair do ar. Na referência consultada foram testados em 16/10/2026; teste de novo antes de contar com eles.</p>
+<p>Os exemplos usam <code>n8n-io/n8n</code>, um projeto público.</p>
+<h2>A seleção</h2>
+<p>| Troca | O que oferece | Quem faz |</p>
+<p>|---|---|---|</p>
+<p>| github.com → gitdiagram.com | Diagrama da arquitetura | Terceiro |</p>
+<p>| github.com → gitingest.com | Repositório inteiro em texto para IA | Terceiro |</p>
+<p>| github.com → deepwiki.com | Wiki com chat sobre o código | Terceiro |</p>
+<p>| github.com → github.dev (ou tecla <code>.</code>) | Editor no navegador | GitHub |</p>
+<p>| github.com → github1s.com | Explorador de código somente leitura | Terceiro |</p>
+<p>| github.com → gitmcp.io | Servidor MCP do repositório | Terceiro |</p>
+<p>| github.com → star-history.com | Histórico de estrelas | Terceiro |</p>
+<p>| github.com → stackblitz.com/github | Rodar projetos simples no navegador | Terceiro |</p>
+<p>Há ainda trocas parecidas para gerar um texto que descreve o projeto e para ouvir um resumo em áudio. Procure pelos nomes GitReverse e GitPodcast e avalie com cuidado.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Escolha o que quer</h3>
+<p>Entender um projeto? Diagrama ou wiki. Perguntar à IA sobre o código? Texto para IA. Editar um arquivo? Editor do GitHub.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Troque o endereço</h3>
+<p>Exemplo: <code>https://gitdiagram.com/n8n-io/n8n</code>.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Pergunte à sua IA com o texto gerado</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Entender um repositório</p><p class="prompt-texto">Abaixo está o conteúdo de um repositório (resumo, pastas e arquivos). Explique em português simples: 1) o que o projeto faz e para quem serve; 2) as cinco pastas ou arquivos mais importantes e o papel de cada um; 3) como rodar na minha máquina, passo a passo; 4) o que eu precisaria mudar para [minha ideia]. Se algo não estiver no texto, diga que não encontrou, sem supor.  [cole o texto]</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Para adaptar uma ideia ao seu caso</h3>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Versão menor do projeto</p><p class="prompt-texto">Quero construir uma versão menor deste projeto para o meu caso: [descreva]. Liste o essencial da primeira versão, o que ficou de fora e por quê, e a forma mais simples de rodar sozinho. Antes de começar, pergunte o que faltar.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+</section>
+<h2>Uma combinação para estudar um projeto em 15 minutos</h2>
+<p>Histórico de estrelas (para ver se o projeto está vivo), diagrama (para ver as partes) e texto para IA (para tirar dúvidas).</p>
+<h2>Avisos</h2>
+<p class="alerta"><strong>Repositório privado:</strong> só o editor do GitHub é do próprio GitHub. Nos demais, o código passa pelo servidor de terceiros. Em repositórios de empresa ou de cliente, use apenas com autorização.</p>
+<p class="alerta">Se um site pedir token do GitHub, crie um com o mínimo de permissão e prazo curto, e apague depois.</p>
+<p class="alerta">Diagramas, wikis e resumos são gerados por IA a partir de amostras do código: confira no código.</p>
+<p class="alerta">Respeite a licença do projeto original ao reaproveitar código.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] O repositório é público ou eu tenho autorização</li>
+<li>[ ] Não enviei tokens com permissão ampla</li>
+<li>[ ] Conferi no código o que a IA afirmou</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Os serviços citados pertencem aos seus respectivos autores (por exemplo, DeepWiki é da Cognition; o editor github.dev é do GitHub). Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="truques-de-link-do-github.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Truques de link do GitHub (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="truques-de-link-do-github.docx" data-nome="Word" data-desc="Para editar" data-material="Truques de link do GitHub (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="truques-de-link-do-github.md" data-nome=".md" data-desc="Para usar com IA" data-material="Truques de link do GitHub (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="truques-de-link-do-github.pdf" download data-material="Truques de link do GitHub (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

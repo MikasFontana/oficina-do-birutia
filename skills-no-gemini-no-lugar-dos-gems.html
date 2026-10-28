@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills no Gemini no lugar dos Gems · Oficina do BirutIA</title>
+  <meta name="description" content="As Skills vão substituir os Gems no Gemini. Veja o que muda, como escrever a sua primeira e modelos prontos para adaptar.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Google</p>
+      <h1>Skills no Gemini no lugar dos Gems</h1>
+      <p class="lide">As Skills vão substituir os Gems no Gemini. Veja o que muda, como escrever a sua primeira e modelos prontos para adaptar.</p>
+<p>Segundo a referência consultada, o Google anunciou que as <strong>Skills</strong> vão substituir os <strong>Gems</strong> no Gemini. Uma skill é um conjunto de instruções salvo uma vez e reutilizado sempre que você pede aquele tipo de tarefa. É possível usar mais de uma na mesma conversa, e elas seguem um formato aberto chamado SKILL.md, escrito em Markdown.</p>
+<p>As datas da transição (início em outubro, migração dos Gems em novembro, fim dos Gems em contas de empresa em março de 2027) vêm da referência consultada: confira o calendário no Google Workspace Updates. As skills criadas no app do Gemini não aparecem no Gmail ou no Docs, e vice-versa.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Escolha uma tarefa que você repete</h3>
+<p>Tarefa de uma vez só não precisa de skill.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Dê um nome que comece com verbo</h3>
+<p>Minúsculas com hífen: <code>escrever-post-da-marca</code>, <code>resumir-reuniao</code>.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Escreva a descrição com "Use quando"</h3>
+<p>É por ela que o Gemini decide quando aplicar a skill.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Escreva as instruções</h3>
+<p>Formato da resposta, passos em ordem, erros a evitar e o que fazer quando faltar informação.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Teste e ajuste</h3>
+<p>Chame a skill em uma conversa nova e corrija a instrução se a resposta sair fora do padrão.</p>
+</section>
+<h2>Modelos prontos</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Escrever na voz da marca</p><p class="prompt-texto">Nome: escrever-na-voz-da-marca Descrição: Escreve textos de marketing no tom da [marca]. Use quando eu pedir post, legenda, e-mail ou anúncio. Instruções: - Público: [quem compra]. - Tom: [direto, acolhedor ou divertido], frases curtas, linguagem do dia a dia. - Palavras que a marca usa: [lista]. Palavras proibidas: [lista]. - Termine sempre com uma chamada para ação clara. - Se eu não disser o canal, pergunte antes de escrever.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Resumir reunião</p><p class="prompt-texto">Nome: resumir-reuniao Descrição: Transforma anotações ou transcrição de reunião em resumo com decisões e tarefas. Use quando eu colar anotações ou transcrição. Instruções: 1. Resumo em até cinco linhas. 2. Decisões tomadas, em lista. 3. Tarefas em tabela: tarefa, responsável, prazo. 4. Pontos em aberto. Se faltar responsável ou prazo, escreva "a definir" e não invente.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Responder cliente</p><p class="prompt-texto">Nome: responder-cliente Descrição: Escreve respostas a clientes por WhatsApp ou e-mail no padrão da [empresa]. Use quando eu colar a mensagem de um cliente e pedir uma resposta. Instruções: - Cumprimente pelo nome, responda em até quatro frases e feche com o próximo passo. - Siga estas políticas: [prazo de troca, horários, formas de pagamento]. - Nunca prometa desconto, prazo ou reembolso fora dessas políticas. - Se a reclamação for grave, sugira que eu ligue ao cliente.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Migrar um Gem para skill</p><p class="prompt-texto">Abaixo estão as instruções de um Gem que eu uso. Reescreva no formato de skill: nome em minúsculas com hífen começando por verbo, descrição com "Use quando...", instruções em passos, erros comuns e o que fazer quando faltar informação. Não mude o objetivo do Gem.  [cole as instruções]</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">Não coloque senhas, CPF, dados bancários ou informações de clientes dentro das instruções. A informação entra na conversa, já anonimizada.</p>
+<p class="alerta">A skill padroniza o jeito de fazer; quem confere o resultado é você.</p>
+<p class="alerta">Em conta de empresa, quem libera é o administrador do Workspace.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Escolhi uma tarefa repetida</li>
+<li>[ ] Descrição com "Use quando"</li>
+<li>[ ] Testei em conversa nova</li>
+<li>[ ] Copiei as instruções dos meus Gems antes da migração</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Recurso do Google (Workspace Updates e Ajuda do Gemini). Modelos escritos pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="skills-no-gemini-no-lugar-dos-gems.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Skills no Gemini no lugar dos Gems (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="skills-no-gemini-no-lugar-dos-gems.docx" data-nome="Word" data-desc="Para editar" data-material="Skills no Gemini no lugar dos Gems (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="skills-no-gemini-no-lugar-dos-gems.md" data-nome=".md" data-desc="Para usar com IA" data-material="Skills no Gemini no lugar dos Gems (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="skills-no-gemini-no-lugar-dos-gems.pdf" download data-material="Skills no Gemini no lugar dos Gems (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

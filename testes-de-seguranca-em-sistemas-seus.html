@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Testes de segurança em sistemas seus · Oficina do BirutIA</title>
+  <meta name="description" content="O Strix usa agentes de IA para testar a segurança da sua própria aplicação e sugerir correções. Só use em sistemas que são seus ou autorizados por escrito.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Testes de segurança em sistemas seus</h1>
+      <p class="lide">O Strix usa agentes de IA para testar a segurança da sua própria aplicação e sugerir correções. Só use em sistemas que são seus ou autorizados por escrito.</p>
+<p>O <strong>Strix</strong> (repositório usestrix/strix, licença Apache-2.0, conferido no GitHub) reúne agentes de IA que testam a segurança de uma aplicação como um atacante faria: um reconhece, outro tenta explorar falhas, outro valida se o problema é real. No fim você recebe as vulnerabilidades encontradas, a prova de que existem e a orientação de correção. Segundo a referência, cobre falhas comuns da lista OWASP Top 10 e funciona com sites, APIs e código-fonte.</p>
+<h2>Regra principal</h2>
+<p><strong>Use somente em sistemas que são seus ou que você tem autorização por escrito para testar.</strong> Testar sistema de terceiros sem permissão é crime em muitos países, inclusive no Brasil. Não aponte a ferramenta para sites de clientes, da empresa onde você trabalha ou de qualquer pessoa sem autorização formal.</p>
+<h2>O que você precisa</h2>
+<p>Docker em funcionamento e uma chave de API de um provedor de IA (que gera custos). No Windows, o projeto indica o WSL. Confira as instruções atuais na documentação oficial (docs.strix.ai) e leia o instalador antes de executar qualquer comando baixado da internet.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Prepare um ambiente de teste</h3>
+<p>O ideal é testar uma cópia do seu sistema, não o ambiente em produção.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Instale e configure pela documentação oficial</h3>
+<p>Defina o provedor de IA e guarde a chave de forma segura.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Aponte para o seu próprio projeto</h3>
+<p>Use o comando da documentação, indicando a pasta do seu código ou o endereço do seu ambiente de teste.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Leia o relatório</h3>
+<p>Comece pelas falhas mais graves. Aplique as correções e rode de novo para confirmar que fecharam.</p>
+</section>
+<h2>Pedido para entender o relatório</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Priorizar correções</p><p class="prompt-texto">Aqui está o relatório de segurança da minha aplicação: [cole o relatório sem chaves nem dados reais]. Explique cada falha em português simples, diga o risco real, proponha a correção mais simples e ordene o que corrigir primeiro. Aponte o que precisa de revisão de um especialista.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">Nunca use em sistemas de terceiros sem autorização por escrito.</p>
+<p class="alerta">Teste em ambiente separado e com cópia dos dados; evite dados reais de clientes.</p>
+<p class="alerta">Os agentes podem executar ações no sistema testado: mantenha backup.</p>
+<p class="alerta">O resultado da IA é um apoio: falhas graves merecem revisão de um profissional de segurança.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] O sistema é meu ou autorizado por escrito</li>
+<li>[ ] Testei em ambiente separado, com backup</li>
+<li>[ ] Li o instalador antes de rodar</li>
+<li>[ ] Corrigi e testei de novo</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Strix, de usestrix (github.com/usestrix/strix). Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="testes-de-seguranca-em-sistemas-seus.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Testes de segurança em sistemas seus (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="testes-de-seguranca-em-sistemas-seus.docx" data-nome="Word" data-desc="Para editar" data-material="Testes de segurança em sistemas seus (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="testes-de-seguranca-em-sistemas-seus.md" data-nome=".md" data-desc="Para usar com IA" data-material="Testes de segurança em sistemas seus (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="testes-de-seguranca-em-sistemas-seus.pdf" download data-material="Testes de segurança em sistemas seus (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

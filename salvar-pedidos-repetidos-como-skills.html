@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salvar seus pedidos repetidos como skills · Oficina do BirutIA</title>
+  <meta name="description" content="Salve uma instrução uma vez e chame com uma barra no chat do Gemini. Passo a passo para criar a primeira skill e modelos prontos.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Google</p>
+      <h1>Salvar seus pedidos repetidos como skills</h1>
+      <p class="lide">Salve uma instrução uma vez e chame com uma barra no chat do Gemini. Passo a passo para criar a primeira skill e modelos prontos.</p>
+<p>Segundo a referência consultada, o Google lançou as <strong>skills</strong> no Gemini: instruções que você salva uma vez e chama digitando <code>/</code> na caixa de mensagem. É possível combinar duas ou mais e anexar arquivos de referência. Elas vão substituir os Gems, que serão migrados. Este guia complementa o guia "Skills no Gemini no lugar dos Gems". Condições (idade, ativação da atividade do Gemini, datas) estão na Ajuda do Gemini: "Create and manage skills".</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Abra as configurações do Gemini e a área de Skills</h3>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Escolha como criar</h3>
+<p>Criar com o Gemini (ele faz perguntas), criar manualmente (nome, descrição e instruções) ou enviar um arquivo SKILL.md.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Dê um nome curto com verbo</h3>
+<p>Minúsculas e hífen: <code>responder-cliente</code>.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Escreva quando usar</h3>
+<p>Termine a descrição com "Use quando..." e a situação.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">5</span><h3>Escreva as instruções em passos</h3>
+<p>Formato, tom e o que fazer quando faltar informação.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">6</span><h3>Teste no chat</h3>
+<p>Digite <code>/</code> e o nome da skill, envie um caso real e ajuste.</p>
+</section>
+<h2>Pedido para criar pelo chat</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Criar skill pelo chat</p><p class="prompt-texto">Crie uma skill com base nestas instruções. Nome: [nome-com-hifen]. Descrição: [o que faz]. Use quando [situação]. Passos: 1) [passo] 2) [passo] 3) [passo]. Formato da resposta: [formato]. Se faltar informação, pergunte antes de responder.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Modelos para colar</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Skill: escrever no meu tom</p><p class="prompt-texto">Nome: escrever-no-meu-tom Descrição: Reescreve textos no meu jeito de falar. Use quando eu pedir post, e-mail ou mensagem. Instruções: Escreva em português do Brasil, frases curtas e linguagem de conversa. Evite palavras difíceis e termos em inglês quando houver equivalente. Meu público é [quem lê]. Exemplos do meu tom: [cole dois textos seus]. Evite texto longo demais, excesso de adjetivos e promessas que eu não posso cumprir.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Skill: responder cliente</p><p class="prompt-texto">Nome: responder-cliente Descrição: Escreve resposta a mensagem de cliente. Use quando eu colar uma dúvida ou reclamação. Instruções: 1) Identifique o que o cliente quer de fato. 2) Responda em até cinco linhas, com educação e sem jargão. 3) Em reclamação, reconheça o problema e informe o próximo passo com prazo. 4) Use só as informações que eu passar sobre preço, prazo e política; se faltar, pergunte. 5) Termine com uma pergunta que ajude a resolver.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Skill: legenda de post</p><p class="prompt-texto">Nome: legenda-instagram Descrição: Escreve legenda de post. Use quando eu enviar o tema ou a imagem. Instruções: Primeira linha com gancho curto. Depois duas ou três frases com a ideia principal. Feche com uma chamada para [comentar, salvar ou enviar mensagem]. Sem hashtags e sem emojis. Entregue duas versões com ganchos diferentes.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Dica</h2>
+<p>Combine skills: uma cuida do tom e outra do formato. Também é possível deixar um arquivo fixo na skill, como a tabela de preços (confira os limites de tamanho na Ajuda).</p>
+<h2>Avisos</h2>
+<p class="alerta">Não coloque CPF, telefones, endereços ou dados de saúde em skills ou anexos; use nomes fictícios nos exemplos.</p>
+<p class="alerta">Copie as instruções dos seus Gems para um documento antes da migração.</p>
+<p class="alerta">Revise preço, prazo e informações antes de enviar ao cliente.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Nome com verbo e descrição com "Use quando"</li>
+<li>[ ] Testei com um caso real</li>
+<li>[ ] Sem dados pessoais na skill</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Recurso do Google (anúncio sobre skills no Gemini e Ajuda do Gemini). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="salvar-pedidos-repetidos-como-skills.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Salvar seus pedidos repetidos como skills (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="salvar-pedidos-repetidos-como-skills.docx" data-nome="Word" data-desc="Para editar" data-material="Salvar seus pedidos repetidos como skills (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="salvar-pedidos-repetidos-como-skills.md" data-nome=".md" data-desc="Para usar com IA" data-material="Salvar seus pedidos repetidos como skills (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="salvar-pedidos-repetidos-como-skills.pdf" download data-material="Salvar seus pedidos repetidos como skills (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>
