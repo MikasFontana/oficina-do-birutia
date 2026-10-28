@@ -65,16 +65,24 @@
 <li>Não use a voz clonada para falar o que você não diria.</li>
 </ul>
 <p class="alerta">Existem outras ferramentas de voz de código aberto. Confira a licença de cada uma antes de usar em projeto comercial.</p>
-      <section class="formatos" aria-labelledby="t-fmt">
-        <p class="fmt-k">Baixar o material</p>
-        <h2 id="t-fmt">Escolha o formato</h2>
-        <div class="fmt-grid">
-          <a class="fmt" href="downloads/clonar-a-propria-voz-com-ia.pdf" download data-material="Clonar a própria voz com IA, de graça e no seu computador (PDF)"><svg width="52" height="62" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg><strong>PDF</strong><span>Para ler e imprimir</span></a>
-          <a class="fmt" href="downloads/clonar-a-propria-voz-com-ia.docx" download data-material="Clonar a própria voz com IA, de graça e no seu computador (Word)"><svg width="52" height="62" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg><strong>Word</strong><span>Para editar</span></a>
-          <a class="fmt" href="downloads/clonar-a-propria-voz-com-ia.md" download data-material="Clonar a própria voz com IA, de graça e no seu computador (.md)"><svg width="52" height="62" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg><strong>.md</strong><span>Para usar com IA</span></a>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="clonar-a-propria-voz-com-ia.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Clonar a própria voz com IA, de graça e no seu computador (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="clonar-a-propria-voz-com-ia.docx" data-nome="Word" data-desc="Para editar" data-material="Clonar a própria voz com IA, de graça e no seu computador (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="clonar-a-propria-voz-com-ia.md" data-nome=".md" data-desc="Para usar com IA" data-material="Clonar a própria voz com IA, de graça e no seu computador (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="clonar-a-propria-voz-com-ia.pdf" download data-material="Clonar a própria voz com IA, de graça e no seu computador (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
         </div>
-        <p class="fmt-nota"><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
-      </section>
+      </details>
       <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
       <p class="nota-fonte">Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.</p>
     </main>
@@ -89,5 +97,6 @@
   <script src="js/pagina.js" defer></script>
   <script src="js/cadastro.js" defer></script>
   <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
 </body>
 </html>
