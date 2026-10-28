@@ -86,14 +86,36 @@ var LINK_FORMULARIO = "https://docs.google.com/forms/d/e/1FAIpQLSeSofeChquem0vQq
           li.setAttribute("data-cats", li.getAttribute("data-cats").replace("embreve", "guias"));
           var c = li.querySelector(".cadeado"); if (c) c.remove();
           var b = li.querySelector(".conteudo-borrado"); if (b) b.remove();
-          if (Array.prototype.indexOf.call(grade.children, li) > 2) grade.insertBefore(li, grade.firstElementChild); // se abriu longe do topo, vai para o começo
         } else {
           var r = li.querySelector(".regressiva");
           if (r) r.textContent = chegou ? "Chegando em instantes" : texto(alvo - agoraMs());
         }
       });
+      ordenar();
       avisar();
       colorir();
+    };
+    // ordem da grade: 1) lançamentos manuais (os que postamos à mão, mais novo primeiro) sempre na frente;
+    // 2) estreias automáticas já abertas (mais nova primeiro); 3) os antigos como já estavam;
+    // 4) os que ainda vão abrir, do mais próximo ao mais distante
+    var INICIO_AUTOMATICO = Date.parse("2026-10-29T00:00"); // o que tem data antes disso foi lançado à mão
+    var ordemOriginal = Array.prototype.slice.call(grade.children);
+    var ordenar = function () {
+      var ms = function (li) { return Date.parse(li.getAttribute("data-libera") || ""); };
+      var lanc = function (li) { return Date.parse(li.getAttribute("data-lancamento") || "") || 0; };
+      var abertos = ordemOriginal.filter(function (li) { return !li.classList.contains("bloqueada"); });
+      var manual = function (li) { return !!li.querySelector(".selo") || (li.hasAttribute("data-libera") && ms(li) < INICIO_AUTOMATICO); };
+      var manuais = abertos.filter(manual).sort(function (a, b) { return lanc(b) - lanc(a); });
+      abertos = abertos.filter(function (li) { return manuais.indexOf(li) === -1; });
+      var estreias = abertos.filter(function (li) { return li.hasAttribute("data-libera"); }).sort(function (a, b) { return ms(b) - ms(a); });
+      var antigos = abertos.filter(function (li) { return !li.hasAttribute("data-libera"); });
+      var fechados = ordemOriginal.filter(function (li) { return li.classList.contains("bloqueada"); }).sort(function (a, b) {
+        var pa = a.querySelector("a[href]") ? 0 : 1, pb = b.querySelector("a[href]") ? 0 : 1; // guias prontos antes dos "em preparação"
+        return pa - pb || ms(a) - ms(b);
+      });
+      var nova = manuais.concat(estreias, antigos, fechados);
+      var igual = nova.every(function (li, i) { return grade.children[i] === li; });
+      if (!igual) nova.forEach(function (li) { grade.appendChild(li); });
     };
     atualizar();
     setInterval(atualizar, 30000);
