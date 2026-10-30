@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peça ao Claude que te ensine em várias aulas · Oficina do BirutIA</title>
+  <meta name="description" content="A skill teach transforma uma pasta em sala de aula: o Claude guarda o que você quer aprender e continua de onde parou, aula após aula.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude Code</p>
+      <h1>Peça ao Claude que te ensine em várias aulas</h1>
+      <p class="lide">A skill teach transforma uma pasta em sala de aula: o Claude guarda o que você quer aprender e continua de onde parou, aula após aula.</p>
+<p>A skill <strong>teach</strong>, do repositório mattpocock/skills (licença MIT, atualizado em outubro de 2026, conferido no GitHub), foi feita para quem quer aprender algo aos poucos. Segundo a descrição no próprio arquivo, o pedido é "com estado": você pretende aprender o tema ao longo de várias sessões. Por isso o Claude trata a pasta atual como uma <strong>sala de aula</strong>: guarda o objetivo em um arquivo chamado MISSION.md e organiza as lições na pasta <code>lessons</code>, para retomar depois sem recomeçar.</p>
+<p>Ela serve para aprender qualquer assunto: uma ferramenta, um conceito, uma habilidade nova.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Crie uma pasta só para o tema</h3>
+<p>Por exemplo, "aprender planilhas". A skill usa a pasta onde você a chama.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Instale</h3>
+<p><code>`</code></p>
+<p>npx skills add https://github.com/mattpocock/skills --skill teach</p>
+<p><code>`</code></p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Abra o Claude Code dentro da pasta e chame</h3>
+<p>Digite <code>/teach</code> e diga o que quer aprender.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Volte nos dias seguintes</h3>
+<p>Abra a mesma pasta e continue. O progresso fica nos arquivos.</p>
+</section>
+<h2>Pedido para o primeiro dia</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Combinar o objetivo</p><p class="prompt-texto">Quero aprender [assunto] em [prazo]. Hoje eu sei [o que já sei]. Pergunte o que precisar para entender o meu objetivo e o meu nível, e depois proponha um plano de aulas curtas, com um exercício em cada uma.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">O tom e o ritmo das aulas dependem do que você pedir; ajuste no começo.</p>
+<p class="alerta">A IA pode errar. Para assuntos de saúde, dinheiro ou direito, confirme com um profissional.</p>
+<p class="alerta">Os arquivos ficam no seu computador, na pasta que você escolheu.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Criei uma pasta própria para o tema</li>
+<li>[ ] Instalei e chamei /teach</li>
+<li>[ ] Combinei objetivo e prazo</li>
+<li>[ ] Voltei na pasta para continuar a aula</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Skills de Matt Pocock (github.com/mattpocock/skills), licença MIT. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="peca-ao-claude-que-te-ensine-em-varias-aulas.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Peça ao Claude que te ensine em várias aulas (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="peca-ao-claude-que-te-ensine-em-varias-aulas.docx" data-nome="Word" data-desc="Para editar" data-material="Peça ao Claude que te ensine em várias aulas (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="peca-ao-claude-que-te-ensine-em-varias-aulas.md" data-nome=".md" data-desc="Para usar com IA" data-material="Peça ao Claude que te ensine em várias aulas (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="peca-ao-claude-que-te-ensine-em-varias-aulas.pdf" download data-material="Peça ao Claude que te ensine em várias aulas (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

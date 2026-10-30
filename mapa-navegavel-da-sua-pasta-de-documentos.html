@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Um mapa navegável da sua pasta de documentos · Oficina do BirutIA</title>
+  <meta name="description" content="O Graphify lê uma pasta com código, textos e PDFs e monta um mapa de conceitos e ligações, com relatório e página para explorar no navegador.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
+      <h1>Um mapa navegável da sua pasta de documentos</h1>
+      <p class="lide">O Graphify lê uma pasta com código, textos e PDFs e monta um mapa de conceitos e ligações, com relatório e página para explorar no navegador.</p>
+<p>O <strong>Graphify</strong> (repositório Graphify-Labs/graphify, licença Apache-2.0, atualizado em outubro de 2026, conferido no GitHub) lê uma pasta e transforma o conteúdo em um <strong>grafo de conhecimento</strong>: um mapa em que cada ideia é um ponto e as ligações mostram como elas se relacionam. Segundo o projeto, entende cerca de 40 linguagens de programação, além de textos, PDFs e imagens.</p>
+<p>No fim você recebe três arquivos, dentro de uma pasta <code>graphify-out</code>:</p>
+<ul>
+<li><code>graph.html</code>: abre no navegador, com busca, filtros e pontos clicáveis;</li>
+<li><code>GRAPH_REPORT.md</code>: o resumo, com os conceitos principais, ligações surpreendentes e perguntas sugeridas;</li>
+<li><code>graph.json</code>: o mapa completo, para consultar depois.</li>
+</ul>
+<p>Combina com quem tem um acervo de anotações, como um cofre do Obsidian, ou uma pasta de projeto grande que precisa entender rápido.</p>
+<h2>O que você precisa</h2>
+<p>Python 3.10 ou mais novo e a ferramenta uv (ou pipx), segundo o README do projeto.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Instale</h3>
+<p><code>`</code></p>
+<p>uv tool install graphifyy</p>
+<p><code>`</code></p>
+<p><code>`</code></p>
+<p>graphify install</p>
+<p><code>`</code></p>
+<p>O nome do pacote tem <strong>dois "y" no fim</strong> (graphifyy). Confira o endereço antes de instalar, para não cair em um pacote falso de nome parecido.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Escolha uma pasta de teste</h3>
+<p>Comece por uma pasta pequena e sem dados sensíveis.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Chame no seu assistente</h3>
+<p><code>`</code></p>
+<p>/graphify .</p>
+<p><code>`</code></p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Explore</h3>
+<p>Abra o <code>graph.html</code> no navegador, leia o relatório e faça perguntas ao Claude sobre o mapa.</p>
+</section>
+<h2>Pedido para ler o relatório</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Entender o mapa</p><p class="prompt-texto">Leia o arquivo GRAPH_REPORT.md desta pasta. Explique em português simples quais são os conceitos mais importantes, quais ligações me surpreenderam e quais perguntas eu deveria fazer sobre este material. Não invente nada que não esteja no relatório.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">Privacidade: segundo o README, código é processado no seu computador; documentos, PDFs e imagens são enviados ao assistente de IA que você usa para extrair o sentido. Não use pastas com dados de clientes ou dados pessoais.</p>
+<p class="alerta">Usar a ferramenta fora do assistente exige uma chave de API de um provedor de IA, que pode gerar custos.</p>
+<p class="alerta">O mapa é uma leitura automática: confira antes de tomar decisões com base nele.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Conferi o nome do pacote (graphifyy)</li>
+<li>[ ] Testei em uma pasta pequena e sem dados sensíveis</li>
+<li>[ ] Abri o graph.html e li o relatório</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Graphify, de Graphify-Labs (github.com/Graphify-Labs/graphify), licença Apache-2.0. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="mapa-navegavel-da-sua-pasta-de-documentos.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Um mapa navegável da sua pasta de documentos (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="mapa-navegavel-da-sua-pasta-de-documentos.docx" data-nome="Word" data-desc="Para editar" data-material="Um mapa navegável da sua pasta de documentos (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="mapa-navegavel-da-sua-pasta-de-documentos.md" data-nome=".md" data-desc="Para usar com IA" data-material="Um mapa navegável da sua pasta de documentos (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="mapa-navegavel-da-sua-pasta-de-documentos.pdf" download data-material="Um mapa navegável da sua pasta de documentos (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

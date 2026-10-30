@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Respostas curtas no Claude, para gastar menos limite · Oficina do BirutIA</title>
+  <meta name="description" content="O Caveman faz o assistente cortar introduções e repetições. Respostas diretas, mais rápidas de ler e com menos consumo do seu limite de uso.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude Code</p>
+      <h1>Respostas curtas no Claude, para gastar menos limite</h1>
+      <p class="lide">O Caveman faz o assistente cortar introduções e repetições. Respostas diretas, mais rápidas de ler e com menos consumo do seu limite de uso.</p>
+<p>O <strong>Caveman</strong> (repositório juliusbrussee/caveman, licença Apache-2.0, atualizado em outubro de 2026, conferido no GitHub) pede ao assistente que responda de forma bem curta: sem "claro, vou explicar", sem repetir a pergunta, sem enfeite. O código continua completo. O exemplo do próprio projeto mostra uma resposta de 63 palavras-unidade (tokens) caindo para 20, com a mesma solução. O projeto também divulga testes que indicam menos consumo; <strong>esses números são do autor</strong>, e nós não os medimos.</p>
+<p>Ele serve para quem prefere objetividade e quer fazer o limite do plano render mais.</p>
+<h2>O que você precisa</h2>
+<p>Um assistente compatível, como o Claude Code. O instalador completo exige Node.js na versão 22.13 ou mais nova. Para só a skill de respostas curtas, o comando simples abaixo basta.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Instale só a skill de respostas curtas</h3>
+<p>No terminal, dentro da sua pasta de trabalho:</p>
+<p><code>`</code></p>
+<p>npx skills add https://github.com/juliusbrussee/caveman --skill caveman</p>
+<p><code>`</code></p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Ative quando quiser</h3>
+<p>Use <code>/caveman</code> para ligar o modo de respostas curtas. Há também uma versão ainda mais enxuta, descrita no README do projeto.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Compare</h3>
+<p>Faça a mesma pergunta com e sem o modo e veja a diferença.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Opção completa (depois, se quiser)</h3>
+<p>O projeto oferece um instalador próprio, <code>npx @caveman-ai/cli@latest</code>, que procura os assistentes do seu computador e mostra o que vai alterar. Leia a lista antes de confirmar.</p>
+</section>
+<h2>Pedido para testar</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Resposta curta</p><p class="prompt-texto">Responda em até cinco linhas, direto ao ponto, sem introdução e sem repetir a minha pergunta. Se eu precisar de mais detalhes, eu peço.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">O exemplo do projeto está em inglês. Não testamos o efeito em português.</p>
+<p class="alerta">Respostas curtas demais podem esconder um cuidado importante: para assuntos delicados, peça detalhes.</p>
+<p class="alerta">O instalador completo altera configurações de vários programas. Leia o que ele mostra antes de aceitar.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Instalei só a skill, sem o instalador completo</li>
+<li>[ ] Comparei uma resposta normal com uma curta</li>
+<li>[ ] Sei desligar quando precisar de mais detalhes</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Caveman, de Julius Brussee (github.com/juliusbrussee/caveman), licença Apache-2.0. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="respostas-curtas-no-claude-caveman.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Respostas curtas no Claude, para gastar menos limite (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="respostas-curtas-no-claude-caveman.docx" data-nome="Word" data-desc="Para editar" data-material="Respostas curtas no Claude, para gastar menos limite (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="respostas-curtas-no-claude-caveman.md" data-nome=".md" data-desc="Para usar com IA" data-material="Respostas curtas no Claude, para gastar menos limite (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="respostas-curtas-no-claude-caveman.pdf" download data-material="Respostas curtas no Claude, para gastar menos limite (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

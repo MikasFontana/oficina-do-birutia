@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faça o Claude escrever só o necessário · Oficina do BirutIA</title>
+  <meta name="description" content="O Ponytail faz o Claude Code parar e perguntar &quot;isso precisa existir?&quot; antes de criar código novo. Menos peças a mais, menos confusão para você revisar.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude Code</p>
+      <h1>Faça o Claude escrever só o necessário</h1>
+      <p class="lide">O Ponytail faz o Claude Code parar e perguntar &quot;isso precisa existir?&quot; antes de criar código novo. Menos peças a mais, menos confusão para você revisar.</p>
+<p>O <strong>Ponytail</strong> (repositório DietrichGebert/ponytail, licença MIT, atualizado em outubro de 2026, conferido no GitHub) é um plugin que muda o comportamento do Claude Code: antes de escrever código novo, ele passa por uma escada de perguntas. Isso precisa existir? Já há algo parecido no projeto? Uma função que já vem pronta resolve? Só no fim ele cria código, sem camadas, opções e dependências que ninguém pediu. O projeto afirma, em um teste próprio com 39 tarefas, uma redução de cerca de 53% no código gerado. <strong>Esse número é do autor, não foi medido por nós.</strong></p>
+<p>Nós usamos o Ponytail nas nossas conversas de programação. O que notamos é um efeito simples: a resposta vem menor e mais fácil de conferir, o que ajuda quem não programa.</p>
+<h2>O que você precisa</h2>
+<p>Claude Code instalado e uma pasta de projeto aberta. O guia vale para quem usa o Claude para criar sites, scripts e automações.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Adicione o plugin</h3>
+<p>No Claude Code, envie este comando sozinho, em uma mensagem:</p>
+<p><code>`</code></p>
+<p>/plugin marketplace add DietrichGebert/ponytail</p>
+<p><code>`</code></p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Instale</h3>
+<p>Em <strong>outra mensagem</strong>, envie:</p>
+<p><code>`</code></p>
+<p>/plugin install ponytail@ponytail</p>
+<p><code>`</code></p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Escolha a intensidade</h3>
+<p>Use <code>/ponytail lite</code>, <code>/ponytail full</code> ou <code>/ponytail ultra</code>. Para desligar, <code>/ponytail off</code>. Sem escolher, ele começa no nível padrão.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Peça uma tarefa de verdade</h3>
+<p>Veja o efeito em uma tarefa pequena, como trocar um texto de um botão ou criar uma página simples.</p>
+</section>
+<h2>Pedido para conferir o resultado</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Entender o que mudou</p><p class="prompt-texto">Mostre em português simples o que você alterou e por quê. Liste os arquivos tocados, diga o que deixou de fazer por não ser necessário e aponte qualquer risco que eu precise conhecer.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">Instale somente a partir de DietrichGebert/ponytail no GitHub. Cópias de outros endereços podem ser golpe.</p>
+<p class="alerta">Código mais curto não é garantia de código correto: teste o que o Claude entregar.</p>
+<p class="alerta">Os números de economia vêm do próprio projeto.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Instalei pelos dois comandos, em mensagens separadas</li>
+<li>[ ] Testei em uma tarefa pequena</li>
+<li>[ ] Conferi o que mudou antes de usar</li>
+</ul>
+<h2>Quem fez</h2>
+<p>Ponytail, de DietrichGebert (github.com/DietrichGebert/ponytail), licença MIT. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="faca-o-claude-escrever-so-o-necessario.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Faça o Claude escrever só o necessário (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="faca-o-claude-escrever-so-o-necessario.docx" data-nome="Word" data-desc="Para editar" data-material="Faça o Claude escrever só o necessário (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="faca-o-claude-escrever-so-o-necessario.md" data-nome=".md" data-desc="Para usar com IA" data-material="Faça o Claude escrever só o necessário (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="faca-o-claude-escrever-so-o-necessario.pdf" download data-material="Faça o Claude escrever só o necessário (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

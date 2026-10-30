@@ -95,15 +95,17 @@ var LINK_FORMULARIO = "https://docs.google.com/forms/d/e/1FAIpQLSeSofeChquem0vQq
       avisar();
       colorir();
     };
-    // ordem da grade: 1) lançamentos manuais (os que postamos à mão, mais novo primeiro) sempre na frente;
-    // 2) estreias automáticas já abertas (mais nova primeiro); 3) os antigos como já estavam;
-    // 4) os que ainda vão abrir, do mais próximo ao mais distante
+    // ordem da grade: 1) os 3 vermelhos (lançamentos mais novos, manuais ou automáticos); 2) os lançamentos manuais
+    // (os que postamos à mão, mais novo primeiro); 3) as estreias automáticas já abertas (mais nova primeiro: quando sai
+    // uma nova, a anterior desce para cá); 4) os antigos como já estavam; 5) os que ainda vão abrir, do mais próximo ao mais distante
     var INICIO_AUTOMATICO = Date.parse("2026-10-29T00:00"); // o que tem data antes disso foi lançado à mão
     var ordemOriginal = Array.prototype.slice.call(grade.children);
     var ordenar = function () {
       var ms = function (li) { return Date.parse(li.getAttribute("data-libera") || ""); };
       var lanc = function (li) { return Date.parse(li.getAttribute("data-lancamento") || "") || 0; };
       var abertos = ordemOriginal.filter(function (li) { return !li.classList.contains("bloqueada"); });
+      var datados = abertos.filter(lanc).sort(function (a, b) { return lanc(b) - lanc(a); }).slice(0, 3);
+      abertos = abertos.filter(function (li) { return datados.indexOf(li) === -1; });
       var manual = function (li) { return !!li.querySelector(".selo") || (li.hasAttribute("data-libera") && ms(li) < INICIO_AUTOMATICO); };
       var manuais = abertos.filter(manual).sort(function (a, b) { return lanc(b) - lanc(a); });
       abertos = abertos.filter(function (li) { return manuais.indexOf(li) === -1; });
@@ -113,7 +115,7 @@ var LINK_FORMULARIO = "https://docs.google.com/forms/d/e/1FAIpQLSeSofeChquem0vQq
         var pa = a.querySelector("a[href]") ? 0 : 1, pb = b.querySelector("a[href]") ? 0 : 1; // guias prontos antes dos "em preparação"
         return pa - pb || ms(a) - ms(b);
       });
-      var nova = manuais.concat(estreias, antigos, fechados);
+      var nova = datados.concat(manuais, estreias, antigos, fechados);
       var igual = nova.every(function (li, i) { return grade.children[i] === li; });
       if (!igual) nova.forEach(function (li) { grade.appendChild(li); });
     };

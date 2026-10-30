@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memória entre conversas no Claude Code · Oficina do BirutIA</title>
+  <meta name="description" content="O claude-mem guarda o que aconteceu em cada sessão e devolve um resumo na próxima, para você não recomeçar do zero. Leia o que o instalador pede antes de aceitar.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Claude Code</p>
+      <h1>Memória entre conversas no Claude Code</h1>
+      <p class="lide">O claude-mem guarda o que aconteceu em cada sessão e devolve um resumo na próxima, para você não recomeçar do zero. Leia o que o instalador pede antes de aceitar.</p>
+<p>Quem usa o Claude Code conhece o problema: ao abrir uma nova sessão, o assistente não lembra o que foi feito antes. O <strong>claude-mem</strong> (repositório thedotmack/claude-mem, licença Apache-2.0, atualizado em outubro de 2026, conferido no GitHub) tenta resolver isso. Segundo o projeto, ele registra o que acontece na sessão (ferramentas usadas, decisões, resumos) e devolve esse contexto comprimido nas próximas.</p>
+<p>Pelo README, ele usa ganchos do Claude Code, um serviço local, um banco de dados SQLite no seu computador e uma busca por ferramentas de pesquisa.</p>
+<h2>Antes de instalar: a conta</h2>
+<p>O instalador descrito no README pede que você <strong>entre no claude-mem pelo navegador</strong>, com um link enviado por e-mail, e oferece uma avaliação gratuita de 30 dias. Depois você escolhe de onde vem a "memória": do serviço do projeto, de uma chave sua (OpenRouter ou Gemini) ou do seu plano da Anthropic. Segundo o README, dá para pular esse passo usando uma opção de linha de comando. <strong>Leia cada tela antes de aceitar</strong> e escolha conscientemente quem vai processar o que o assistente registra.</p>
+<h2>Passo a passo</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Decida se faz sentido</h3>
+<p>Vale para quem trabalha em projetos longos e quer continuidade. Para tarefas rápidas, o arquivo CLAUDE.md simples costuma bastar.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Instale</h3>
+<p><code>`</code></p>
+<p>npx claude-mem install</p>
+<p><code>`</code></p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Leia o que ele pergunta</h3>
+<p>Observe a tela da conta e a escolha do provedor de memória.</p>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Teste em um projeto sem dados sensíveis</h3>
+<p>Trabalhe uma sessão, feche e abra outra. Pergunte ao Claude o que ficou da sessão anterior.</p>
+</section>
+<h2>Pedido para conferir a memória</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">O que você lembra</p><p class="prompt-texto">Resuma em tópicos o que você sabe sobre este projeto a partir das sessões anteriores: o que foi feito, o que foi decidido e o que ficou pendente. Diga de onde vem cada informação e marque o que você não tem certeza.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Avisos</h2>
+<p class="alerta">A memória pode guardar trechos do que você escreveu e dos arquivos que o Claude leu. Evite projetos com senhas, chaves e dados de clientes.</p>
+<p class="alerta">Confira para onde vão os dados na opção que você escolheu.</p>
+<p class="alerta">Você pode desinstalar quando quiser; veja a documentação do projeto.</p>
+<h2>Checklist final</h2>
+<ul>
+<li>[ ] Li as telas do instalador antes de aceitar</li>
+<li>[ ] Escolhi o provedor de memória de propósito</li>
+<li>[ ] Testei em um projeto sem dados sensíveis</li>
+</ul>
+<h2>Quem fez</h2>
+<p>claude-mem, de thedotmack (github.com/thedotmack/claude-mem), licença Apache-2.0. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.</p>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="memoria-entre-conversas-no-claude-code.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Memória entre conversas no Claude Code (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="memoria-entre-conversas-no-claude-code.docx" data-nome="Word" data-desc="Para editar" data-material="Memória entre conversas no Claude Code (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="memoria-entre-conversas-no-claude-code.md" data-nome=".md" data-desc="Para usar com IA" data-material="Memória entre conversas no Claude Code (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="memoria-entre-conversas-no-claude-code.pdf" download data-material="Memória entre conversas no Claude Code (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>
