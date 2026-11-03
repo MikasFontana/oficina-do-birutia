@@ -82,3 +82,5 @@ Respeite a licença do projeto original ao reaproveitar código.
 Os serviços citados pertencem aos seus respectivos autores (por exemplo, DeepWiki é da Cognition; o editor github.dev é do GitHub). Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

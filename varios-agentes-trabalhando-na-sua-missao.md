@@ -49,3 +49,5 @@ Instaladores baixados da internet devem ser lidos antes de executar.
 Clodfarm é de matank001 e da comunidade (github.com/matank001/clodfarm). Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

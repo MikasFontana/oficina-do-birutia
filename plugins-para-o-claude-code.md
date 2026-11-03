@@ -45,3 +45,5 @@ Plugin parado ainda carrega peso. Revise a lista uma vez por mês.
 Plugin de terceiros é código de terceiros. Ler antes de instalar leva dois minutos e evita a maior parte dos problemas.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

@@ -52,3 +52,5 @@ Anexe o .md na conversa, em vez do PDF original. Compare o resultado com o origi
 Confira a documentação oficial do MarkItDown para os comandos mais atuais.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

@@ -54,3 +54,5 @@ Revise a apresentação como alguém que não conhece o assunto: onde ficaria pe
 Abra o arquivo final em outro computador ou no celular antes de apresentar. Fontes e formatos às vezes mudam.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

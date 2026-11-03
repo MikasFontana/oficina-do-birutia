@@ -67,3 +67,5 @@ Leia o arquivo [nome do script] que baixei do repositório oficial [nome do proj
 Cada projeto tem o seu autor e a sua licença, indicados no repositório: Raphire (Win11Debloat), Gathin23 (CleanYourTV), equipe do Pi-hole, Universal Debloater Alliance (UAD-ng), Zagitta (GPU unlock), yuliskov (SmartTube) e a equipe do ReVanced. Não temos ligação com nenhum deles. Vale a licença que está no repositório de cada um.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

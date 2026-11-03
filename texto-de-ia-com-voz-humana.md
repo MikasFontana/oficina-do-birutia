@@ -47,3 +47,5 @@ Leia estes 3 textos meus e descreva em 8 pontos como eu escrevo. Depois reescrev
 Nenhum detector de IA é confiável. Escreva para o leitor, e não para passar em um teste.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

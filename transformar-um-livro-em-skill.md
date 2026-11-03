@@ -57,3 +57,5 @@ Se o livro tiver nova edição, refaça os capítulos que mudaram.
 A skill guarda o método. O livro continua sendo a fonte de verdade.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

@@ -67,3 +67,5 @@ Duplicado só se apaga na mão, depois de você abrir os dois e escolher. A IA n
 Crie uma pasta Entrada e jogue tudo nela. Uma vez por semana, peça os pedidos 2 e 4 só para o que está lá.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

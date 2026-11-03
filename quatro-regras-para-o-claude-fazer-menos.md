@@ -47,3 +47,5 @@ Peça um ajuste pequeno e observe se ele mexeu só no que foi pedido. Se não, d
 Regra não substitui revisão. Em um projeto importante, olhe o que mudou antes de aceitar.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

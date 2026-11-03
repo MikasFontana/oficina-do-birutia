@@ -1,10 +1,12 @@
 # Skills no Gemini no lugar dos Gems
 
-As Skills vão substituir os Gems no Gemini. Veja o que muda, como escrever a sua primeira e modelos prontos para adaptar.
+As Skills vão substituir os Gems no Gemini. Veja o que muda, como escrever a sua primeira e modelos prontos da Oficina do BirutIA para adaptar.
 
 Segundo a referência consultada, o Google anunciou que as Skills vão substituir os Gems no Gemini. Uma skill é um conjunto de instruções salvo uma vez e reutilizado sempre que você pede aquele tipo de tarefa. É possível usar mais de uma na mesma conversa, e elas seguem um formato aberto chamado SKILL.md, escrito em Markdown.
 
 As datas da transição (início em outubro, migração dos Gems em novembro, fim dos Gems em contas de empresa em março de 2027) vêm da referência consultada: confira o calendário no Google Workspace Updates. As skills criadas no app do Gemini não aparecem no Gmail ou no Docs, e vice-versa.
+
+Os modelos abaixo são skills da Oficina do BirutIA (licença MIT), em versão resumida e adaptada ao Gemini. Como o formato SKILL.md é aberto, a ideia é a mesma do Claude Code, mas não testamos o arquivo completo no Gemini: cole os modelos no chat e confira.
 
 ## Passo a passo
 
@@ -14,7 +16,7 @@ Tarefa de uma vez só não precisa de skill.
 
 ### 2. Dê um nome que comece com verbo
 
-Minúsculas com hífen: escrever-post-da-marca, resumir-reuniao.
+Minúsculas com hífen, como nos nossos modelos: legenda-instagram, roteiro-de-reel.
 
 ### 3. Escreva a descrição com "Use quando"
 
@@ -28,44 +30,44 @@ Formato da resposta, passos em ordem, erros a evitar e o que fazer quando faltar
 
 Chame a skill em uma conversa nova e corrija a instrução se a resposta sair fora do padrão.
 
-## Modelos prontos
+## Modelos prontos da Oficina do BirutIA
 
-### Pedido: Escrever na voz da marca
+### Pedido: Carrossel para redes sociais
 
 ```
-Nome: escrever-na-voz-da-marca
-Descrição: Escreve textos de marketing no tom da [marca]. Use quando eu pedir post, legenda, e-mail ou anúncio.
+Nome: carrossel-instagram
+Descrição: Planeja carrosséis para Instagram e LinkedIn, tela por tela. Use quando eu pedir carrossel ou transformar um texto em sequência de telas.
 Instruções:
-- Público: [quem compra].
-- Tom: [direto, acolhedor ou divertido], frases curtas, linguagem do dia a dia.
-- Palavras que a marca usa: [lista]. Palavras proibidas: [lista].
-- Termine sempre com uma chamada para ação clara.
-- Se eu não disser o canal, pergunte antes de escrever.
+1. Se faltar, pergunte o assunto, o público, a ação desejada ao final e se há cores e fontes da marca.
+2. Use no máximo 6 telas: capa com promessa clara, quatro telas no meio com uma ideia cada e fechamento com uma única chamada para ação.
+3. Cada tela tem até 25 palavras. Entregue: Tela N, Título, Texto e Visual sugerido.
+4. Depois, escreva a legenda do post e faça uma verificação: a capa se entende sozinha? Cada tela faz sentido sem as outras?
+5. Não invente dados: use [colocar dado real]. Se o assunto couber em 3 telas, faça com 3.
 ```
 
-### Pedido: Resumir reunião
+### Pedido: Roteiro de vídeo curto
 
 ```
-Nome: resumir-reuniao
-Descrição: Transforma anotações ou transcrição de reunião em resumo com decisões e tarefas. Use quando eu colar anotações ou transcrição.
+Nome: roteiro-de-reel
+Descrição: Escreve roteiros de reels e vídeos verticais curtos, cena a cena. Use quando eu pedir roteiro de vídeo curto.
 Instruções:
-1. Resumo em até cinco linhas.
-2. Decisões tomadas, em lista.
-3. Tarefas em tabela: tarefa, responsável, prazo.
-4. Pontos em aberto.
-Se faltar responsável ou prazo, escreva "a definir" e não invente.
+1. Se faltar, pergunte de uma vez: assunto, público, o que a pessoa deve fazer ao final e duração.
+2. Entregue três ganchos de até 12 palavras e indique o melhor.
+3. Monte cenas de 3 a 6 segundos em tabela: tempo, fala e tela.
+4. Feche com uma única chamada para ação e estime a duração.
+5. Não invente dados nem prometa resultado garantido.
 ```
 
-### Pedido: Responder cliente
+### Pedido: Revisor de texto
 
 ```
-Nome: responder-cliente
-Descrição: Escreve respostas a clientes por WhatsApp ou e-mail no padrão da [empresa]. Use quando eu colar a mensagem de um cliente e pedir uma resposta.
+Nome: revisor-texto-humano
+Descrição: Revisa textos para tirar o jeito de texto de IA, sem inventar fatos. Use quando eu pedir para humanizar ou revisar um texto antes de publicar.
 Instruções:
-- Cumprimente pelo nome, responda em até quatro frases e feche com o próximo passo.
-- Siga estas políticas: [prazo de troca, horários, formas de pagamento].
-- Nunca prometa desconto, prazo ou reembolso fora dessas políticas.
-- Se a reclamação for grave, sugira que eu ligue ao cliente.
+1. Liste cada marca de texto de IA que encontrar, citando o trecho: abertura genérica, estrutura previsível, adjetivos de propaganda, excesso de conectores.
+2. Proponha a correção de cada uma e entregue a versão revisada completa.
+3. Preserve nomes, datas e termos técnicos. Não mude o sentido.
+4. Onde faltar exemplo real, escreva [colocar exemplo real].
 ```
 
 ### Pedido: Migrar um Gem para skill
@@ -75,6 +77,10 @@ Abaixo estão as instruções de um Gem que eu uso. Reescreva no formato de skil
 
 [cole as instruções]
 ```
+
+## Antes de instalar a skill de outra pessoa
+
+Se você baixar uma skill pronta (de um repositório, por exemplo), leia tudo antes. Nós usamos a skill auditor-de-skills, que lê todos os arquivos sem instalar nem executar nada e entrega uma tabela de riscos, licença e dependências. Veja o guia sobre escolher skills com segurança aqui na Oficina.
 
 ## Avisos
 
@@ -92,6 +98,8 @@ Em conta de empresa, quem libera é o administrador do Workspace.
 - [ ] Copiei as instruções dos meus Gems antes da migração
 ## Quem fez
 
-Recurso do Google (Workspace Updates e Ajuda do Gemini). Modelos escritos pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Recurso do Google (Workspace Updates e Ajuda do Gemini). Skills de exemplo: Oficina do BirutIA (Mikas Fontana, MLM Produções), licença MIT. Guia escrito pela Oficina do BirutIA.
 
-Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
+Oficina do BirutIA - material gratuito. Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

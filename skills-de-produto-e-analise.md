@@ -57,3 +57,5 @@ Leia esta planilha e me diga: o que há de errado nos dados (vazios, duplicados,
 A skill melhora o formato e o rigor da resposta. O julgamento sobre o negócio continua sendo seu.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

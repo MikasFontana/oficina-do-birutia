@@ -70,3 +70,5 @@ Regras em arquivo ajudam, mas não garantem. Confira o que o Claude entregar.
 Arquivo de multica-ai (github.com/multica-ai/andrej-karpathy-skills), com base em observações de Andrej Karpathy. Licença não declarada na data da conferência. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.
 
 Oficina do BirutIA - material gratuito. Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

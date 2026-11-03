@@ -50,3 +50,5 @@ Contexto: [quem sou e o que preciso]. Tarefa: [o que quero]. Formato: [lista, ta
 Dez minutos de ajuste no primeiro dia economizam horas de correção depois.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

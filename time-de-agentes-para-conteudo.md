@@ -50,3 +50,5 @@ Aja como o Pesquisador. Assunto da semana: [assunto]. Entregue 5 ideias de posts
 Um time de IA não substitui o seu olhar. Ele organiza o trabalho para o seu olhar cair onde importa.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

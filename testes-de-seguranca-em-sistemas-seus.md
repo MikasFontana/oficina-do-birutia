@@ -59,3 +59,5 @@ O resultado da IA é um apoio: falhas graves merecem revisão de um profissional
 Strix, de usestrix (github.com/usestrix/strix). Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br
