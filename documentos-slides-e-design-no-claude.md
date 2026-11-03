@@ -67,3 +67,5 @@ Revise o material como um cliente exigente: há erro, número sem fonte, promess
 A IA entrega um primeiro rascunho muito bom. O acabamento e a conferência são responsabilidade sua.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

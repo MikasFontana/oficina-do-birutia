@@ -108,3 +108,5 @@ Com o plugin jurídico, leia o contrato anexo do ponto de vista de [contratante 
 Corey Haines (marketing), Charlie Hills (redes sociais), nextlevelbuilder (UI/UX Pro Max), Leonxlnx (Taste Skill) e Anthropic (finanças, jurídico, documentos e frontend-design). Não temos ligação com nenhum deles. A licença de cada um está no repositório, e vale a de lá, não a deste guia.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

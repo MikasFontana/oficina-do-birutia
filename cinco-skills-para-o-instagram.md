@@ -55,3 +55,5 @@ Use a skill "roteiro-de-reel" para o assunto [assunto] e o público [público]. 
 Skill ruim é pior que nenhuma. Se o resultado não ficar bom em duas tentativas, reescreva as regras em vez de insistir.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

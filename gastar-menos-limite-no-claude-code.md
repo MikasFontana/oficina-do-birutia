@@ -51,3 +51,5 @@ Me mostre, em palavras simples, o que mais está pesando nesta conversa: arquivo
 Economizar limite não é pedir menos. É pedir sem repetir o contexto.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

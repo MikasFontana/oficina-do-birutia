@@ -54,3 +54,5 @@ Um painel com tarefas e prazos, ao lado da conversa, usando um mod.
 Não coloque senhas, dados de cartão ou informações sensíveis de terceiros na memória do assistente.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

@@ -57,3 +57,5 @@ Revise o post abaixo antes de agendar: tem número sem fonte, promessa exagerada
 Volume sem qualidade cansa quem segue você. Trinta posts bons por mês vencem sessenta medianos.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

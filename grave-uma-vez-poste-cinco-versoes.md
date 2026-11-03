@@ -80,3 +80,5 @@ Depois dos cinco dias, compare três coisas: quantas pessoas ficaram nos primeir
 - A chamada para ação é única e coerente com o objetivo?
 - Em saúde e finanças: nada de promessa de resultado.
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

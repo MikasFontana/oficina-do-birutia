@@ -66,3 +66,5 @@ Revise o vídeo pronto: o texto na tela corresponde ao que é falado? Há cortes
 Use apenas a sua voz, ou a voz de quem autorizou por escrito.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

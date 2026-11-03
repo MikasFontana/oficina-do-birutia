@@ -93,3 +93,5 @@ Os pedidos que fazem você responder (quiz, socrático) fixam mais do que o resu
 Técnicas de estudo de domínio público. Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência; os pedidos são nossos.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

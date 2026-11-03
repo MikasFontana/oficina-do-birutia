@@ -64,3 +64,5 @@ Esqueça as soluções que discutimos até aqui. Liste só os fatos que são ver
 Em assunto de saúde, dinheiro ou lei, a IA ajuda a pensar, mas não substitui um profissional. Confira os números e as fontes antes de agir.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

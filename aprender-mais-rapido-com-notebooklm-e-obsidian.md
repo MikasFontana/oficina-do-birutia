@@ -56,3 +56,5 @@ Crie uma nota por ideia nova, em suas palavras, e ligue com notas relacionadas. 
 Estudar com IA funciona quando você continua pensando. Se a IA pensa por você, a retenção cai.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

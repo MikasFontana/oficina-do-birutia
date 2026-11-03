@@ -67,3 +67,5 @@ Segundo o projeto, ele mantém uma página própria para essas marcas, que desli
 O CleanYourTV é um projeto aberto de Gathin23 (github.com/Gathin23/cleanyourtv). Não temos ligação com ele: o pedido acima é nosso e apenas indica o projeto. Leia a licença e o código antes de usar.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

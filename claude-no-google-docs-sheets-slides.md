@@ -63,3 +63,5 @@ Revise o texto dos slides para um público de [público], sem jargão e com fras
 Use a IA como um assistente que propõe. Quem aprova é você.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

@@ -48,3 +48,5 @@ Skill parada também gasta o espaço de contexto do Claude. Remova as que você 
 Se algo parecer estranho, não instale. Uma skill a menos custa pouco, e uma instalada sem leitura pode custar caro.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

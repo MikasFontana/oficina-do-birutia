@@ -47,3 +47,5 @@ Crie um mod com um comando chamado /resumo que leia o que fizemos hoje e escreva
 Um mod roda no seu computador com as suas permissões. Trate como qualquer programa: crie só o que você entende.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

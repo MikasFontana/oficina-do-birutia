@@ -65,3 +65,5 @@ Acrescente movimento discreto: elementos que crescem na entrada, uma leve flutua
 Os números continuam sendo o que importa. O 3D é a embalagem, e a tabela de apoio garante que ninguém fica sem a informação.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

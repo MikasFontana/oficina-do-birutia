@@ -55,3 +55,5 @@ Filtre o áudio gerado com o FFmpeg para reduzir o chiado e normalizar o volume,
 Existem outras ferramentas de voz de código aberto. Confira a licença de cada uma antes de usar em projeto comercial.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br

@@ -55,3 +55,5 @@ Quando o texto sair fora do tom, peça: "O que, na identidade da marca, você de
 Em saúde, finanças e outras áreas reguladas, escreva em "o que nunca dizer" as promessas proibidas pela regra do seu setor.
 
 Oficina do BirutIA - material gratuito. Conferido em 27/10/2026. As ferramentas de IA mudam com frequência.
+
+Quer automações para a sua empresa? O BirutIA e a MLM Produções podem ajudar. www.mlmproducoes.com.br
