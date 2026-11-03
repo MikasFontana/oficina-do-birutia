@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Personalizar o Gemini com instruções e skills · Oficina do BirutIA</title>
-  <meta name="description" content="Instruções fixas, skills para tarefas repetidas e apps conectados: tudo para deixar o Gemini com o seu jeito.">
+  <meta name="description" content="Instruções fixas, skills para tarefas repetidas e apps conectados: tudo para deixar o Gemini com o seu jeito, com skills da Oficina do BirutIA como ponto de partida.">
   <meta name="theme-color" content="#1c1d20">
   <link rel="icon" href="img/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +29,9 @@
       <a class="voltar" href="./">← Voltar para a página inicial</a>
       <p class="migalha"><a href="./#materiais">Materiais</a> / Google</p>
       <h1>Personalizar o Gemini com instruções e skills</h1>
-      <p class="lide">Instruções fixas, skills para tarefas repetidas e apps conectados: tudo para deixar o Gemini com o seu jeito.</p>
+      <p class="lide">Instruções fixas, skills para tarefas repetidas e apps conectados: tudo para deixar o Gemini com o seu jeito, com skills da Oficina do BirutIA como ponto de partida.</p>
 <p>Segundo a referência consultada, o app do Gemini ganhou um menu de personalização (em inglês, *Customize*) reunindo três coisas: instruções que valem para toda conversa, <strong>skills</strong> (conjuntos de instruções salvas para tarefas que você repete) e apps conectados. A liberação é gradual, a lista de apps varia por conta e país, e as skills são, por enquanto, para maiores de 18 anos. Se algo não bater com a sua tela, procure o mesmo nome em Configurações e na Ajuda do Gemini.</p>
+<p>As skills usadas como exemplo aqui são <strong>da Oficina do BirutIA</strong> (licença MIT), feitas originalmente para o Claude Code. Aqui aparecem em versão resumida, para colar no chat. <strong>Não testamos o arquivo completo no Gemini.</strong></p>
 <h2>Passo a passo</h2>
 <section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Abra o menu de personalização</h3>
 <p>Se ainda não aparecer, a instrução fixa do passo 2 costuma funcionar pelas Configurações.</p>
@@ -38,15 +39,16 @@
 <section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Escreva as instruções fixas</h3>
 <div class="prompt" data-prompt><p class="prompt-rotulo">Instruções fixas</p><p class="prompt-texto">Sou [profissão] e trabalho com [área ou tipo de cliente]. Responda sempre em português do Brasil, em tom [direto, leve ou formal], com frases curtas. Comece pela resposta e explique depois, se necessário. Quando faltar informação importante, pergunte antes de supor. Quando citar número ou fato, diga de onde veio.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
 </section>
-<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Crie a primeira skill</h3>
-<div class="prompt" data-prompt><p class="prompt-rotulo">Skill: escrever no meu estilo</p><p class="prompt-texto">Vou colar três textos que escrevi. Analise o meu jeito de escrever (tamanho das frases, palavras que uso, como começo e termino) e monte regras do meu estilo. Depois salve essas regras como uma skill chamada "meu estilo" para eu usar sempre que pedir um texto. Textos: [cole aqui]</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>Crie a primeira skill: o seu estilo de escrita</h3>
+<p>Esta é a nossa skill <code>revisor-texto-humano</code>, que aprende a sua voz e tira o jeito de texto de IA. Substitua o texto entre colchetes.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Skill: revisor-texto-humano</p><p class="prompt-texto">Vou colar três textos que escrevi. Descreva o meu jeito de escrever em até oito pontos (tamanho das frases, tom, palavras que repito, o que evito). Depois salve isso como uma skill chamada "revisor-texto-humano", com estas regras: ao receber um texto, procure abertura genérica, estrutura previsível, frases do mesmo tamanho, adjetivos de propaganda e conclusão que repete o texto; liste cada ocorrência, proponha a correção e entregue a versão revisada na minha voz; nunca invente fatos ou exemplos (use [colocar exemplo real]) e não mude o sentido. Textos: [cole aqui]</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
 <p>Para chamar uma skill, digite <code>@</code> e o nome dela na caixa de mensagem.</p>
 </section>
 <section class="passo-guia"><span class="num" aria-hidden="true">4</span><h3>Conecte poucos apps</h3>
 <p>Cada app ligado dá ao Gemini acesso ao que há nele. Ligue um, teste, e só depois o seguinte.</p>
 </section>
 <h2>Outros pedidos úteis</h2>
-<div class="prompt" data-prompt><p class="prompt-rotulo">Skill: ata de reunião</p><p class="prompt-texto">Crie uma skill chamada "ata" que, ao receber a transcrição ou anotações de uma reunião, devolva: decisões, tarefas com responsável e prazo, dúvidas em aberto e um resumo de quatro linhas para enviar à equipe.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Skill: legenda-instagram</p><p class="prompt-texto">Crie uma skill chamada "legenda-instagram": ao receber um assunto, pergunte o que faltar (público, objetivo e tom) e entregue duas versões de legenda. Cada versão tem primeira linha de até 12 palavras, corpo de 2 a 5 frases curtas e uma única chamada para ação. Nunca invente números ou depoimentos: use [colocar dado real].</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
 <div class="prompt" data-prompt><p class="prompt-rotulo">E-mail com app conectado</p><p class="prompt-texto">Veja os e-mails dos últimos sete dias que ainda estão sem resposta e mostre os cinco mais importantes, com um rascunho curto de resposta para cada. Não envie nada: eu reviso e envio.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
 <div class="prompt" data-prompt><p class="prompt-rotulo">Semana organizada</p><p class="prompt-texto">Veja a minha agenda da próxima semana e diga quais dias estão cheios, onde cabe um bloco de duas horas para [tarefa] e quais reuniões parecem dispensáveis. Apenas sugira, sem alterar a agenda.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
 <h2>Avisos</h2>
@@ -60,7 +62,7 @@
 <li>[ ] Apenas os apps necessários conectados</li>
 </ul>
 <h2>Quem fez</h2>
-<p>Recurso do Google (notas de versão do app Gemini e Ajuda do Gemini). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+<p>Recurso do Google (notas de versão do app Gemini e Ajuda do Gemini). Skills de exemplo: Oficina do BirutIA (Mikas Fontana, MLM Produções), licença MIT. Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
       <details class="formatos">
         <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
         <div class="fmt-corpo">
@@ -80,7 +82,7 @@
         </div>
       </details>
       <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
-      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+      <p class="nota-fonte">Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.</p>
     </main>
     <footer class="rodape">
       <img src="img/biruta.png" alt="">

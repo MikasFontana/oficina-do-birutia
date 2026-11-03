@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Som para os seus vídeos feitos com o Claude: três ferramentas gratuitas e a licença de cada som · Oficina do BirutIA</title>
+  <meta name="description" content="O Claude monta o vídeo em código, mas não escuta o resultado. Três ferramentas gratuitas resolvem isso: um banco de sons abertos, uma skill que encaixa o som no quadro certo e um programa que confere o áudio. Com a licença de cada uma e quais sons podem entrar em vídeo de cliente.">
+  <meta name="theme-color" content="#1c1d20">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <canvas id="fundo3d" aria-hidden="true"></canvas>
+  <div class="quadro" aria-hidden="true"></div>
+  <div class="pagina">
+    <header class="topo">
+      <a class="marca" href="./"><img src="img/biruta.png" alt="">Oficina do Birut<span class="ia">IA</span></a>
+      <nav aria-label="Principal">
+        <a href="./#materiais">Materiais</a>
+        <a href="./#como">O que oferecemos</a>
+        <a href="./#pedido">Contato</a>
+      </nav>
+    </header>
+    <main class="guia">
+      <a class="voltar" href="./">← Voltar para a página inicial</a>
+      <p class="migalha"><a href="./#materiais">Materiais</a> / Design e vídeo</p>
+      <h1>Som para os seus vídeos feitos com o Claude: três ferramentas gratuitas e a licença de cada som</h1>
+      <p class="lide">O Claude monta o vídeo em código, mas não escuta o resultado. Três ferramentas gratuitas resolvem isso: um banco de sons abertos, uma skill que encaixa o som no quadro certo e um programa que confere o áudio. Com a licença de cada uma e quais sons podem entrar em vídeo de cliente.</p>
+<p>Quando o Claude monta um vídeo em código, ele escreve a imagem, a animação e o texto, mas <strong>não escuta o que saiu</strong>. O resultado costuma ser um vídeo mudo ou com um bipe sintético. Este guia reúne três ferramentas gratuitas que fecham essa lacuna: <strong>de onde vem o som</strong>, <strong>onde ele entra</strong> e <strong>se ficou bom</strong>.</p>
+<h2>Como usamos esta lista</h2>
+<ul>
+<li><strong>Não copiamos nada.</strong> Cada ferramenta vem direto do repositório do autor, e as atualizações vêm de lá.</li>
+<li><strong>O crédito é de quem fez.</strong> Autor, licença e link estão abaixo, conferidos em 30/10/2026.</li>
+<li><strong>O nosso trabalho</strong> é explicar o papel de cada uma, avisar dos cuidados com a licença dos sons e dar pedidos prontos para testar.</li>
+</ul>
+<p class="alerta">Antes de instalar qualquer skill, abra o arquivo <code>SKILL.md</code> dela e leia. Skill é instrução, e às vezes código, que roda no seu computador.</p>
+<h2>As três ferramentas</h2>
+<section class="passo-guia"><span class="num" aria-hidden="true">1</span><h3>Openverse: o banco de sons</h3>
+<p>Buscador de mídia aberta mantido pela WordPress Foundation. Reúne sons de outros sites (Wikimedia Commons, Jamendo e Freesound, por exemplo) e tem busca no site e por API.</p>
+<ul>
+<li><strong>Custo:</strong> gratuito. A página de termos e os limites de uso da API estão no site oficial: openverse.org.</li>
+<li><strong>Cuidado importante:</strong> o Openverse junta arquivos de outros sites e <strong>você precisa conferir a licença na página original</strong> de cada som antes de usar.</li>
+</ul>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">2</span><h3>Real SFX: onde cada som entra</h3>
+<p>Skill do Claude Code criada por Alexander Korbanov (Clipwing). Ela acha os momentos do vídeo que pedem som, escolhe gravações reais da <strong>sua</strong> biblioteca e encaixa cada uma no quadro exato, mantendo voz e música.</p>
+<ul>
+<li><strong>Licença:</strong> os scripts são MIT. O pacote de sons de interface que acompanha a skill tem código MIT e sons CC0, segundo o README dela. O repositório em si não traz um arquivo de licença na raiz, então confira antes de redistribuir.</li>
+<li><strong>Cuidado:</strong> ela não vem com biblioteca de efeitos. Você aponta a pasta dos seus sons, e o Openverse (com licença conferida) é uma boa fonte.</li>
+<li>Repositório: github.com/Clipwing/skills</li>
+</ul>
+</section>
+<section class="passo-guia"><span class="num" aria-hidden="true">3</span><h3>earshot: o ouvido</h3>
+<p>Programa de Leon Lin (Leonxlnx), licença <strong>MIT</strong>. Descreve um som em palavras, compara com uma descrição, acha o melhor trecho de uma gravação, avalia o áudio de um vídeo e cria efeitos em código.</p>
+<ul>
+<li><strong>Requisitos:</strong> Python 3.10 ou mais novo e FFmpeg. Roda só na CPU, sem placa de vídeo.</li>
+<li><strong>Modelos:</strong> no primeiro uso baixa dois modelos abertos, cerca de 1,1 GB no total (CLAP, licença Apache 2.0, e AST, licença BSD-3-Clause).</li>
+<li><strong>Privacidade:</strong> o áudio fica no seu computador. Só o comando opcional <code>llm</code> envia áudio para fora (para o Gemini), e exige a sua própria chave e uma confirmação explícita.</li>
+<li>Repositório: github.com/Leonxlnx/earshot</li>
+</ul>
+</section>
+<h2>A licença dos sons: o que pode entrar em vídeo de cliente</h2>
+<p>Vídeo de negócio é uso comercial. Cortar um som e sincronizar com a imagem também conta como obra derivada.</p>
+<ul>
+<li><strong>CC0 e domínio público:</strong> pode, sem condição.</li>
+<li><strong>CC BY:</strong> pode, <strong>com crédito obrigatório</strong> (título, autor, link e a informação de que foi editado).</li>
+<li><strong>CC BY-SA:</strong> evite. A obra derivada precisa sair com a mesma licença.</li>
+<li><strong>CC BY-NC:</strong> não use. É só para uso não comercial.</li>
+<li><strong>CC BY-ND:</strong> não use. Proíbe obra derivada.</li>
+</ul>
+<h2>Pedidos prontos</h2>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Achar e guardar sons com o crédito</p><p class="prompt-texto">Quero sons para um vídeo. Busque no Openverse (somente licenças CC0, domínio público e CC BY) estes tipos de som: whoosh, clique, pop e impacto leve. Baixe 5 opções de cada para a pasta Sons e, para cada arquivo, salve num arquivo de texto: título, autor, licença, endereço da página original e se exige crédito. Antes de baixar, me mostre a lista e espere o meu ok.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Pôr o som no vídeo</p><p class="prompt-texto">Tenho um vídeo montado em código, sem som. Use a skill real-sfx para achar os momentos que pedem efeito (entrada de texto, troca de cena, números subindo, logotipo), escolher o som certo da minha pasta Sons e colocar cada um no quadro exato. Mantenha a minha voz e a música. No fim, me entregue o vídeo novo e um relatório do que entrou em cada segundo.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Conferir o áudio antes de postar</p><p class="prompt-texto">Use o earshot para avaliar o áudio do meu vídeo final. Diga o que acontece em cada trecho, se algum som está alto demais ou fora do tempo da imagem, e liste as correções com o segundo exato de cada uma. Não envie nenhum áudio para fora do meu computador.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Créditos dos sons</p><p class="prompt-texto">Gere o texto de créditos para a descrição do vídeo, a partir do arquivo de créditos da pasta Sons. Inclua só os sons com licença CC BY, no formato: título, autor, licença e link.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
+<h2>Cuidados</h2>
+<ul>
+<li>Estas ferramentas <strong>medem</strong> o som. Elas não substituem o seu ouvido: ouça os trechos que elas apontarem, com fone e depois no alto-falante do celular, que é onde a maioria assiste.</li>
+<li>Confira a licença de cada som na página original, mesmo quando o Openverse já filtrou.</li>
+<li>Para uma voz ou um som que imite uma pessoa real, só com autorização por escrito.</li>
+<li>Em vídeo para crianças, ouça tudo antes: volume e sustos importam.</li>
+</ul>
+<h2>Antes de publicar</h2>
+<ul>
+<li>[ ] Todo som tem licença CC0, domínio público ou CC BY.</li>
+<li>[ ] Os créditos dos sons CC BY estão na descrição.</li>
+<li>[ ] Ouvi os trechos que a ferramenta apontou, no fone e no celular.</li>
+<li>[ ] A voz e a música continuam claras por cima dos efeitos.</li>
+</ul>
+<h2>Quem fez</h2>
+<ul>
+<li><strong>Openverse:</strong> WordPress Foundation. openverse.org</li>
+<li><strong>Real SFX:</strong> Alexander Korbanov, Clipwing. github.com/Clipwing/skills</li>
+<li><strong>earshot:</strong> Leon Lin (Leonxlnx), licença MIT. github.com/Leonxlnx/earshot</li>
+</ul>
+      <details class="formatos">
+        <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
+        <div class="fmt-corpo">
+          <div class="fmt-opcoes" role="radiogroup" aria-label="Formato do arquivo">
+            <label class="fmt-op"><input type="radio" name="fmt" value="pdf" checked data-href="som-para-os-seus-videos-no-claude.pdf" data-nome="PDF" data-desc="Para ler e imprimir" data-material="Som para os seus vídeos feitos com o Claude: três ferramentas gratuitas e a licença de cada som (PDF)"><span>PDF</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="docx" data-href="som-para-os-seus-videos-no-claude.docx" data-nome="Word" data-desc="Para editar" data-material="Som para os seus vídeos feitos com o Claude: três ferramentas gratuitas e a licença de cada som (Word)"><span>Word</span></label>
+            <label class="fmt-op"><input type="radio" name="fmt" value="md" data-href="som-para-os-seus-videos-no-claude.md" data-nome=".md" data-desc="Para usar com IA" data-material="Som para os seus vídeos feitos com o Claude: três ferramentas gratuitas e a licença de cada som (.md)"><span>.md</span></label>
+          </div>
+          <div class="fmt-previa">
+            <span class="fmt-ico" data-ext="pdf"><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#e5322d"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">PDF</text></svg></span>
+            <span class="fmt-ico" data-ext="docx" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#2b6fd6"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">DOC</text></svg></span>
+            <span class="fmt-ico" data-ext="md" hidden><svg width="46" height="56" viewBox="0 0 46 56" aria-hidden="true"><path d="M4 4h26l12 12v36H4z" fill="#fff" stroke="#d9d9de"/><path d="M30 4v12h12" fill="#e4e4ea"/><rect x="4" y="30" width="38" height="14" fill="#7c4df0"/><text x="23" y="41" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial">.MD</text></svg></span>
+            <div class="fmt-texto"><strong class="fmt-nome"></strong><span class="fmt-desc"></span></div>
+            <a class="btn btn-laranja fmt-baixar" href="som-para-os-seus-videos-no-claude.pdf" download data-material="Som para os seus vídeos feitos com o Claude: três ferramentas gratuitas e a licença de cada som (PDF)">↓ Baixar <span>PDF</span></a>
+          </div>
+          <p class="fmt-nota" hidden><strong>O que é .md?</strong> É o Markdown: um arquivo de texto simples que o Claude, o ChatGPT e programas de notas, como o Obsidian, leem direto. Ideal para colar na IA ou guardar no seu cofre de notas.</p>
+        </div>
+      </details>
+      <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
+      <p class="nota-fonte">Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.</p>
+    </main>
+    <footer class="rodape">
+      <img src="img/biruta.png" alt="">
+      <p class="aviso">Material feito pela Oficina do BirutIA, a partir do uso real na agência.</p>
+      <p>Oficina do BirutIA · feita com o Claude · <a href="privacidade.html">Privacidade</a></p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/fundo3d.js" defer></script>
+  <script src="js/pagina.js" defer></script>
+  <script src="js/cadastro.js" defer></script>
+  <script src="js/subir.js" defer></script>
+  <script src="js/formatos.js" defer></script>
+</body>
+</html>

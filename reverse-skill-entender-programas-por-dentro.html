@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Reverse-skill: entender programas por dentro · Oficina do BirutIA</title>
-  <meta name="description" content="Um pacote de skills ajuda agentes de IA a escolher o método certo para estudar aplicativos e programas. Use só em alvos seus ou autorizados.">
+  <meta name="description" content="Um pacote de skills ajuda agentes de IA a estudar aplicativos e programas. Veja como auditar o pacote com uma skill da Oficina antes de instalar, e use só em alvos seus ou autorizados.">
   <meta name="theme-color" content="#1c1d20">
   <link rel="icon" href="img/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,9 +29,10 @@
       <a class="voltar" href="./">← Voltar para a página inicial</a>
       <p class="migalha"><a href="./#materiais">Materiais</a> / Repositórios</p>
       <h1>Reverse-skill: entender programas por dentro</h1>
-      <p class="lide">Um pacote de skills ajuda agentes de IA a escolher o método certo para estudar aplicativos e programas. Use só em alvos seus ou autorizados.</p>
+      <p class="lide">Um pacote de skills ajuda agentes de IA a estudar aplicativos e programas. Veja como auditar o pacote com uma skill da Oficina antes de instalar, e use só em alvos seus ou autorizados.</p>
 <p>A <strong>reverse-skill</strong> (repositório zhaoxuya520/reverse-skill, licença MIT, conferido no GitHub) é um pacote de skills que orienta agentes de IA de programação em tarefas de engenharia reversa e pesquisa de segurança. Segundo a referência, ela funciona como um roteador: você descreve a tarefa, ela identifica o tipo de alvo, verifica quais ferramentas estão instaladas e conduz o método, terminando com um relatório de achados.</p>
 <p><strong>Uso permitido apenas em sistemas seus ou com autorização por escrito do dono.</strong> Analisar ou invadir sistemas de terceiros sem permissão é crime. O próprio repositório restringe o uso a pesquisa legal, estudo, competições de segurança e sistemas autorizados.</p>
+<p>Como o pacote executa comandos no seu computador, a regra aqui é <strong>auditar antes de instalar</strong>. Para isso usamos uma skill nossa, a <code>auditor-de-skills</code> (Oficina do BirutIA, licença MIT), que só lê: nunca instala, nunca executa os scripts e nunca apaga nada.</p>
 <h2>Para que serve (usos legítimos)</h2>
 <ul>
 <li>Auditar o seu próprio aplicativo antes de lançar.</li>
@@ -43,23 +44,28 @@
 <p>Um agente de programação com suporte a skills, Node.js e Python recentes (veja as versões no README) e, para aplicativos Android, o Java. Há conhecimento técnico envolvido: se você está começando com IA em conteúdo, vendas ou atendimento, este não é o ponto de partida.</p>
 <h2>Passo a passo resumido</h2>
 <p>1. Leia o README e as regras de uso do repositório.</p>
-<p>2. Baixe o projeto e abra o agente dentro da pasta, conforme as instruções.</p>
-<p>3. Deixe a skill listar as ferramentas já instaladas.</p>
-<p>4. Descreva a tarefa e <strong>declare que o alvo é seu ou autorizado</strong>.</p>
+<p>2. <strong>Baixe o pacote para uma pasta de teste, sem instalar.</strong></p>
+<p>3. <strong>Audite com a skill <code>auditor-de-skills</code></strong> (pedido abaixo) e só continue se o veredito for "Pode instalar" ou "Instalar com ressalvas" que você aceita.</p>
+<p>4. Instale conforme o README e abra o agente dentro da pasta do projeto.</p>
+<p>5. Deixe a skill listar as ferramentas já instaladas.</p>
+<p>6. Descreva a tarefa e <strong>declare que o alvo é seu ou autorizado</strong>.</p>
+<div class="prompt" data-prompt><p class="prompt-rotulo">Auditar antes de instalar</p><p class="prompt-texto">Use a skill auditor-de-skills na pasta [caminho da pasta baixada]. Leia todos os arquivos, inclusive os scripts, sem executar nada. Entregue a tabela com: o que faz, scripts, acesso à internet, leitura ou gravação fora da pasta, senhas ou chaves, licença e dependências, citando arquivo e trecho de cada achado. Termine com o veredito em uma linha e diga o que você não conseguiu verificar.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
 <div class="prompt" data-prompt><p class="prompt-rotulo">Exemplo de pedido autorizado</p><p class="prompt-texto">Tenho o pacote do aplicativo da minha empresa nesta pasta. Quero entender com quais servidores ele se comunica e se há informação sensível exposta no código. O aplicativo é nosso e tenho autorização para analisá-lo. Defina o escopo antes de agir e entregue um relatório com as provas.</p><button class="btn btn-claro copiar" type="button">Copiar pedido</button></div>
 <h2>Avisos</h2>
 <p class="alerta">Não rode em sistemas de clientes sem autorização formal do dono.</p>
 <p class="alerta">Arquivos suspeitos (possíveis vírus) só em máquina virtual separada, nunca no computador principal.</p>
 <p class="alerta">A IA executa comandos no seu computador: leia o que ela vai rodar antes de aprovar.</p>
+<p class="alerta">A auditoria da <code>auditor-de-skills</code> é uma leitura, não uma garantia: ela mesma lista o que não conseguiu verificar.</p>
 <p class="alerta">O projeto muda rápido: confira o README.</p>
 <h2>Checklist final</h2>
 <ul>
 <li>[ ] O alvo é meu ou autorizado por escrito</li>
+<li>[ ] Auditei o pacote antes de instalar</li>
 <li>[ ] Ambiente isolado para arquivos suspeitos</li>
 <li>[ ] Revisei os comandos antes de aprovar</li>
 </ul>
 <h2>Quem fez</h2>
-<p>reverse-skill, de zhaoxuya520 (github.com/zhaoxuya520/reverse-skill). Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
+<p>reverse-skill, de zhaoxuya520 (github.com/zhaoxuya520/reverse-skill). Skill de auditoria: Oficina do BirutIA (Mikas Fontana, MLM Produções), licença MIT. Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.</p>
       <details class="formatos">
         <summary><span class="fmt-k">Baixar o material</span><span class="fmt-abrir">Escolher o formato</span></summary>
         <div class="fmt-corpo">
@@ -79,7 +85,7 @@
         </div>
       </details>
       <a class="voltar voltar-fim" href="./">← Voltar para a página inicial</a>
-      <p class="nota-fonte">Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.</p>
+      <p class="nota-fonte">Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.</p>
     </main>
     <footer class="rodape">
       <img src="img/biruta.png" alt="">
