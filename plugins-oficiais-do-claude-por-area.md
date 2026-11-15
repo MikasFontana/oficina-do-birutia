@@ -75,7 +75,7 @@ Antes de enviar dados de clientes, confira a política da sua empresa e retire o
 - [ ] Removi os que não uso
 ## Quem fez
 
-Repositório da Anthropic (anthropics/knowledge-work-plugins). Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Repositório da Anthropic (anthropics/knowledge-work-plugins). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

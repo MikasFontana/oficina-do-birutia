@@ -58,7 +58,7 @@ Não publique fotos ou dados de pessoas sem autorização.
 - [ ] Revisei preço do plano e fim do teste
 ## Quem fez
 
-Postiz (postiz.com) e Anthropic (conectores). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Postiz (postiz.com) e Anthropic (conectores). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

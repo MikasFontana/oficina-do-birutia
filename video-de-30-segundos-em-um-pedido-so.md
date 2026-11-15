@@ -76,7 +76,7 @@ O vídeo de um produto precisa corresponder ao produto real.
 - [ ] Avisei que é IA
 ## Quem fez
 
-Modelo da Kling AI (consulte o anúncio oficial). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Modelo da Kling AI (consulte o anúncio oficial). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

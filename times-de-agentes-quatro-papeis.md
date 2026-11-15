@@ -70,7 +70,7 @@ Comece com tarefas pequenas para ver se o time realmente supera um agente sozinh
 - [ ] Comparei com um agente sozinho
 ## Quem fez
 
-Estudo citado: Google Research, Google DeepMind e MIT (leia a fonte original). Papéis e pedidos escritos pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Estudo citado: Google Research, Google DeepMind e MIT (leia a fonte original). Papéis e pedidos escritos pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

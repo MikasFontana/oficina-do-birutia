@@ -52,7 +52,7 @@ O teste automático não substitui olhar o site no celular de verdade.
 - [ ] Corrigi o que falhou e testei de novo
 ## Quem fez
 
-webapp-testing, de Anthropic (github.com/anthropics/skills), licença Apache 2.0 na pasta da skill. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.
+webapp-testing, de Anthropic (github.com/anthropics/skills), licença Apache 2.0 na pasta da skill. Guia escrito pela Oficina do BirutIA, a partir do que lemos no repositório.
 
 Oficina do BirutIA - material gratuito. Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.
 

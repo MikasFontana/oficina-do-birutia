@@ -72,7 +72,7 @@ Se o vídeo puder ser confundido com uma gravação real, informe na legenda que
 - [ ] Avisei na legenda que é IA
 ## Quem fez
 
-Modelo da HeyGen (página oficial e documentação). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Modelo da HeyGen (página oficial e documentação). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

@@ -65,7 +65,7 @@ Não conferimos a qualidade de cada exemplo: teste no seu caso.
 - [ ] Conferi imagem e som antes de publicar
 ## Quem fez
 
-HyperFrames, da HeyGen (github.com/heygen-com/hyperframes), licença Apache-2.0. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.
+HyperFrames, da HeyGen (github.com/heygen-com/hyperframes), licença Apache-2.0. Guia escrito pela Oficina do BirutIA, a partir do que lemos no repositório.
 
 Oficina do BirutIA - material gratuito. Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.
 

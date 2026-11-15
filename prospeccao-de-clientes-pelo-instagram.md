@@ -57,7 +57,7 @@ Consulte o jurídico se pretende abordar em escala.
 - [ ] Ofereço forma de sair da lista
 ## Quem fez
 
-Mailerfind (serviço de terceiros). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Mailerfind (serviço de terceiros). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

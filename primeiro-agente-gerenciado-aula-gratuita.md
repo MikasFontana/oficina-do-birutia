@@ -55,7 +55,7 @@ Acompanhe o custo das primeiras execuções.
 - [ ] Defini o que exige aprovação
 ## Quem fez
 
-Aula da Anthropic (Code with Claude 2026, com Isabella He). Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Aula da Anthropic (Code with Claude 2026, com Isabella He). Curadoria da Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

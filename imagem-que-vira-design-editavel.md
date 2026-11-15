@@ -51,7 +51,7 @@ Não envie imagens com dados pessoais de clientes sem autorização.
 - [ ] Troquei marca e fotos que não são minhas
 ## Quem fez
 
-Recursos do Canva e da OpenAI. Pedido escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Recursos do Canva e da OpenAI. Pedido escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

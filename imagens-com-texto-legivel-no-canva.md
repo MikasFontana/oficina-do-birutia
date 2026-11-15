@@ -76,7 +76,7 @@ Não inclua nome, telefone ou foto de cliente sem autorização.
 - [ ] Verifiquei o limite de uso do meu plano
 ## Quem fez
 
-Modelo do Canva (consulte o anúncio oficial "Introducing Canva Craft"). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Modelo do Canva (consulte o anúncio oficial "Introducing Canva Craft"). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

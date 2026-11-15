@@ -63,7 +63,7 @@ Comandos e nomes podem mudar. Em caso de erro, consulte a página oficial: claud
 - [ ] Testei o projeto depois de cada mudança
 ## Quem fez
 
-O plugin é da Anthropic (repositório anthropics/claude-plugins-official, página claude.com/plugins/claude-code-setup). Este guia foi escrito pela Oficina do BirutIA com base na página oficial e no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+O plugin é da Anthropic (repositório anthropics/claude-plugins-official, página claude.com/plugins/claude-code-setup). Este guia foi escrito pela Oficina do BirutIA com base na página oficial.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

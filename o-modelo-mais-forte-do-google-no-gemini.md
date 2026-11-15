@@ -64,7 +64,7 @@ Comece o modo tarefas com um trabalho curto e observe como ele age.
 - [ ] Sem dados pessoais nos anexos
 ## Quem fez
 
-Modelo e recurso do Google (anúncio "Gemini 4 Argon is now available in the Gemini app"). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Modelo e recurso do Google (anúncio "Gemini 4 Argon is now available in the Gemini app"). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

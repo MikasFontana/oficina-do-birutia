@@ -50,7 +50,7 @@ Em saúde, finanças e questões jurídicas, trate o resultado como rascunho par
 - [ ] Defini como conferir o resultado
 ## Quem fez
 
-Ideia de Felix Rieseberg (Anthropic), conforme o texto citado. Pedido e exemplos escritos pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Ideia de Felix Rieseberg (Anthropic), conforme o texto citado. Pedido e exemplos escritos pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

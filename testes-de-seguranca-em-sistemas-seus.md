@@ -56,7 +56,7 @@ O resultado da IA é um apoio: falhas graves merecem revisão de um profissional
 - [ ] Corrigi e testei de novo
 ## Quem fez
 
-Strix, de usestrix (github.com/usestrix/strix). Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Strix, de usestrix (github.com/usestrix/strix). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

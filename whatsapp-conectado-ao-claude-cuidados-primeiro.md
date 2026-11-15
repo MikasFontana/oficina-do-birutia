@@ -63,7 +63,7 @@ Dados de terceiros nas conversas exigem cuidado.
 - [ ] Aparelho desconectado ao terminar
 ## Quem fez
 
-Projeto de lharries (github.com/lharries/whatsapp-mcp). Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Projeto de lharries (github.com/lharries/whatsapp-mcp). Curadoria da Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

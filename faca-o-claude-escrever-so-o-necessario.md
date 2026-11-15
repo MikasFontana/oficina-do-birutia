@@ -63,7 +63,7 @@ Os números de economia vêm do próprio projeto.
 - [ ] Conferi o que mudou antes de usar
 ## Quem fez
 
-Ponytail, de DietrichGebert (github.com/DietrichGebert/ponytail), licença MIT. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.
+Ponytail, de DietrichGebert (github.com/DietrichGebert/ponytail), licença MIT. Guia escrito pela Oficina do BirutIA, a partir do que lemos no repositório.
 
 Oficina do BirutIA - material gratuito. Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.
 

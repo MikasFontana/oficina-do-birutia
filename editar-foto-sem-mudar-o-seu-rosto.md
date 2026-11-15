@@ -64,7 +64,7 @@ Se o resultado for usado em perfil profissional ou documento, compare com a foto
 - [ ] Tenho autorização para usar a foto
 ## Quem fez
 
-Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência; os pedidos foram reescritos por nós.
+Guia escrito pela Oficina do BirutIA; os pedidos foram reescritos por nós.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

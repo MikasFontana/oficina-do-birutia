@@ -76,7 +76,7 @@ Antes de enviar planilhas, retire nome, CPF e telefone de clientes.
 - [ ] Permissões dos aplicativos revisadas
 ## Quem fez
 
-Recurso do Google (anúncio "New Gemini tools for small business owners"). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Recurso do Google (anúncio "New Gemini tools for small business owners"). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

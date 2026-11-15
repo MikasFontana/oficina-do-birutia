@@ -57,7 +57,7 @@ Em projetos de clientes, não cole dados pessoais na conversa.
 - [ ] Recebi o plano e fiz uma etapa por vez
 ## Quem fez
 
-Superpowers, de obra e colaboradores (github.com/obra/superpowers), licença MIT. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.
+Superpowers, de obra e colaboradores (github.com/obra/superpowers), licença MIT. Guia escrito pela Oficina do BirutIA, a partir do que lemos no repositório.
 
 Oficina do BirutIA - material gratuito. Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.
 

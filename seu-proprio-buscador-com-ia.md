@@ -53,7 +53,7 @@ Se a pesquisa depender de um serviço de busca externo, ele pode ter limites ou 
 - [ ] Fontes conferidas nas primeiras respostas
 ## Quem fez
 
-Vane, de ItzCrazyKns (github.com/ItzCrazyKns/Vane). Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Vane, de ItzCrazyKns (github.com/ItzCrazyKns/Vane). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

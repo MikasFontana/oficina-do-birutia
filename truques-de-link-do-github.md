@@ -79,7 +79,7 @@ Respeite a licença do projeto original ao reaproveitar código.
 - [ ] Conferi no código o que a IA afirmou
 ## Quem fez
 
-Os serviços citados pertencem aos seus respectivos autores (por exemplo, DeepWiki é da Cognition; o editor github.dev é do GitHub). Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Os serviços citados pertencem aos seus respectivos autores (por exemplo, DeepWiki é da Cognition; o editor github.dev é do GitHub). Curadoria da Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

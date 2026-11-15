@@ -66,7 +66,7 @@ Escute o áudio inteiro antes de publicar: preço, data e nome passam pelo seu o
 - [ ] Aviso de voz gerada por IA, quando necessário
 ## Quem fez
 
-Modelo da ElevenLabs (página oficial e documentação). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Modelo da ElevenLabs (página oficial e documentação). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

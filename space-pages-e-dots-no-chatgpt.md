@@ -75,7 +75,7 @@ Informações de planos e países vêm de material de referência e podem estar 
 - [ ] Revisei as atualizações automáticas
 ## Quem fez
 
-Recursos da OpenAI (anúncios de 29/09/2026). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Recursos da OpenAI (anúncios de 29/09/2026). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

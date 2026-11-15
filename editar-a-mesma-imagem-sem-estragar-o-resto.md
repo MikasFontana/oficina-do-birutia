@@ -80,7 +80,7 @@ Revise texto e logotipo antes de usar em anúncio.
 - [ ] Autorização para imagens de pessoas
 ## Quem fez
 
-Ideogram (página oficial do Ideogram 4.5). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Ideogram (página oficial do Ideogram 4.5). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

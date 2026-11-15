@@ -48,7 +48,7 @@ Comandos e versões mudam; confira o repositório.
 - [ ] Testei com as ferramentas que uso
 ## Quem fez
 
-Codenotch, de vinzdg (github.com/vinzdg/codenotch). Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Codenotch, de vinzdg (github.com/vinzdg/codenotch). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

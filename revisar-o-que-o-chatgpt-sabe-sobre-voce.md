@@ -59,7 +59,7 @@ Dados de clientes, pacientes ou funcionários seguem a política da sua empresa 
 - [ ] Uso o pedido de anonimizar antes de colar textos de terceiros
 ## Quem fez
 
-Recursos da OpenAI (consulte a Central de Ajuda, "Using locked chats in ChatGPT"). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Recursos da OpenAI (consulte a Central de Ajuda, "Using locked chats in ChatGPT"). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

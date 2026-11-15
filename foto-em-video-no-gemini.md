@@ -74,7 +74,7 @@ A cidade e a vista aérea são criadas pela IA; não são o mapa real do seu end
 - [ ] Avisei que é conteúdo de IA
 ## Quem fez
 
-Recurso do Google (Ajuda do Gemini, "Gerar vídeos com os apps do Gemini"). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Recurso do Google (Ajuda do Gemini, "Gerar vídeos com os apps do Gemini"). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

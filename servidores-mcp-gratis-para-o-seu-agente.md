@@ -62,7 +62,7 @@ Respeite os termos de uso dos sites que o agente consultar.
 - [ ] Removi o que não uso
 ## Quem fez
 
-Projetos de Upstash, Microsoft, Firecrawl, Supabase, Google, Stripe, Desktop Commander e do Model Context Protocol. Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Projetos de Upstash, Microsoft, Firecrawl, Supabase, Google, Stripe, Desktop Commander e do Model Context Protocol. Curadoria da Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

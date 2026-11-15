@@ -89,7 +89,7 @@ Cada servidor tem custo, limites ou permissões próprias.
 - [ ] Removi o que não uso
 ## Quem fez
 
-Projetos: Perplexity, Firecrawl, Microsoft (Playwright) e Context7, cada um com documentação própria. Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Projetos: Perplexity, Firecrawl, Microsoft (Playwright) e Context7, cada um com documentação própria. Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 
