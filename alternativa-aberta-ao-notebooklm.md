@@ -67,7 +67,7 @@ Confira respostas importantes na fonte citada.
 - [ ] Testei com fontes sem dados pessoais
 ## Quem fez
 
-Open Notebook, de lfnovo (github.com/lfnovo/open-notebook). Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Open Notebook, de lfnovo (github.com/lfnovo/open-notebook). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

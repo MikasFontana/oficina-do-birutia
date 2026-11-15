@@ -54,7 +54,7 @@ No SEO em escala, páginas quase iguais podem ser tratadas como baixa qualidade 
 - [ ] Revisei números e promessas antes de publicar
 ## Quem fez
 
-Skills de Corey Haines (github.com/coreyhaines31/marketingskills), licença MIT. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.
+Skills de Corey Haines (github.com/coreyhaines31/marketingskills), licença MIT. Guia escrito pela Oficina do BirutIA, a partir do que lemos no repositório.
 
 Oficina do BirutIA - material gratuito. Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.
 

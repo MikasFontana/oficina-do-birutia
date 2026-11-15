@@ -58,7 +58,7 @@ Confira o plano da Vercel e os limites do uso gratuito no site oficial.
 - [ ] Só então pedi a publicação final
 ## Quem fez
 
-Skill de Vercel (github.com/vercel-labs/agent-skills). Licença não exibida no nível principal do repositório na data da conferência. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.
+Skill de Vercel (github.com/vercel-labs/agent-skills). Licença não exibida no nível principal do repositório na data da conferência. Guia escrito pela Oficina do BirutIA, a partir do que lemos no repositório.
 
 Oficina do BirutIA - material gratuito. Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.
 

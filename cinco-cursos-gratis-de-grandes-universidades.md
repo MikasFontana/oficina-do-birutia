@@ -49,7 +49,7 @@ Cuidado com sites que vendem "certificados" de cursos gratuitos: use a plataform
 - [ ] Reservei horários na semana
 ## Quem fez
 
-Cursos de Harvard, Stanford, MIT e Yale. Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Cursos de Harvard, Stanford, MIT e Yale. Curadoria da Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

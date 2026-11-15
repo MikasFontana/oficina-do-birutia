@@ -54,7 +54,7 @@ Para trabalho profissional, não troque suas ferramentas atuais por um programa 
 - [ ] Mantive minha ferramenta atual para clientes
 ## Quem fez
 
-PhotoCraft e Crafting Apps são da equipe ArtCraft (github.com/storytold/photocraft). Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+PhotoCraft e Crafting Apps são da equipe ArtCraft (github.com/storytold/photocraft). Curadoria da Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

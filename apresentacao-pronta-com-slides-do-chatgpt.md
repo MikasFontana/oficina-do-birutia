@@ -66,7 +66,7 @@ Com dados reais de clientes em espaço compartilhado, siga a política da sua em
 - [ ] Sem dados pessoais nos slides
 ## Quem fez
 
-Recurso da OpenAI (notas de lançamento do ChatGPT). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Recurso da OpenAI (notas de lançamento do ChatGPT). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

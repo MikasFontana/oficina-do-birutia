@@ -66,7 +66,7 @@ Se o recurso novo ainda não apareceu, os mesmos pedidos funcionam no fluxo comu
 - [ ] Sem dados pessoais no caderno
 ## Quem fez
 
-Recurso do Google (Gemini Notebook). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Recurso do Google (Gemini Notebook). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

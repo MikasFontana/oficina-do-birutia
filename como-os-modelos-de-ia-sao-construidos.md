@@ -47,7 +47,7 @@ A aula é técnica; sem base em matemática, aproveite os conceitos gerais e use
 - [ ] Respondi às perguntas de revisão
 ## Quem fez
 
-Aula de Yann Dubois na Universidade de Stanford (CS229). Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Aula de Yann Dubois na Universidade de Stanford (CS229). Curadoria da Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

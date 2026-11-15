@@ -80,7 +80,7 @@ O que vai ao cliente passa pela sua revisão.
 - [ ] Arquivo apagado quando não for mais necessário
 ## Quem fez
 
-Recurso da OpenAI (Central de Ajuda e notas de lançamento do ChatGPT). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Recurso da OpenAI (Central de Ajuda e notas de lançamento do ChatGPT). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

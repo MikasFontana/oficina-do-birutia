@@ -59,7 +59,7 @@ Informe quando a imagem foi alterada por IA e puder induzir a erro.
 - [ ] Autorização para usar a foto
 ## Quem fez
 
-Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência; os pedidos são nossos.
+Guia escrito pela Oficina do BirutIA; os pedidos são nossos.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

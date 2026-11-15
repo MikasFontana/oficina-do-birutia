@@ -67,7 +67,7 @@ Escassez e garantia em ofertas precisam ser verdadeiras.
 - [ ] Revisei as ações com meu time
 ## Quem fez
 
-Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência. A estrutura de instruções e perguntas é nossa.
+Guia escrito pela Oficina do BirutIA. A estrutura de instruções e perguntas é nossa.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

@@ -41,7 +41,7 @@ Não confunda com ferramentas que coletam dados de sites: essa é só uma brinca
 - [ ] Usei página de teste
 ## Quem fez
 
-Literal Web Crawler, de adampog. Segundo a referência, a ideia original é de @rybinfx. Curadoria da Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Literal Web Crawler, de adampog. Curadoria da Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

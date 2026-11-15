@@ -90,7 +90,7 @@ Os pedidos que fazem você responder (quiz, socrático) fixam mais do que o resu
 - [ ] Marquei as revisões no calendário
 ## Quem fez
 
-Técnicas de estudo de domínio público. Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência; os pedidos são nossos.
+Técnicas de estudo de domínio público. Guia escrito pela Oficina do BirutIA; os pedidos são nossos.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

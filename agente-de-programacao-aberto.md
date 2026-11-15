@@ -64,7 +64,7 @@ Chaves de API ficam fora do repositório.
 - [ ] Não compartilhei conversas com dados sensíveis
 ## Quem fez
 
-OpenCode (github.com/anomalyco/opencode). Guia escrito pela Oficina do BirutIA, com apoio do material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+OpenCode (github.com/anomalyco/opencode). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

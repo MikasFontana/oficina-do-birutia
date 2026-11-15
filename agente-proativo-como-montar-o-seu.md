@@ -56,7 +56,7 @@ Rascunhos de resposta são para você revisar, nunca para enviar sem ler.
 - [ ] Limite do plano acompanhado
 ## Quem fez
 
-Claude Duet é da Anthropic. Guia escrito pela Oficina do BirutIA, com base na página oficial e no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Claude Duet é da Anthropic. Guia escrito pela Oficina do BirutIA, com base na página oficial.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

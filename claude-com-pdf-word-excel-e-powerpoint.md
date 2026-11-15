@@ -68,7 +68,7 @@ Confira números e fórmulas antes de usar.
 - [ ] Conferi o arquivo gerado antes de enviar
 ## Quem fez
 
-Skills de Anthropic (github.com/anthropics/skills). Licença reservada nas quatro pastas citadas, na data da conferência. Guia escrito pela Oficina do BirutIA, a partir da seleção da comunidade Inteligência Aplicada (consultada como referência) e do que lemos no repositório.
+Skills de Anthropic (github.com/anthropics/skills). Licença reservada nas quatro pastas citadas, na data da conferência. Guia escrito pela Oficina do BirutIA, a partir do que lemos no repositório.
 
 Oficina do BirutIA - material gratuito. Conferido em 30/10/2026. As ferramentas de IA mudam com frequência.
 

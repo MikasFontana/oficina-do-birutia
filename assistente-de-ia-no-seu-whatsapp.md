@@ -74,7 +74,7 @@ Confira horários, endereços e preços na fonte.
 - [ ] Revisei permissões depois de uma semana
 ## Quem fez
 
-Os serviços citados são de terceiros. Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Os serviços citados são de terceiros. Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

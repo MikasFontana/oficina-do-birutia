@@ -53,7 +53,7 @@ Uma lista da IA é ponto de partida, não verdade: confirme antes de usar.
 - [ ] Mensagem se identifica e oferece saída
 ## Quem fez
 
-Firecrawl (changelog e documentação oficial). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Firecrawl (changelog e documentação oficial). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 

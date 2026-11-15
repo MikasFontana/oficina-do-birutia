@@ -75,7 +75,7 @@ A automação avançada está em beta e menus podem mudar.
 - [ ] Acompanho o gasto de créditos
 ## Quem fez
 
-Manus (anúncio "Introducing Manus 2.0" e documentação). Guia escrito pela Oficina do BirutIA, com base no material de Guilherme Morais (@guilhermemorais.ia), consultado como referência.
+Manus (anúncio "Introducing Manus 2.0" e documentação). Guia escrito pela Oficina do BirutIA.
 
 Oficina do BirutIA - material gratuito. Conferido em 28/10/2026. As ferramentas de IA mudam com frequência.
 
